@@ -1,4 +1,0 @@
-glciampaglia.com
-================
-
-Personal homepage
