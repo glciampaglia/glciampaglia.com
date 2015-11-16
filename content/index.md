@@ -9,7 +9,7 @@ type = "index"
 
 ### About Me {#first-heading}
 
-Welcome!I am currently a postdoctoral fellow at the [Center for Complex Networks
+I am currently a postdoctoral fellow at the [Center for Complex Networks
 and Systems Research](http://cnets.indiana.edu/) (CNetS), [Indiana
 University Bloomington](http://iub.edu), working on information
 diffusion in the group of [Filippo
