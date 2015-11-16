@@ -1,3 +1,9 @@
-baseurl = "http://glciampaglia.com/"
+baseurl = "http://glciampaglia.com"
 languageCode = "en-us"
 title = "Giovanni Luca Ciampaglia"
+
+RSSLink = "http://glciampaglia.com/index.xml"
+
+[params]
+    description = "Personal homepage of Giovanni Luca Ciampaglia, Ph.D."
+    author = "Giovanni Luca Ciampaglia"
