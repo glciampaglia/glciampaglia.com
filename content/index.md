@@ -4,52 +4,49 @@ type = "index"
 
 # Giovanni Luca Ciampaglia
 
-<img align="right" style="padding : 0 2em 2em 2em;" src="images/metiled_270_bw.png" alt="A picture of me, GLC.">
+<img align="right" style="padding : 0 2em 2em 2em;" src="images/iuni_backyard_2015.png" alt="A picture of me, GLC.">
 
 
 ### About Me {#first-heading}
 
-I am currently a postdoctoral fellow at the [Center for Complex Networks
-and Systems Research](http://cnets.indiana.edu/) (CNetS), [Indiana
-University Bloomington](http://iub.edu), working on information
-diffusion in the group of [Filippo
-Menczer](http://informatics.indiana.edu/fil/) and [Alessandro
-Flammini](http://sites.google.com/site/aflammin/). I will be soon
-joining the [IU Network Science Institute](http://iuni.iu.edu) as an
-assistant research scientist.
+I am currently assistant research scientist at the [Indiana University Network
+Science Institute](http://iuni.iu.edu). I work on information diffusion in
+close collaboration with [Filippo Menczer](http://informatics.indiana.edu/fil/)
+and [Alessandro Flammini](http://sites.google.com/site/aflammin/).
 
 I obtained my Ph.D. in [Informatics](http://www.inf.usi.ch) from
-Università della Svizzera Italiana (also known as University of Lugano)
+_Università della Svizzera Italiana_ (also known as University of Lugano)
 in December 2011. My research was supervised jointly by Luca Maria
 Gambardella ([IDSIA](http://www.idsia.ch/%7Eluca/)), Alberto Vancheri
 (co-advisor,
 [SUPSI](http://www.supsi.ch/dti/strumenti/rubrica/dettaglio.5503.backLink.58b96214-2453-483c-9f5f-d122ec981907.html))
 and Paolo Giordano (co-advisor, [Uni
-Wien](http://plone.mat.univie.ac.at/people/details?memberid=975&is_guest=0)).
+Wien](http://www.mat.univie.ac.at/~giordap7/)).
 
-Before joining CNetS, I was previously research analyst contractor at
-the [Wikimedia Foundation](https://wikimediafoundation.org/), working on
-[editor engagement
-issues](http://en.wikipedia.org/wiki/Wikipedia:Editor_engagement), and
-research associate at the [Chair of sociology, in particular modeling
-and simulation](http://www.soms.ethz.ch), at the [Swiss Federal
-Institute of Technology](http://ethz.ch) (ETH) in Zürich.
+Before joining CNetS, I was previously research analyst contractor at the
+[Wikimedia Foundation](https://wikimediafoundation.org/), working on [editor
+engagement issues](http://en.wikipedia.org/wiki/Wikipedia:Editor_engagement),
+research associate at the [Chair of sociology, in particular modeling and
+simulation](http://www.soms.ethz.ch), in the [Swiss Federal Institute of
+Technology](http://ethz.ch) (ETH) in Zürich, and SNSF postdoctoral fellow at the
+[Center for Complex Networks and Systems Research](http://cnets.indiana.edu/)
+(CNetS), [Indiana University Bloomington](http://iub.edu), thanks to the
+generous support of the [Swiss National Science Foundation](http://snf.ch).
 
-My research is about collective social phenomena on the Internet, in
-particular large-scale collaboration platforms such as Wikipedia. I am
-also interested in other complex social phenomena such as emergence of
-social norms, cultural dynamics. Prior to my Ph.D. studies I also worked
-on models of urban growth. You can find more information in my
-[curriculum vitae](docs/cvglc.pdf) and my [software developer
-portfolio](docs/portfolioglc.pdf).
+My research is about collective social phenomena on the Internet, in particular
+large-scale collaboration platforms such as Wikipedia. I am also interested in
+other complex social phenomena such as emergence of social norms, cultural
+dynamics. Prior to my Ph.D. studies I also worked on models of urban growth.
+You can find more information in my [curriculum vitae](docs/cvglc.pdf) and my
+(old) [software portfolio](docs/portfolioglc.pdf).
 
 ### Contact Information
 
 <ul class="inline-list">
 <li><span class="dings">✉</span><br/>
-    School of Informatics and Computing<br/>
+    Network Science Institute<br/>
     Indiana University Bloomington<br/>
-    919 E 10 St<br/>
+    1001 Sr 45/46<br/>
      Bloomington, IN 47408, USA
 </li>
 <li><span class="dings">@</span><br/>
@@ -57,7 +54,8 @@ portfolio](docs/portfolioglc.pdf).
     (remove the caps)<br/>
 </li>
 <li><span class="dings">✆</span> <br/>
-    1-812-855-7261
+    1-812-855-7261 (SoIC)<br/>
+    1-812-856-4168 (IUNI)<br/>
 </li>
 </ul>
 
