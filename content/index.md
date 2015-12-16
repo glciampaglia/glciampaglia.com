@@ -26,12 +26,13 @@ Wien](http://www.mat.univie.ac.at/~giordap7/)).
 Before joining CNetS, I was previously research analyst contractor at the
 [Wikimedia Foundation](https://wikimediafoundation.org/), working on [editor
 engagement issues](http://en.wikipedia.org/wiki/Wikipedia:Editor_engagement),
-research associate at the [Chair of sociology, in particular modeling and
-simulation](http://www.soms.ethz.ch), in the [Swiss Federal Institute of
-Technology](http://ethz.ch) (ETH) in Zürich, and SNSF postdoctoral fellow at the
-[Center for Complex Networks and Systems Research](http://cnets.indiana.edu/)
-(CNetS), [Indiana University Bloomington](http://iub.edu), thanks to the
-generous support of the [Swiss National Science Foundation](http://snf.ch).
+research associate at the [Chair of Computational Social
+Science](http://www.coss.ethz.ch), in the [Swiss Federal Institute of
+Technology](http://ethz.ch) (ETH) in Zürich, Switzerland, and SNSF postdoctoral
+fellow at the [Center for Complex Networks and Systems
+Research](http://cnets.indiana.edu/) (CNetS), [Indiana University
+Bloomington](http://iub.edu), thanks to the generous support of the [Swiss
+National Science Foundation](http://snf.ch).
 
 My research is about collective social phenomena on the Internet, in particular
 large-scale collaboration platforms such as Wikipedia. I am also interested in
