@@ -157,8 +157,8 @@ at the [Santa Fe Institute!](http://www.santafe.edu) Pictures are on
 ### Publications
 
 -   C. Shao, G. L. Ciampaglia, A. Flammini, F. Menczer: Hoaxy: A Platform 
-    for Tracking Online Misinformation. **Proceedings of WWW'16 Companion**.
-    **In press**.
+    for Tracking Online Misinformation. *Proceedings of WWW'16 Companion*.
+    *In press*.
 -   J. Park, G. L. Ciampaglia, E. Ferrara: Style in the age of Instagram
     -- Predicting success within the fashion industry using social
     media. *Proceedings of CSCW'16*
