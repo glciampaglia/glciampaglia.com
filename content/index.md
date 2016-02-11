@@ -38,8 +38,9 @@ My research is about collective social phenomena on the Internet, in particular
 large-scale collaboration platforms such as Wikipedia. I am also interested in
 other complex social phenomena such as emergence of social norms, cultural
 dynamics. Prior to my Ph.D. studies I also worked on models of urban growth.
-You can find more information in my [curriculum vitae](docs/cvglc.pdf) and my
-(old) [software portfolio](docs/portfolioglc.pdf).
+You can find more information in my [curriculum vitae](docs/cvglc.pdf),
+complete [list of publications](docs/publist.pdf), and my (old) [software
+portfolio](docs/portfolioglc.pdf).
 
 ### Contact Information
 
@@ -155,6 +156,9 @@ at the [Santa Fe Institute!](http://www.santafe.edu) Pictures are on
 
 ### Publications
 
+-   C. Shao, G. L. Ciampaglia, A. Flammini, F. Menczer: Hoaxy: A Platform 
+    for Tracking Online Misinformation. **Proceedings of WWW'16 Companion**.
+    **In press**.
 -   J. Park, G. L. Ciampaglia, E. Ferrara: Style in the age of Instagram
     -- Predicting success within the fashion industry using social
     media. *Proceedings of CSCW'16*
