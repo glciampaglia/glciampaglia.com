@@ -1,2 +1,6 @@
 #!/bin/bash
-rsync -aP public/ mercury:www/ --delete
+SERVER=abraxas
+LOCALDIR=public/
+REMOTEDIR=glciampaglia.com/
+
+rsync -aP --delete ${LOCALDIR} ${SERVER}:${REMOTEDIR}
