@@ -63,6 +63,10 @@ portfolio](docs/portfolioglc.pdf).
 
 ### News
 
+__4 Sep. 2016__: The 2017 NetSci International School and Conference on Network
+Science will be held in Indianapolis at the JW Marriott Indianapolis from June
+19-23. More information will be available soon: http://netsci2017.net/
+
 **21 Jun. 2015**: Submit to the [Computational Social Science
 2015](http://cssworkshop.oii.ox.ac.uk/) workshop! This is a satellite
 event of the [2015 Conference on Complex
@@ -154,8 +158,10 @@ talks is also available on
 at the [Santa Fe Institute!](http://www.santafe.edu) Pictures are on
 [Picasa.](http://picasaweb.google.com/cssummerschool2008/)
 
-### Publications
+### Publications ([Google Scholar](https://scholar.google.com/citations?user=ay9uGpcAAAAJ))
 
+-   C. A. Davis, G. L. Ciampaglia, et al. OSoMe: The IUNI observatory on
+    social media”. *PeerJ Computer Science*. [[doi](http://dx.doi.org/10.7287/peerj.preprints.2008v1)].
 -   C. Shao, G. L. Ciampaglia, A. Flammini, F. Menczer: Hoaxy: A Platform 
     for Tracking Online Misinformation. *Proceedings of WWW'16 Companion*.
     [[pdf](http://www2016.net/proceedings/companion/p745.pdf), [arxiv](http://arxiv.org/abs/1603.01511)].
