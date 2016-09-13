@@ -161,7 +161,7 @@ googleAnalytics = "UA-45616511-1"
 
 [[menu.main]]
   name = "Posts"
-  url = "#post"
+  url = "#posts"
   weight = 3
 
 [[menu.main]]
