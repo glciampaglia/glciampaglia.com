@@ -8,6 +8,15 @@ weight = 0
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Giovanni Luca Ciampaglia is an assistant research scientist at the [Indiana
+University Network Science Institute](http://iuni.iu.edu) (IUNI). His research
+interests are in the emerging disciplines of [network
+science](//en.wikipedia.org/wiki/Network_science) and [computational social
+science](//en.wikipedia.org/wiki/Computational_social_science), with a
+particular focus on information diffusion on the Internet and social media. At
+IUNI, he leads various efforts within the Social Network Science Hub.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. Etiam iaculis libero hendrerit ipsum tempus accumsan. Praesent ex justo, aliquam bibendum nulla in, vehicula rhoncus massa. Fusce gravida mattis tellus vel commodo. Etiam molestie non ligula ac venenatis. Integer semper diam at fringilla dapibus. Nunc tincidunt lacinia nisi, sed blandit purus fermentum vel. Morbi tempus dolor dolor. Phasellus scelerisque est elit, et porttitor mauris faucibus sit amet. Phasellus sollicitudin bibendum sem eu blandit. Curabitur congue felis eu velit faucibus porta. Curabitur a pharetra diam.
+His research has been covered in major news outlets, including the Wall Street
+Journal, the Economist, Wired, MIT Technology Review, CBS News, Vogue UK,
+Harper's Bazaar, Pacific Standard, the Daily Mail, _il Sole 24 Ore_ (in
+Italian), and  _Welt_ (in German) to cite a few. 
