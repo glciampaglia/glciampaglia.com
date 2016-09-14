@@ -8,9 +8,10 @@ weight = 0
 
 # Biography
 
-Giovanni Luca Ciampaglia is an assistant research scientist at the [Indiana
-University Network Science Institute](http://iuni.iu.edu) (IUNI). His research
-interests are in the emerging disciplines of [network
+Giovanni Luca Ciampaglia (IPA: dʒovˈannɪ lˈuːka tʃampˈaːʎa) is an assistant
+research scientist at the [Indiana University Network Science
+Institute](http://iuni.iu.edu) (IUNI). His research interests are in the
+emerging disciplines of [network
 science](//en.wikipedia.org/wiki/Network_science) and [computational social
 science](//en.wikipedia.org/wiki/Computational_social_science), with a
 particular focus on information diffusion on the Internet and social media. At

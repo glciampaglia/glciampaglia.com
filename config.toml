@@ -118,7 +118,7 @@ googleAnalytics = "UA-45616511-1"
   [[params.social]]
     icon = "arxiv"
     icon_pack = "ai"
-    link = "//arxiv.org/find/all/1/au:+ciampaglia/0/1/0/all/"
+    link = "http://arxiv.org/find/cs/1/au:+Ciampaglia_G/0/1/0/all/0/1"
 
   [[params.social]]
     icon = "github"
