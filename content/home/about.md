@@ -8,7 +8,7 @@ weight = 0
 
 # Biography
 
-Giovanni Luca Ciampaglia (IPA: dʒovˈannɪ lˈuːka tʃampˈaːʎa) is an assistant
+__Giovanni Luca Ciampaglia__ ([IPA](https://en.wikipedia.org/wiki/Help:IPA): dʒovˈannɪ lˈuːka tʃampˈaːʎa) is an assistant
 research scientist at the [Indiana University Network Science
 Institute](http://iuni.iu.edu) (IUNI). His research interests are in the
 emerging disciplines of [network
