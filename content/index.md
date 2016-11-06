@@ -160,6 +160,14 @@ at the [Santa Fe Institute!](http://www.santafe.edu) Pictures are on
 
 ### Publications ([Google Scholar](https://scholar.google.com/citations?user=ay9uGpcAAAAJ))
 
+-   M. Tambuscio, D. F. M. Oliveira, G. L. Ciampaglia, G. Ruffo: Network
+    segregation in a model of misinformation and fact checking.
+    *arXiv:1610.04170 [cs.SI]* [[arxiv](https://arxiv.org/abs/1610.04170)].
+-   A. Nematzadeh, G. L. Ciampaglia, Y.-Y. Ahn: Information Overload in Group
+    CommunicationFrom Conversation to Cacophony in the Twitch Chat.
+    *arXiv:1610.06947 [cs.SI]* [[arxiv](https://arxiv.org/abs/1610.06497)].
+-   M. Sayyadiharikandeh, G. L. Ciampaglia, A. Flammini: Cross-domain gender
+    detection in Twitter. *ChASM*.
 -   C. A. Davis, G. L. Ciampaglia, et al. OSoMe: The IUNI observatory on
     social media”. *PeerJ Computer Science*. [[doi](http://dx.doi.org/10.7287/peerj.preprints.2008v1)].
 -   C. Shao, G. L. Ciampaglia, A. Flammini, F. Menczer: Hoaxy: A Platform 
