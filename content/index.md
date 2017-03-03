@@ -63,6 +63,10 @@ portfolio](docs/portfolioglc.pdf).
 
 ### News
 
+__2 Mar. 2017__: I am co-organizing the ICWSM [Workshop on Digital
+Misinformation](cnets.indiana.edu/blog/2016/12/29/icwsm-2017-misinformation-workshop/),
+which will be held in Montreal, Canada, on May 15, 2017.
+
 __4 Sep. 2016__: The 2017 NetSci International School and Conference on Network
 Science will be held in Indianapolis at the JW Marriott Indianapolis from June
 19-23. More information will be available soon: http://netsci2017.net/
@@ -160,16 +164,10 @@ at the [Santa Fe Institute!](http://www.santafe.edu) Pictures are on
 
 ### Publications ([Google Scholar](https://scholar.google.com/citations?user=ay9uGpcAAAAJ))
 
--   M. Tambuscio, D. F. M. Oliveira, G. L. Ciampaglia, G. Ruffo: Network
-    segregation in a model of misinformation and fact checking.
-    *arXiv:1610.04170 [cs.SI]* [[arxiv](https://arxiv.org/abs/1610.04170)].
--   A. Nematzadeh, G. L. Ciampaglia, Y.-Y. Ahn: Information Overload in Group
-    CommunicationFrom Conversation to Cacophony in the Twitch Chat.
-    *arXiv:1610.06947 [cs.SI]* [[arxiv](https://arxiv.org/abs/1610.06497)].
--   M. Sayyadiharikandeh, G. L. Ciampaglia, A. Flammini: Cross-domain gender
-    detection in Twitter. *ChASM*.
+-   S. Nakandala, G. L. Ciampaglia, N. M. Su, Y. Y. Ahn. Gendered Conversation
+    in a Social Game-Streaming Platform. *ICWSM 2017* [[pre-print](https://arxiv.org/abs/1611.06459)].
 -   C. A. Davis, G. L. Ciampaglia, et al. OSoMe: The IUNI observatory on
-    social media”. *PeerJ Computer Science*. [[doi](http://dx.doi.org/10.7287/peerj.preprints.2008v1)].
+    social media. *PeerJ Computer Science*. [[doi](http://dx.doi.org/10.7287/peerj.preprints.2008v1)].
 -   C. Shao, G. L. Ciampaglia, A. Flammini, F. Menczer: Hoaxy: A Platform 
     for Tracking Online Misinformation. *Proceedings of WWW'16 Companion*.
     [[pdf](http://www2016.net/proceedings/companion/p745.pdf), [arxiv](http://arxiv.org/abs/1603.01511)].
