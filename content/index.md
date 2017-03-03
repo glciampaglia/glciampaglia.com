@@ -64,7 +64,7 @@ portfolio](docs/portfolioglc.pdf).
 ### News
 
 __2 Mar. 2017__: I am co-organizing the ICWSM [Workshop on Digital
-Misinformation](cnets.indiana.edu/blog/2016/12/29/icwsm-2017-misinformation-workshop/),
+Misinformation](http://cnets.indiana.edu/blog/2016/12/29/icwsm-2017-misinformation-workshop/),
 which will be held in Montreal, Canada, on May 15, 2017.
 
 __4 Sep. 2016__: The 2017 NetSci International School and Conference on Network
