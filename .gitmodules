@@ -1,6 +1,3 @@
 [submodule "themes/academic"]
 	path = themes/academic
 	url = git@github.com:gcushen/hugo-academic.git
-[submodule "themes/finite"]
-	path = themes/finite
-	url = git@github.com:lambdafu/hugo-finite.git
