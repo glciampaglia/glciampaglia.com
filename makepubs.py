@@ -2,55 +2,32 @@
 
 import os
 import re
-import json
 import datetime
 import argparse
 import contextlib
 
-try:
-    import frontmatter
-except ImportError:
-    import sys
-    print("""Error: could not import python-frontmatter. Please install it with:
-
-    pip install python-frontmatter
-
-Aborting.""", file=sys.stderr)
-    sys.exit(-1)
-
-try:
-    import toml
-except ImportError:
-    import sys
-    print("""Error: could not import toml. Please install it with:
-
-    pip install toml
-
-Aborting.""", file=sys.stderr)
-    sys.exit(-1)
-
-
-empty = """
-+++
-date = {date!r}
-publication = {journal!r}
-publication_short = ""
-title = {title!r}
-+++
-"""
+# external dependencies
+import toml
+import bibtexparser
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('input',
+parser.add_argument('bibliography',
                     type=argparse.FileType(),
-                    help='bibliography in JSON format')
-parser.add_argument('-d', '--directory', default='content/publication/')
+                    help='bibliography in bibtex format')
+parser.add_argument('-d', '--destination', help='default: %(default)s',
+                    default='content/publication/')
 parser.add_argument('-t', '--test', action='store_true',
-                    help='Prepend TEST- to new publications')
+                    help='Prepend TEST- to created files')
+parser.add_argument('-f', '--force-overwrite', action='store_true',
+                    help='Overwrite any existing file.')
 
 
 def slugify(title, maxlen=30):
+    """
+    Transform a text into a slug string
+    """
     slug = title.lower()
-    slug = re.sub('<[^>]*>', '', slug)
+    slug = re.sub('[{}]', '', slug)
     slug = re.sub('\W+', '-', slug, flags=re.U) #.encode('ascii', errors='xmlcharrefreplace')
     slug_words = slug.split('-')
     s = slug_words[0]
@@ -61,91 +38,150 @@ def slugify(title, maxlen=30):
     return s
 
 
-class Publication(object):
-    def __init__(self, post=None):
-        if post:
-            self.metadata = dict(post.metadata)
-            self.content = post.content
-        else:
-            self.metadata = {}
-            self.content = ""
-    def updatefromjson(self, json):
-        m = self.metadata
-        m['abstract'] = json.get('abstract', "")
-        m['short_abstract'] = json.get('short_abstract', "")
-        m['authors'] = self._authors(json.get('author', []))
-        m['date'] = self._date(json['issued'])
-        m['publication'] = json.get('container-title', "")
-        m['publication'] = re.sub('<[^>]*>', '', m['publication'])
-        m['publication-short'] = json.get('collection-title')
-        m['title'] = json.get('title', "")
-        m['title'] = re.sub('<[^>]*>', '', m['title'])
-        m['math'] = json.get('math', 'true')
-        m['selected'] = json.get('selected', 'false')
-        m['image'] = json.get('image', "")
-        m['image_preview'] = json.get('image_preview', "")
-        m['url_code'] = json.get('url_code', "")
-        m['url_dataset'] = json.get('url_dataset', "")
-        m['url_pdf'] = json.get('url_pdf', "")
-        m['url_project'] = json.get('url_project', "")
-        m['url_slides'] = json.get('url_slides', "")
-        m['url_video'] = json.get('url_video', "")
-        m['[url_custom]'] = []
-        for k in ['URL', 'DOI']:
-            if k in json:
-                self._add_custom_url(k, json[k])
-        return self
-    def _add_custom_url(self, name, url):
-        m = self.metadata
-        m['[url_custom]'].append({'name': name, 'url': url})
-    def _date(self, issued):
-        this_year = datetime.date.today().year
-        the_year = issued.get('date-parts', [[this_year]])[0][0]
-        return '{}-01-01'.format(the_year)
-    def _authors(self, authors):
-        l = []
-        for a in authors:
-            last_name = a['family']
-            given_names = a['given'].split(' ')
-            initials = ''.join(map(lambda k: k[0], given_names))
-            l.append("{} {}".format(initials.upper(), last_name.title()))
-        return l
+class TOMLPublication(object):
+    _fields = {
+        'abstract': str,
+        'short_abstract': str,
+        'authors': list,
+        'date': str,
+        'publication': str,
+        'publication_short': str,
+        'title': str,
+        'math': bool,
+        'selected': bool,
+        'image': str,
+        'image_preview': str,
+        'url_code': str,
+        'url_pdf': str,
+        'url_project': str,
+        'url_slides': str,
+        'url_video': str,
+    }
+    def __init__(self, entry):
+        self.entry = entry
+        self.slug = slugify(entry['title'])
+        self.frontmatter = {}
+        fmat = self.frontmatter
+        for k, f in self._fields.items():
+            fmat[k] = f()
+        self._set_date()
+        self._set_authors()
+        self._set_url_custom()
+        fill_method = getattr(self, '_fill_' + entry['ENTRYTYPE'])
+        fill_method()
+        fmat['title'] = re.sub('[{}]', '', fmat['title'])
+    def totoml(self):
+        return toml.dumps(self.frontmatter)
+    def _set_authors(self):
+        fmat = self.frontmatter
+        author_string = self.entry['author']
+        author_string = re.sub('[{}]', '', author_string)
+        fmat['authors'] = re.split(' and ', author_string, flags=re.I)
+        authors = fmat['authors']
+        for i in range(len(authors)):
+            a = authors[i].strip()
+            names = a.split(',')
+            if len(names) > 1:
+                last_name, given_name = names
+                authors[i] = given_name + ' ' + last_name
+    def _set_date(self):
+        today = datetime.date.today()
+        year = self.entry.get('year', today.year)
+        month = self.entry.get('month', 'Jan')
+        s = '{} {}'.format(year, month)
+        flag = False
+        for monthfmt in ['%m', '%b', '%B']:
+            fmt = '%Y ' + monthfmt
+            try:
+                d = datetime.datetime.strptime(s, fmt).date()
+            except ValueError:
+                pass
+            else:
+                flag = True
+                break
+        if not flag:
+            raise ValueError("could not parse: {}".format(s))
+        self.frontmatter['date'] = str(d)
+    def _set_url_custom(self):
+        if 'link' in self.entry:
+            self.frontmatter['url_custom'] = []
+            section = self.frontmatter['url_custom']
+            for link_dict in self.entry['link']:
+                if 'anchor' not in link_dict:
+                    continue
+                section.append({'name': link_dict['anchor'],
+                                'url': link_dict['url']})
+    def _fill_article(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['title']
+        fm['publication'] = e['journal']
+    def _fill_inbook(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['chapter']
+        fm['publication'] = e['title']
+    def _fill_inproceedings(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['title']
+        fm['publication'] = e['booktitle']
+    def _fill_mastersthesis(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['title']
+        fm['publication'] = e['school']
+    def _fill_phdthesis(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['title']
+        fm['publication'] = e['school']
+    def _fill_misc(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['title']
+        fm['publication'] = e['note']
+    def _fill_unpublished(self):
+        fm = self.frontmatter
+        e = self.entry
+        fm['title'] = e['title']
+        fm['publication'] = "Unpublished"
+    def dumps(self):
+        return "+++\n{}\n+++".format(self.totoml())
+    def dump(self, path):
+        with open(path, 'w') as f:
+            f.write(self.dumps())
+
+
+def _customizations(r):
+    import bibtexparser.customization as cust
+    r = cust.convert_to_unicode(r)
+    r = cust.link(r)
+    r = cust.doi(r)
+    return r
 
 
 def main():
     args = parser.parse_args()
-    obj = json.load(args.input)
-    pubs = []
-
-    for ref in obj:
-        slug = slugify(ref['title'])
+    bibparser = bibtexparser.bparser.BibTexParser()
+    bibparser.customization = _customizations
+    with contextlib.closing(args.bibliography) as f:
+        db = bibtexparser.load(f, parser=bibparser)
+    for entry in db.entries:
+        pub = TOMLPublication(entry)
         if args.test:
-            fn = 'TEST-' + slug + '.md'
+            fn = 'TEST-' + pub.slug + '.md'
         else:
-            fn = slug + '.md'
-        path = os.path.join(args.directory, fn)
-        if os.path.exists(path):
-            # update existing metada
-            pub = Publication(frontmatter.load(path))
-            print('* updated: {}'.format(path))
+            fn = pub.slug + '.md'
+        path = os.path.join(args.destination, fn)
+        if os.path.exists(path) and not args.force_overwrite:
+            # file exists and user does not want to overwrite (default)
+            continue
         else:
-            # create new publication
-            pub = Publication()
-            print('* created: {}'.format(path))
-        pub.updatefromjson(ref)
-        body = """
-+++
-{frontmatter}
-+++
-
-{content}
-""".format(frontmatter=toml.dumps(pub.metadata), content=pub.content)
-        with contextlib.closing(open(path, 'w')) as f:
-            print(body, file=f)
-        pubs.append(pub)
-    return pubs
-
-
+            # file does not exist OR
+            # file exists and user wants to overwrite
+            pub.dump(path)
+            print('* written: {}'.format(path))
 
 if __name__ == '__main__':
-    pubs = main()
+    main()
