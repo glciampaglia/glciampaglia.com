@@ -3,4 +3,7 @@ SERVER=abraxas
 LOCALDIR=public/
 REMOTEDIR=glciampaglia.com/
 
-rsync -aP --delete ${LOCALDIR} ${SERVER}:${REMOTEDIR}
+# run hugo; if successful, run rsync; if successful, run rm
+hugo -d ${LOCALDIR} && \
+    rsync -aP --delete ${LOCALDIR} ${SERVER}:${REMOTEDIR} && \
+    rm -rf ${LOCALDIR}
