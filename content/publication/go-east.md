@@ -18,7 +18,7 @@ authors = ["Giovanni Luca Ciampaglia", "Brunello Tirozzi"]
 publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
-publication = "Proceedings of 4th International Congress on Environmental Modelling and Software p. 817-826"
+publication = "Proceedings of 4th International Congress on Environmental Modelling and Software"
 publication_short = "Proc. of iEMS'2008"
 
 # Abstract and optional shortened version.
@@ -67,3 +67,21 @@ image = ""
 caption = ""
 
 +++
+
+## BibTeX
+```bibtex
+@InProceedings{Ciampaglia2008,
+  Title                    = {Go East: a residential land use model for the periphery of {R}ome},
+  Author                   = {Ciampaglia, Giovanni L. and Tirozzi, B.},
+  Booktitle                = {Proceedings of the iEMSs Fourth Biennial Meeting: Integrating Sciences and Information Technology for Environmental Assessment and Decision Making},
+  Year                     = {2008},
+
+  Address                  = {Barcelona, Catalonia},
+  Editor                   = {Miquel S\`{a}nchez-Marr\`{e} and Javier B\'{e}jar and Joaquim Comas and Andrea E. Rizzoli and Giorgio Guariso},
+  Month                    = jul,
+  Pages                    = {817--826},
+  Publisher                = {International Environmental Modelling and Software Society},
+
+  Keywords                 = {Rome, CA, agent-based model, land use, urban}
+}
+```

@@ -1,6 +1,6 @@
 +++
 title = "Content tagged as 'Academic'"
-date = "2017-09-014T00:00:00"
+date = "2017-09-01T00:00:00"
 math = false
 highlight = false
 

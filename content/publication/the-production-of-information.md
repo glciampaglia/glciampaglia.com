@@ -18,8 +18,8 @@ authors = ["Giovanni Luca Ciampaglia", "Alessandro Flammini", "Filippo Menczer"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "Scientific Reports **5** p. 9452"
-publication_short = ""
+publication = "Scientific Reports **5**, (2015) p. 9452"
+publication_short = "Sci. Rep. **5**, (2015) p. 9452"
 
 # Abstract and optional shortened version.
 abstract = """ Online traces of human activity offer novel opportunities to
@@ -41,8 +41,11 @@ ordering, may lead to the development of the fundamental laws of the attention
 economy, and to a better understanding of social exchange of knowledge
 information networks. """
 
-abstract_short = """Can we measure the relationship between demand and
-supply for new information about a topic? """
+abstract_short = """Online traces of human activity offer novel opportunities to
+study the dynamics of complex knowledge exchange networks, in particular how
+emergent patterns of collective attention determine what new information is
+generated and consumed. Can we measure the relationship between demand and
+supply for new information about a topic? [...]"""
 
 # Does this page contain LaTeX math? (true/false)
 math = false
@@ -51,7 +54,7 @@ math = false
 highlight = true
 
 # Featured image thumbnail (optional)
-image_preview = ""
+image_preview = "thumbs/fig1_trafficseries_raster.png"
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -67,7 +70,7 @@ url_video = ""
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "srep09452-f1.png"
+image = "headers/fig1_trafficseries_raster.png"
 caption = """(a), Time series of traffic. The grey lines represent the daily
 traffic to articles that are linked from/to the article “2012 Summer Olympics,”
 according to a recent snapshot of Wikipedia (see Methods). For visualization
@@ -83,3 +86,17 @@ for the entry about Hurricane Sandy and its neighbors. New articles tend to be
 peripheral to these networks."""
 
 +++
+
+# BibTeX
+```bibtex
+@Article{Ciampaglia2015a,
+  Title                    = {The production of information in the attention economy},
+  Author                   = {Ciampaglia, Giovanni Luca and Flammini, Alessandro and Menczer, Filippo},
+  Journal                  = {Scientific Reports},
+  Year                     = {2015},
+  Pages                    = {9452},
+  Volume                   = {5},
+
+  Doi                      = {10.1038/srep09452}
+}
+```

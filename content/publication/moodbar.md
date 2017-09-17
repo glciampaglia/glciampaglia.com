@@ -59,16 +59,39 @@ url_video = ""
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "moodbar.png"
+image = "headers/moodbar.png"
 caption = ""
 
 +++
 
-This research started in 2012 when I contracted as a research analyst at the
-[Wikimedia Foundation](//wikimediafoundation.org). For more information of the initial study, please also see
-our blog post on the official Wikipedia blog titled "[What MoodBar tells us
-about registered
+This research was performed while at the [Wikimedia
+Foundation](//wikimediafoundation.org). For more information of the initial
+study, please see our blog post on the official Wikipedia blog titled
+"[What MoodBar tells us about registered
 editors](https://blog.wikimedia.org/2012/07/05/what-moodbar-tells-us-about-new-registered-editors/)".
-The paper presented at CSCW'15 expands upon those findings and concludes that
-lightweight socialization does have a positive effect on long-term editor
-retention on Wikipedia.
+
+The paper presented at CSCW'15 expands upon those findings and concludes
+that lightweight socialization does have a positive effect on long-term
+editor retention on Wikipedia.
+
+## BibTeX
+```bibtex
+@InProceedings{Ciampaglia2015,
+  Title                    = {MoodBar: Increasing New User Retention in Wikipedia Through Lightweight Socialization},
+  Author                   = {Ciampaglia, Giovanni Luca and Taraborelli, Dario},
+  Booktitle                = {Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work \& Social Computing},
+  Year                     = {2015},
+
+  Address                  = {New York, NY, USA},
+  Pages                    = {734--742},
+  Publisher                = {ACM},
+  Series                   = {CSCW '15},
+
+  Acmid                    = {2675181},
+  Doi                      = {10.1145/2675133.2675181},
+  ISBN                     = {978-1-4503-2922-4},
+  Keywords                 = {experiment, online community, socialization, user retention, wikipedia},
+  Location                 = {Vancouver, BC, Canada},
+  Numpages                 = {9}
+}
+```

@@ -24,8 +24,9 @@ defaultContentLanguageInSubdir = false
   organization = "Indiana University Network Science Institute"
   organization_url = "http://iuni.iu.edu/"
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "iuni_backyard_2015.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "gciampag@iu.edu"
+#  avatar = "iuni_backyard_2015.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "20170118_giovanniLucaCiampaglia_ER_7281.JPG"
+#  email = "gciampag@iu.edu"
   address = "1001 IN-45, Indiana, 47408, USA."
   office_hours = ""
   phone = "+1 812 855 7261"
@@ -126,7 +127,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:gciampag@iu.edu"
+    link = "http://www.google.com/recaptcha/mailhide/d?k=01daWieGubyy0duY1aKcvyhg==&c=P3KjzhuuM4Bbdyj39aH43w=="
 
   [[params.social]]
     icon = "google-scholar"
@@ -175,7 +176,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Publications"
-  url = "#publications_selected"
+  url = "#publications"
   weight = 2
 
 [[menu.main]]

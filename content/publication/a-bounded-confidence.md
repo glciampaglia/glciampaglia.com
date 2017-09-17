@@ -18,8 +18,8 @@ authors = ["Giovanni Luca Ciampaglia"]
 publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
-publication = "Proc. of Social Informatics: Third International Conference, SocInfo 2011, Singapore, October 6-8, 2011. Proceedings"
-publication_short = "Proc. of SocInfo 2011"
+publication = "Third International Conference on Social Informatics (SocInfo'11)"
+publication_short = "Proc. SocInfo'11"
 
 # Abstract and optional shortened version.
 abstract = """Commons-based peer production does seem to rest upon a paradox.
@@ -58,3 +58,23 @@ image = ""
 caption = ""
 
 +++
+
+## BibTeX
+```bibtex
+@InProceedings{Ciampaglia2011,
+  Title                    = {A Bounded Confidence Approach to Understand User Participation in Peer Production Systems},
+  Author                   = {Giovanni Luca Ciampaglia},
+  Booktitle                = {Third International Conference on Social Informatics (SocInfo'11)},
+  Year                     = {2011},
+
+  Address                  = {Singapore},
+  Month                    = {Oct},
+  Pages                    = {269--282},
+  Publisher                = {Springer Verlang},
+  Series                   = {LNCS},
+  Volume                   = {6984},
+
+  Doi                      = {10.1007/978-3-642-24704-0_29},
+  Keywords                 = {wikipedia, consensus, user participation, sensitivity analysis},
+}
+```

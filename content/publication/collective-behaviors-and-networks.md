@@ -18,7 +18,8 @@ authors = ["Giovanni Luca Ciampaglia", "Emilio Ferrara", "Alessandro Flammini"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "EPJ Data Science **1** (3) p. 37"
+publication = "EPJ Data Science **3** (1) p. 37"
+publication_short = "EPJ Data Science"
 
 # Abstract and optional shortened version.
 abstract = """The goal of this thematic series is to provide a discussion venue
@@ -60,3 +61,24 @@ image = ""
 caption = ""
 
 +++
+
+## BibTeX
+```bibtex
+@Article{Ciampaglia2014a,
+  Title                    = {Collective behaviors and networks},
+  Author                   = {Ciampaglia, Giovanni Luca and Ferrara, Emilio and Flammini, Alessandro},
+  Journal                  = {EPJ Data Science},
+  Year                     = {2014},
+
+  Month                    = {Dec},
+  Number                   = {1},
+  Pages                    = {37},
+  Volume                   = {3},
+
+  Abstract                 = {The goal of this thematic series is to provide a discussion venue about recent advances in the study of networks and their applications to the study of collective behavior in socio-technical systems. The series includes contributions exploring the intersection between data-driven studies of complex networks and agent-based models of collective social behavior. Particular attention is devoted to topics aimed at understanding social behavior through the lens of data about technology-mediated communication. These include: modeling social dynamics of attention and collaboration, characterizing online group formation and evolution, and studying the emergence of roles and interaction patterns in social media environments.},
+  Day                      = {30},
+  Doi                      = {10.1140/epjds/s13688-014-0037-6},
+  ISSN                     = {2193-1127},
+  Url                      = {https://doi.org/10.1140/epjds/s13688-014-0037-6}
+}
+```

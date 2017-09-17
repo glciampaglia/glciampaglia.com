@@ -72,9 +72,29 @@ url_video = ""
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "actor-activities.png"
+image = "headers/actor-activities.png"
 caption = """In this example from DBpedia, *starring* is an activity pertinent to the profession *Actor*."""
 
 +++
+
 This work competed for the WSDM 2017 cup in the 'Triple Scoring' task. For more
 information, please refer to the [official website](http://www.wsdm-cup-2017.org/) of the cup.
+
+## BibTeX
+
+```bibtex
+@InProceedings{Shiralkar2017,
+  Title                    = {{RelSifter: Scoring Triples from Type-like Relations---The Samphire Triple Scorer at WSDM Cup 2017}},
+  Author                   = {Prashant Shiralkar and Mihai Avram and {Giovanni Luca} Ciampaglia and Filippo Menczer and Alessandro Flammini},
+  Booktitle                = {{WSDM Cup 2017 Notebook Papers, February 10, Cambridge, UK}},
+  Year                     = {2017},
+  Editor                   = {Martin Potthast and Stefan Heindorf and Hannah Bast},
+  Month                    = feb,
+  Publisher                = {CEUR-WS.org},
+
+  Crossref                 = {wsdmcup:2017},
+  ISSN                     = {1613-0073},
+  Url                      = {http://www.wsdm-cup-2017.org/proceedings.html}
+}
+```
+
