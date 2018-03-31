@@ -1,9 +1,218 @@
-baseurl = "http://glciampaglia.com"
-languageCode = "en-us"
+baseurl = "http://glciampaglia.com/"  # End your URL with a `/` trailing slash.
 title = "Giovanni Luca Ciampaglia"
+copyright = "&copy; 2017 Giovanni Luca Ciampaglia"
+theme = "academic"
+enableEmoji = true
+footnotereturnlinkcontents = "<sup>^</sup>"
 
-RSSLink = "http://glciampaglia.com/index.xml"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+
+# Enable analytics by entering your Google Analytics tracking ID
+googleAnalytics = "UA-45616511-1"
+
+# Default language to use (if you setup multilingual support)
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[blackfriday]
+  hrefTargetBlank = true
 
 [params]
-    description = "Personal homepage of Giovanni Luca Ciampaglia, Ph.D."
-    author = "Giovanni Luca Ciampaglia"
+  name = "Giovanni Luca Ciampaglia"
+  role = "Research Scientist"
+  organization = "Indiana University Network Science Institute"
+  organization_url = "http://iuni.iu.edu/"
+  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+#  avatar = "iuni_backyard_2015.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "20170118_giovanniLucaCiampaglia_ER_7281.JPG"
+#  email = "gciampag@iu.edu"
+  address = "1001 IN-45, Indiana, 47408, USA."
+  office_hours = ""
+  phone = "+1 812 855 7261"
+  skype = "glcwork"
+  telegram = ""
+
+  # Enable Keybase in Contact section by entering your keybase.io username.
+  keybase = ""
+
+  # Date format (refer to Go's date format: http://flippinggodateformat.com )
+  #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+  date_format = "Mon, Jan 2, 2006"
+
+  # Enable global LaTeX math rendering?
+  #   If false, you can enable it locally on a per page basis.
+  math = false
+
+  # Highlight.js options
+  #   highlight
+  #     Enable global source code highlighting?  If false, you can
+  #     override it for a particular page in that page's preamble.
+  #
+  #     Example: highlight = true
+  #
+  #   highlight_languages
+  #     Add support for highlighting additional languages. Support for
+  #     languages mentioned here will be included in all pages. You
+  #     can also set this variable for a particular page in that
+  #     page's preamble.
+  #
+  #     Example: highlight_languages = ["go", "lisp", "ocaml"]
+  #
+  #   highlight_style
+  #     Choose a different CSS style for highlighting source
+  #     code. Setting this option in a page's preamble has no
+  #     effect.
+  #
+  #     Example: highlight_style = "github-gist"
+  #
+  #   highlight_version
+  #     Choose the version of highlight.js you want. Setting this
+  #     option in a page's preamble has no effect.
+  #
+  #     Example: highlight_version = "9.9.0"
+  #
+  #   For the list of supported languages, styles, and versions, see:
+  #   https://cdnjs.com/libraries/highlight.js/
+  #
+  #   For more info on the highlighting options, see:
+  #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
+  highlight = true
+  highlight_languages = []
+  # highlight_style = "github"
+  # highlight_version = "9.9.0"
+
+  # Enable native social sharing buttons?
+  sharing = true
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  custom_css = []
+  custom_js  = []
+
+  # Publication types.
+  #   Used to categorize publications.
+  #   The index of the publication type in the list is used as its unique numerical identifier.
+  #   The numeric ID is used in a publication's frontmatter to categorize it.
+  #   The language can be edited below.
+  #   For multi-lingual sites, copy this block to each language section at the end of this file.
+  publication_types = [
+    'Uncategorized',  # 0
+    'Conference proceedings',  # 1
+    'Journal',  # 2
+    'Work in progress',  # 3
+    'Technical report',  # 4
+    'Book',  # 5
+    'Book chapter'  # 6
+  ]
+
+  # Social/Academic Networking
+  #
+  # Icon pack "fa" includes the following social network icons:
+  #
+  #   twitter, weibo, linkedin, github, facebook, pinterest, google-plus,
+  #   youtube, instagram, soundcloud
+  #
+  #   For email icon, use "fa" icon pack, "envelope" icon, and
+  #   "mailto:your@email.com" as the link.
+  #
+  #   Full list: https://fortawesome.github.io/Font-Awesome/icons/
+  #
+  # Icon pack "ai" includes the following academic network icons:
+  #
+  #   google-scholar, arxiv, orcid, researchgate, mendeley
+  #
+  #   Full list: https://jpswalsh.github.io/academicons/
+
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fa"
+    link = "http://www.google.com/recaptcha/mailhide/d?k=01daWieGubyy0duY1aKcvyhg==&c=P3KjzhuuM4Bbdyj39aH43w=="
+
+  [[params.social]]
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "//scholar.google.com/citations?user=ay9uGpcAAAAJ"
+
+  [[params.social]]
+    icon = "arxiv"
+    icon_pack = "ai"
+    link = "http://arxiv.org/find/cs/1/au:+Ciampaglia_G/0/1/0/all/0/1"
+
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fa"
+    link = "//github.com/glciampaglia"
+
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//www.linkedin.com/in/giovanni-luca-ciampaglia-94101348"
+
+  [[params.social]]
+    icon = "calendar"
+    icon_pack = "fa"
+    link = "//doodle.com/glciampaglia"
+
+#   [[params.social]]
+#     icon = "wikipedia-w"
+#     icon_pack = "fa"
+#     link = "//en.wikipedia.org/wiki/User:Junkie.dolphin"
+
+#   [[params.social]]
+#     icon = "orcid"
+#     icon_pack = "ai"
+#     link = "//orcid.org/0000-0001-5354-9257"
+
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+[[menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 1
+
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 2
+
+[[menu.main]]
+  name = "News"
+  url = "#news"
+  weight = 3
+
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 4
+
+[[menu.main]]
+  name = "Press"
+  url = "#press"
+  weight = 5
+
+# [[menu.main]]
+#  name = "Teaching"
+#  url = "#teaching"
+#  weight = 6
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 7
+
+# Taxonomies.
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+
+# Languages
+#   Create a [languages.X] block for each language you want, where X is the language ID.
+
+# Configure the English version of the website.
+[languages.en]
+  languageCode = "en-us"
