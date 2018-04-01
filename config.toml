@@ -30,7 +30,7 @@ defaultContentLanguageInSubdir = false
 
 [params]
   # Color theme.
-  #   Choose from `default`, `ocean`, `forest`, or `coffee`.
+  #   Choose from `default`, `ocean`, `forest`, `coffee`, `1950s`, or `dark`.
   color_theme = "ocean"
 
   # Font style.
