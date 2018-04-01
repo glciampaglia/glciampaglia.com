@@ -1,45 +1,40 @@
 +++
-date = "2016-04-20T00:00:00"
-draft = false
+# About/Biography widget.
 widget = "about"
+active = true
+date = "2016-04-20T00:00:00"
 
 # Order that this section will appear in.
-weight = 1
+weight = 5
 
 # List your academic interests.
 [interests]
-    interests = [
-        "Data Science",
-        "Network Science", 
-        "Computational Social Science", 
-    ]
+  interests = [
+    "Artificial Intelligence",
+    "Computational Linguistics",
+    "Information Retrieval"
+  ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Informatics"
-  institution = "University of Lugano"
+  course = "PhD in Artificial Intelligence"
+  institution = "Stanford University"
   year = 2012
 
 [[education.courses]]
-  course = "MSc in Computer Science"
-  institution = "Sapienza University of Rome"
-  year = 2007
+  course = "MEng in Artificial Intelligence"
+  institution = "Massachusetts Institute of Technology"
+  year = 2009
+
+[[education.courses]]
+  course = "BSc in Artificial Intelligence"
+  institution = "Massachusetts Institute of Technology"
+  year = 2008
+ 
 +++
 
 # Biography
 
-Giovanni Luca Ciampaglia is an assistant research scientist at the Indiana
-University Network Science Institute (IUNI). Before joining IUNI he was an
-analyst for the Wikimedia Foundation, and a research associate at the Swiss
-Federal Institute of Technology in Zurich.
+Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-[//]: <> (He holds a Ph.D. in Informatics from the University of Lugano, Switzerland and a M.Sc. (Laurea) from Sapienza University of Rome, Italy. )
-
-[//]: <> (He won the 2012 Kantar "Information is Beautiful" for Best Interactive Visualization and has been the recipient of a postdoctoral "Mobility" fellowship from the Swiss National Science Foundation. His research is supported by the Democracy Fund.)
-
-He is interested in information quality in cyber-human systems, in particular
-trustworthiness and reliability of information in intelligent systems. His work
-has been covered in major news outlets, including the Wall Street Journal, the
-Economist, Wired, MIT Technology Review, NPR, and CBS News, to cite a few.
-
-[//]: <> (He serves on the editorial board of the Journal of Computational Social Science and on the program committee of several conferences.) 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
