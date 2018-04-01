@@ -235,7 +235,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
    name = "Resume"
-   url = "/docs/cvglc.pdf"
+   url = "/docs/cv-glc.pdf"
    weight = 2.5
 
 [[menu.main]]
