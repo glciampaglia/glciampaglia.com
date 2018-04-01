@@ -182,6 +182,7 @@ defaultContentLanguageInSubdir = false
     icon = "envelope"
     icon_pack = "fa"
     link = "http://www.google.com/recaptcha/mailhide/d?k=01daWieGubyy0duY1aKcvyhg==&c=P3KjzhuuM4Bbdyj39aH43w=="
+
   [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
@@ -231,6 +232,11 @@ defaultContentLanguageInSubdir = false
   name = "Publications"
   url = "#publications"
   weight = 2
+
+[[menu.main]]
+   name = "Resume"
+   url = "/docs/cvglc.pdf"
+   weight = 2.5
 
 [[menu.main]]
   name = "News"
