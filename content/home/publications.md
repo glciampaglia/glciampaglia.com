@@ -3,7 +3,7 @@
 # This widget displays recent publications from `content/publication/`.
 widget = "publications"
 active = true
-date = 2016-04-20
+date = "2017-09-14T00:00:00"
 
 title = "Recent Publications"
 subtitle = ""
@@ -12,7 +12,7 @@ subtitle = ""
 weight = 20
 
 # Number of publications to list.
-count = 10
+count = 5
 
 # List format.
 #   0 = Simple
