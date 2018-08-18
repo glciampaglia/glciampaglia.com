@@ -1,6 +1,6 @@
 baseurl = "http://glciampaglia.com/"  # End your URL with a `/` trailing slash.
 title = "Giovanni Luca Ciampaglia"
-copyright = "&copy; 2017 Giovanni Luca Ciampaglia"
+copyright = "&copy; 2018 Giovanni Luca Ciampaglia"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -39,18 +39,18 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Giovanni Luca Ciampaglia"
-  role = "Research Scientist"
+  role = "Assistant Professor"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Indiana University Network Science Institute", url = "http://iuni.iu.edu/" } ]
+  organizations = [ { name = "University of South Florida", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "20170118_giovanniLucaCiampaglia_ER_7281.JPG"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-#  email = "gciampag@iu.edu"
-  address = "1001 IN-45, Indiana, 47408, USA."
+#  email = "glc3@usf.edu"
+  address = "4202 E. Fowler Avenue, ENB 118, Tampa, FL 33620, USA"
   office_hours = ""
-  phone = "+1 812 855 7261"
+  phone = "+1 (813) 974-3780"
   skype = "glcwork"
   telegram = ""
 
@@ -181,7 +181,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "http://www.google.com/recaptcha/mailhide/d?k=01daWieGubyy0duY1aKcvyhg==&c=P3KjzhuuM4Bbdyj39aH43w=="
+    link = "http://scr.im/glcmail"
 
   [[params.social]]
     icon = "google-scholar"
@@ -191,7 +191,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "arxiv"
     icon_pack = "ai"
-    link = "http://arxiv.org/find/cs/1/au:+Ciampaglia_G/0/1/0/all/0/1"
+    link = "https://arxiv.org/search/?query=Giovanni+Luca+Ciampaglia&searchtype=author&abstracts=hide&order=-announced_date_first&size=50"
 
   [[params.social]]
     icon = "github"

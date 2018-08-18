@@ -29,18 +29,17 @@ weight = 1
 
 # Biography
 
-Giovanni Luca Ciampaglia is an assistant research scientist at the Indiana
-University Network Science Institute (IUNI). Before joining IUNI he was an
-analyst for the Wikimedia Foundation, and a research associate at the Swiss
-Federal Institute of Technology in Zurich.
+Giovanni Luca Ciampaglia is an assistant professor at the [Department of
+Computer Science and Engineering](https://www.usf.edu/engineering/cse/) at the
+University of South Florida (USF). He is interested in information quality in
+cyber-human systems, in particular trustworthiness and reliability of
+information in intelligent systems. 
 
-[//]: <> (He holds a Ph.D. in Informatics from the University of Lugano, Switzerland and a M.Sc. (Laurea) from Sapienza University of Rome, Italy. )
-
-[//]: <> (He won the 2012 Kantar "Information is Beautiful" for Best Interactive Visualization and has been the recipient of a postdoctoral "Mobility" fellowship from the Swiss National Science Foundation. His research is supported by the Democracy Fund.)
-
-He is interested in information quality in cyber-human systems, in particular
-trustworthiness and reliability of information in intelligent systems. His work
-has been covered in major news outlets, including the Wall Street Journal, the
-Economist, Wired, MIT Technology Review, NPR, and CBS News, to cite a few.
-
-[//]: <> (He serves on the editorial board of the Journal of Computational Social Science and on the program committee of several conferences.) 
+Prior to joining USF he was an assistant research scientist at the [Indiana
+University Network Science Institute](http://iuni.iu.edu/) (IUNI), an analyst
+for the [Wikimedia Foundation](https://wikimediafoundation.org/), and a
+research associate at the [Professorship of Computational Social
+Science](http://www.coss.ethz.ch/) at the Swiss Federal Institute of Technology
+in Zurich. His work has been covered in major news outlets, including the Wall
+Street Journal, the Economist, Wired, MIT Technology Review, NPR, and CBS News,
+to cite a few.
