@@ -3,8 +3,8 @@
 # An example of using the custom widget to create your own homepage section.
 # To create more sections, duplicate this file and edit the values below as desired.
 widget = "custom"
-active = false
-date = "2017-09-14T00:00:00"
+active = true  
+date = "2018-08-19T00:00:00"
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
 title = "Teaching"
@@ -15,14 +15,8 @@ weight = 60
 
 +++
 
-This is an example of using the *custom* widget to create your own homepage section.
+* University of South Florida
+    - [CIS 4930 / 6930: Special Topics: Social Media Mining](teaching/cis4930-6930)
+* ETH Zürich
+    - 851-0585-04L – Modelling and Simulating Social Systems with MATLAB
 
-I am a teaching instructor for the following courses at University X:
-
-- CS101: An intro to computer science
-- CS102: An intro to computer science
-- CS103: An intro to computer science
-- CS104: An intro to computer science
-- CS105: An intro to computer science
-- CS106: An intro to computer science
-- CS107: An intro to computer science
