@@ -5,8 +5,9 @@ math = false
 summary = "Visualizing deletion discussions on Wikipedia."
 tags = ["Wikipedia", "AfD", "visualization"]
 title = "Notabilia"
-#[header]
-#    image = "headers/notabilia_D_List_of_proven_conspiracies__2nd_nomination_.png"
+[image]
+  caption = "The 100 longest _Article for Deletion_ discussions on Wikipedia, which results in _deletion_ of the article."
+  focal_point = "Right"
 
 +++
 
@@ -17,9 +18,9 @@ and vandalism. However, since the encyclopedia tries to cover the sum of all
 human knowledge, often it is hard to decide whether the content at hand should
 be deleted or not. In this cases, Wikipedia editors and contributors try to
 reach a consensus by discussing on a special board called _Articles for
-Deletion_, or AfD. These discussions represent a sophisticate form of crowdsourcing
-which, for its own nature, may be subject to a number of socio-cognitive
-biases.
+Deletion_, or AfD. These discussions represent a sophisticate form of
+crowdsourcing which, for its own nature, may be subject to a number of
+socio-cognitive biases.
 
 In this project we explored the shape of the most enduring AfD conversations.
 We looked at two types of conversations: those in which the final consensus was
