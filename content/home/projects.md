@@ -1,6 +1,5 @@
 +++
 # Projects widget.
-# This widget displays all projects from `content/project/`.
 widget = "projects"
 active = true
 date = "2017-09-14T00:00:00"
@@ -10,6 +9,11 @@ subtitle = ""
 
 # Order that this section will appear in.
 weight = 40
+
+# Content.
+# Display content from the following folder.
+# For example, `folder = "project"` displays content from `content/project/`.
+folder = "project"
 
 # View.
 # Customize how projects are displayed.
@@ -22,7 +26,8 @@ view = 0
 filter_default = 0
 
 # Add or remove as many filters (`[[filter]]` instances) as you like.
-# Use "*" tag to show all projects or an existing tag prefixed with "." to filter by specific tag.
+# To show all items, set `tag` to "*".
+# To filter by a specific tag, set `tag` to an existing tag name.
 # To remove toolbar, delete/comment all instances of `[[filter]]` below.
 # [[filter]]
 #   name = "All"

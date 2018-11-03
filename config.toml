@@ -48,7 +48,7 @@ enableGitInfo = false
   avatar = "20170118_giovanniLucaCiampaglia_ER_7281.JPG"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  #email = "glc3@usf.edu"
+  email = "glc3@mail.usf.edu"
   address = "4202 E. Fowler Avenue, ENB 118, Tampa, FL 33620, USA"
   office_hours = ""
   phone = "+1 (813) 974-9349"
@@ -228,8 +228,8 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    # link = "#contact"  # For a direct email link, use "mailto:test@example.org".
-    link = "http://scr.im/glcmail"
+    link = "#contact"  # For a direct email link, use "mailto:test@example.org".
+    # link = "http://scr.im/glcmail"
 
 #   [[params.social]]
 #     icon = "twitter"
@@ -241,11 +241,11 @@ enableGitInfo = false
     icon_pack = "ai"
     link = "//scholar.google.com/citations?user=ay9uGpcAAAAJ"
 
-  [[params.social]]
-    icon = "arxiv"
-    icon_pack = "ai"
-    link = "https://arxiv.org/search/?query=Giovanni+Luca+Ciampaglia&searchtype=author&abstracts=hide&order=-announced_date_first&size=50"
-
+#   [[params.social]]
+#     icon = "arxiv"
+#     icon_pack = "ai"
+#     link = "https://arxiv.org/search/?searchtype=author&query=Ciampaglia%2C+G+L"
+# 
   [[params.social]]
     icon = "github"
     icon_pack = "fab"
@@ -256,11 +256,11 @@ enableGitInfo = false
     icon_pack = "fab"
     link = "//www.linkedin.com/in/giovanni-luca-ciampaglia-94101348"
 
-  [[params.social]]
-    icon = "calendar"
-    icon_pack = "fab"
-    link = "//doodle.com/glciampaglia"
-
+#   [[params.social]]
+#     icon = "calendar"
+#     icon_pack = "fas"
+#     link = "//doodle.com/glciampaglia"
+# 
 #   [[params.social]]
 #     icon = "wikipedia-w"
 #     icon_pack = "fab"
@@ -270,13 +270,13 @@ enableGitInfo = false
 #     icon = "orcid"
 #     icon_pack = "ai"
 #     link = "//orcid.org/0000-0001-5354-9257"
-
+# 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-  # [[params.social]]
-  #   icon = "cv"
-  #   icon_pack = "ai"
-  #   link = "files/cv.pdf"
+  [[params.social]]
+    icon = "cv"
+    icon_pack = "ai"
+    link = "docs/cv-glc.pdf"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
