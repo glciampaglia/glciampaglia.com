@@ -1,6 +1,5 @@
 +++
 date = "2016-09-13T17:28:21-04:00"
-external_link = "http://notabilia.net"
 math = false
 summary = "Visualizing deletion discussions on Wikipedia."
 tags = ["Wikipedia", "AfD", "visualization"]
@@ -10,6 +9,8 @@ title = "Notabilia"
   focal_point = "Right"
 
 +++
+
+## Description
 
 Every day thousands of new entries are added to Wikipedia. While many contain
 useful information, a large fraction is about content that does not meet
@@ -33,5 +34,14 @@ visualization](//www.informationisbeautifulawards.com/showcase/443-notabilia).
 The awarding jury included -- among others -- MoMA curator Paola
 Antonelli and Brian Eno.
 
+## Official Project Page 
+
+___Visit Notabilia: http://notabilia.net___ (offsite link)
+
+## Collaborators 
+
 Notabilia is a joint project with [Dario Taraborelli](//nitens.org/) and
 [Moritz Stefaner](//truth-and-beauty.net/). 
+
+## Funding
+None.
