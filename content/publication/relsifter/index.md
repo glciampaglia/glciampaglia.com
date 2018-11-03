@@ -58,6 +58,8 @@ highlight = false
 # Is this a selected publication? (true/false)
 selected = false
 
+projects = ['computational-fact-checking']
+
 # Links (optional)
 url_pdf = "http://www.uni-weimar.de/medien/webis/events/wsdm-cup-17/wsdmcup17-papers-final/wsdmcup17-triple-scoring/shiralkar17-notebook.pdf"
 url_code = "https://github.com/wsdm-cup-2017/samphire"

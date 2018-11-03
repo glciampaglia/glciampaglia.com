@@ -10,6 +10,10 @@ title = "Notabilia"
 
 +++
 
+## Official Project Page 
+
+[notabilia.net <sup><i class="fas fa-external-link-alt"></i></sup>](//notabilia.net)
+
 ## Description
 
 Every day thousands of new entries are added to Wikipedia. While many contain
@@ -33,10 +37,6 @@ Beautiful Awards_  for [best interactive
 visualization](//www.informationisbeautifulawards.com/showcase/443-notabilia).
 The awarding jury included -- among others -- MoMA curator Paola
 Antonelli and Brian Eno.
-
-## Official Project Page 
-
-___Visit Notabilia: http://notabilia.net___ (offsite link)
 
 ## Collaborators 
 

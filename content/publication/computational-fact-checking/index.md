@@ -50,6 +50,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+projects = ['computational-fact-checking']
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1371/journal.pone.0128193"
 url_code = "https://github.com/glciampaglia/knowledge_linker"

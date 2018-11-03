@@ -64,6 +64,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = true
 
+projects = ['computational-fact-checking']
+
 # Links (optional)
 url_pdf = "https://arxiv.org/abs/1708.07239"
 url_code = "https://github.com/shiralkarprashant/knowledgestream"
