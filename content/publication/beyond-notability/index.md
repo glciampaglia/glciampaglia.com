@@ -44,6 +44,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+projects = ['notabilia']
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1109/SASOW.2010.26"
 url_code = ""

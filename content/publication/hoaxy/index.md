@@ -58,6 +58,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+projects = ["hoaxy"]
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1145/2872518.2890098"
 url_code = "https://github.com/IUNetSci/hoaxy-backend.git"

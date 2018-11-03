@@ -1,7 +1,7 @@
 +++
 date = "2016-09-13T17:38:40-04:00"
 math = false
-summary = "Computational fact checking"
+summary = "Computational fact checking from knowledge networks"
 tags = ["dbpedia", "fact-checking"]
 title = "Computational Fact-checking"
 
