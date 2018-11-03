@@ -5,8 +5,11 @@ draft = false
 tags = ["Service"]
 title = "WWW2018 Alternate Track on Journalism, Misinformation, and Fact Checking"
 
+[image]
+caption = ""
+focal_point = "Smart"
+
 +++
-{{<figure src="/img/thumbs/twc2018.svg" >}}
 
 The [Twenty-seventh International WWW Conference, or
 WWW2018](https://www2018.thewebconf.org/) will have an alternate track on

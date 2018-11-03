@@ -7,11 +7,11 @@ title = "Socinfo2017"
 math = true
 summary = ""
 
-[header]
+[image]
 caption = ""
+focal_point = "Center"
 
 +++
-{{<figure src="/img/thumbs/socinfo2017.png" >}}
 
 The [9th International Conference on Social
 Informatics](http://socinfo2017.oii.ox.ac.uk/) just wrapped last week and it

@@ -12,12 +12,11 @@ categories = []
 # Use `caption` to display an image caption.
 #   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
 # Set `preview` to `false` to disable the thumbnail in listings.
-[header]
+[image]
 caption = ""
-preview = true
+focal_point = "Smart"
 
 +++
-{{<figure src="/img/thumbs/300px-South_Florida_Bulls_logo.svg.png">}}
 
 I am excited to announce that I have accepted an offer to join the [Department
 of Computer Science and Engineering](https://www.usf.edu/engineering/cse/) at
@@ -32,4 +31,4 @@ Media Mining. The course is open to both undergraduate (CIS 4930) and graduate
 
 On a related note, I am also looking for serious, motivated students interested
 in carrying out research on social and information networks. For more
-information, please [contact me](http://scr.im/glcmail).
+information, please [contact me](/#contact).
