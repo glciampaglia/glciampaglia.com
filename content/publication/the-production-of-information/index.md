@@ -54,7 +54,7 @@ math = false
 highlight = true
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Links (optional)
 url_pdf = "http://doi.org/10.1038/srep09452"
