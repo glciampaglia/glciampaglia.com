@@ -48,8 +48,8 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = false
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/rate_by_treatment.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/rate_by_treatment.png"
 
 # Is this a selected publication? (true/false)
 selected = false
@@ -62,15 +62,15 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/rate_by_treatment.png"
-caption = """ Figure 4. Probability of acceptance as a function of proposed
-workload and power treatment. Error bars are 95% Agresti-Coull approximate
-confidence intervals. We find monotonic acceptance rate, except for few
-hyperfair offers in the “balanced” treatment. Different treatment elicit
-different bargaining behaviors. """
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/rate_by_treatment.png"
+# caption = """ Figure 4. Probability of acceptance as a function of proposed
+# workload and power treatment. Error bars are 95% Agresti-Coull approximate
+# confidence intervals. We find monotonic acceptance rate, except for few
+# hyperfair offers in the “balanced” treatment. Different treatment elicit
+# different bargaining behaviors. """
 
 +++
 

@@ -8,7 +8,6 @@ math = true
 summary = ""
 
 [header]
-image = ""
 caption = ""
 
 +++ 

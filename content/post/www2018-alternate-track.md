@@ -5,10 +5,6 @@ draft = false
 tags = ["Service"]
 title = "WWW2018 Alternate Track on Journalism, Misinformation, and Fact Checking"
 
-[header]
-image = ""
-caption = ""
-
 +++
 {{<figure src="/img/thumbs/twc2018.svg" >}}
 

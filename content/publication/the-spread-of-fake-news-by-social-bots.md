@@ -55,8 +55,8 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/spread-of-fake-news-fig8a.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/spread-of-fake-news-fig8a.png"
 
 # Is this a selected publication? (true/false)
 selected = false
@@ -69,17 +69,17 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/spread-of-fake-news-fig8a.png"
-caption = """Example of targeting for the claim _Report: three million votes in
-presidential election cast by illegal aliens_, published by
-Infowars.com on November 14, 2016 and shared over 18 thousand
-times on Twitter. Only a portion of the diffusion network is shown. Nodes
-stand for Twitter accounts, with size representing number of followers.
-Links illustrate how the claim spreads: by retweets and quoted tweets
-(blue), or by replies and mentions (red)."""
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/spread-of-fake-news-fig8a.png"
+# caption = """Example of targeting for the claim _Report: three million votes in
+# presidential election cast by illegal aliens_, published by
+# Infowars.com on November 14, 2016 and shared over 18 thousand
+# times on Twitter. Only a portion of the diffusion network is shown. Nodes
+# stand for Twitter accounts, with size representing number of followers.
+# Links illustrate how the claim spreads: by retweets and quoted tweets
+# (blue), or by replies and mentions (red)."""
 
 +++
 

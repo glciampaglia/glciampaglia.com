@@ -8,7 +8,6 @@ math = false
 summary = "This is a timeline of old news from my previous homepage. It is included here for my future biographer."
 
 [header]
-image = ""
 caption = ""
 +++
 

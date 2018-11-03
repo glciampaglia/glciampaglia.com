@@ -55,9 +55,6 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = false
 
-# Featured image thumbnail (optional)
-image_preview = ""
-
 # Is this a selected publication? (true/false)
 selected = false
 
@@ -69,12 +66,12 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/actor-activities.png"
-caption = """In this example from DBpedia, *starring* is an activity pertinent to the profession *Actor*."""
-
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/actor-activities.png"
+# caption = """In this example from DBpedia, *starring* is an activity pertinent to the profession *Actor*."""
+ 
 +++
 
 This work competed for the WSDM 2017 cup in the 'Triple Scoring' task. For more

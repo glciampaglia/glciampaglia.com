@@ -53,8 +53,8 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/fig1_trafficseries_raster.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/fig1_trafficseries_raster.png"
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -67,23 +67,23 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/fig1_trafficseries_raster.png"
-caption = """(a), Time series of traffic. The grey lines represent the daily
-traffic to articles that are linked from/to the article “2012 Summer Olympics,”
-according to a recent snapshot of Wikipedia (see Methods). For visualization
-purposes, only a random sample of 100 neighbors is shown. The focal page is
-represented by the black solid line; red and gold lines represent the average
-and median traffic, respectively. The vertical black segments represent the
-times when new linked articles are created (see Methods). (b), Network of
-neighbors of “2012 Summer Olympics.” White nodes represent the neighbor articles
-predating 2012; colored nodes correspond to neighbors created in 2012. The size
-of the nodes is proportional to their yearly traffic volume; their position was
-computed using the ARF layout32. (c and d), Same visualizations as (a) and (b)
-for the entry about Hurricane Sandy and its neighbors. New articles tend to be
-peripheral to these networks."""
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/fig1_trafficseries_raster.png"
+# caption = """(a), Time series of traffic. The grey lines represent the daily
+# traffic to articles that are linked from/to the article “2012 Summer Olympics,”
+# according to a recent snapshot of Wikipedia (see Methods). For visualization
+# purposes, only a random sample of 100 neighbors is shown. The focal page is
+# represented by the black solid line; red and gold lines represent the average
+# and median traffic, respectively. The vertical black segments represent the
+# times when new linked articles are created (see Methods). (b), Network of
+# neighbors of “2012 Summer Olympics.” White nodes represent the neighbor articles
+# predating 2012; colored nodes correspond to neighbors created in 2012. The size
+# of the nodes is proportional to their yearly traffic volume; their position was
+# computed using the ARF layout32. (c and d), Same visualizations as (a) and (b)
+# for the entry about Hurricane Sandy and its neighbors. New articles tend to be
+# peripheral to these networks."""
 
 +++
 

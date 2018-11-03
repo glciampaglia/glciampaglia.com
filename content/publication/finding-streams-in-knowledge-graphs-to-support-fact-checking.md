@@ -61,8 +61,8 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/relevant-facts.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/relevant-facts.png"
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -75,11 +75,11 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/relevant-facts.png"
-caption = "Relevant facts about a target claim as surfaced by Knowledge Stream."
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/relevant-facts.png"
+# caption = "Relevant facts about a target claim as surfaced by Knowledge Stream."
 
 +++
 

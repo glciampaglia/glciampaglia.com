@@ -42,9 +42,6 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = ""
-
 # Is this a selected publication? (true/false)
 selected = false
 
@@ -56,11 +53,11 @@ url_project = "https://meta.wikimedia.org/wiki/Research:MoodBar"
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/moodbar.png"
-caption = ""
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/moodbar.png"
+# caption = ""
 
 +++
 

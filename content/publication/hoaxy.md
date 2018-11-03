@@ -55,8 +55,8 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/hoaxy-fig5.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/hoaxy-fig5.png"
 
 # Is this a selected publication? (true/false)
 selected = false
@@ -69,11 +69,11 @@ url_project = "https://hoaxy.iuni.iu.edu"
 url_slides = ""
 url_video = "https://www.youtube.com/watch?v=YoO7DDMvhUQ"
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/hoaxy-fig5.png"
-caption = ""
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/hoaxy-fig5.png"
+# caption = ""
 
 +++
 

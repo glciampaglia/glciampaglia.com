@@ -61,9 +61,6 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = ""
-
 # Is this a selected publication? (true/false)
 selected = false
 
@@ -75,16 +72,16 @@ url_project = "https://osome.iuni.iu.edu/"
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/Fig4.png"
-caption = """Figure 4: Interactive network visualization tool. A detail of
-the network of retweets and mention for a hashtag commonly linked to “Ice
-Bucket Challenge,” a popular Internet phenomenon from 2014. The size of a
-node is proportional to its strength (weighted degree). The detail shows
-the patterns of mention and information broadcasting occurring between
-celebrities, as the viral challenge was taking off. """
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/Fig4.png"
+# caption = """Figure 4: Interactive network visualization tool. A detail of
+# the network of retweets and mention for a hashtag commonly linked to “Ice
+# Bucket Challenge,” a popular Internet phenomenon from 2014. The size of a
+# node is proportional to its strength (weighted degree). The detail shows
+# the patterns of mention and information broadcasting occurring between
+# celebrities, as the viral challenge was taking off. """
 
 +++
 

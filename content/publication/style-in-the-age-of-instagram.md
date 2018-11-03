@@ -35,8 +35,8 @@ math = true
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/park2016style-figure3.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/park2016style-figure3.png"
 
 # Is this a selected publication? (true/false)
 selected = false
@@ -49,14 +49,14 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/park2016style-figure3.png"
-caption = """ Distribution of body size measures and Instagram activity of
-new faces of the 2015 S/S season ($N=431$). Dashed lines, where shown,
-indicate averages computed on the closest matching age group in the US
-female population. """
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/park2016style-figure3.png"
+# caption = """ Distribution of body size measures and Instagram activity of
+# new faces of the 2015 S/S season ($N=431$). Dashed lines, where shown,
+# indicate averages computed on the closest matching age group in the US
+# female population. """
 
 +++
 

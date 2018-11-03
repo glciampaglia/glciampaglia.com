@@ -59,8 +59,8 @@ math = true
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = "thumbs/fig3-ngrams.png"
+## Featured image thumbnail (optional)
+#image_preview = "thumbs/fig3-ngrams.png"
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -73,12 +73,12 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/fig3-ngrams.png"
-caption = """ Statistically over-represented unigrams in female and male
-channels. Font size is proportional to the $z$-score. """
+# # Featured image
+# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+# [header]
+# image = "headers/fig3-ngrams.png"
+# caption = """ Statistically over-represented unigrams in female and male
+# channels. Font size is proportional to the $z$-score. """
 
 +++
 

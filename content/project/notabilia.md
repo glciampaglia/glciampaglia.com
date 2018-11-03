@@ -5,8 +5,8 @@ math = false
 summary = "Visualizing deletion discussions on Wikipedia."
 tags = ["Wikipedia", "AfD", "visualization"]
 title = "Notabilia"
-[header]
-    image = "headers/notabilia_D_List_of_proven_conspiracies__2nd_nomination_.png"
+#[header]
+#    image = "headers/notabilia_D_List_of_proven_conspiracies__2nd_nomination_.png"
 
 +++
 

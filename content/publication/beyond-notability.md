@@ -41,9 +41,6 @@ math = true
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = ""
-
 # Is this a selected publication? (true/false)
 selected = false
 
@@ -54,14 +51,6 @@ url_dataset = "data/afd_data.7z"
 url_project = ""
 url_slides = "docs/slides/qteso2010.pdf"
 url_video = ""
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/vote_ord_prob.png"
-caption = """Probability of voting for an option $o$ as a function of the
-position $n$ of the vote in the AfD sequence. Horizontal lines represent
-the baseline probabilities calculated on the complete sample"""
 
 +++
 

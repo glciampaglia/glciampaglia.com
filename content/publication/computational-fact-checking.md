@@ -47,9 +47,6 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-# Featured image thumbnail (optional)
-image_preview = ""
-
 # Is this a selected publication? (true/false)
 selected = false
 
@@ -60,17 +57,6 @@ url_dataset = ""
 url_project = ""
 url_slides = ""
 url_video = ""
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-[header]
-image = "headers/journal.pone.0128193.g003.png"
-caption = """Fig 3. Automatic truth assessments for simple factual statements.
-In each confusion matrix, rows represent subjects and columns represent objects.
-The diagonals represent true statements. Higher truth values are mapped to
-colors of increasing intensity. (a) Films winning the Oscar for Best Movie and
-their directors, grouped by decade of award (see the complete list in the S1
-Text). (b) US presidents and their spouses, denoted by initials."""
 
 +++
 
