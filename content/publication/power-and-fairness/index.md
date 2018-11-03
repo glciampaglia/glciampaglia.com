@@ -48,9 +48,6 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = false
 
-## Featured image thumbnail (optional)
-#image_preview = "thumbs/rate_by_treatment.png"
-
 # Is this a selected publication? (true/false)
 selected = false
 

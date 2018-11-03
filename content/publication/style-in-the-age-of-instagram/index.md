@@ -35,9 +35,6 @@ math = true
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-## Featured image thumbnail (optional)
-#image_preview = "thumbs/park2016style-figure3.png"
-
 # Is this a selected publication? (true/false)
 selected = false
 
