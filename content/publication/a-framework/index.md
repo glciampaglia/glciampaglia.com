@@ -52,4 +52,8 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
+[image]
+  caption = "Fig. 1: Indirect inference model calibration."
+  focal_point = "Top"
+
 +++

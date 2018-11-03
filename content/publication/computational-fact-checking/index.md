@@ -60,4 +60,8 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
+[image]
+  caption = "Fig. 3. Automatic truth assessments for simple factual statements."
+  focal_point = "TopLeft"
+
 +++

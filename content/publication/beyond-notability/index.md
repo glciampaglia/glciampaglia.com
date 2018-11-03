@@ -54,4 +54,7 @@ url_project = ""
 url_slides = "docs/slides/qteso2010.pdf"
 url_video = ""
 
+[image]
+  caption = "Expected number of votes as a function of the vote size $N$. " 
+  focal_point = "TopLeft"
 +++

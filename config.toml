@@ -45,7 +45,7 @@ enableGitInfo = true
   organizations = [ { name = "University of South Florida", url = "http://usf.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "20170118_giovanniLucaCiampaglia_ER_7281-SQUARED.JPG"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "giovanni_avatar.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
   email = "glc3@mail.usf.edu"
