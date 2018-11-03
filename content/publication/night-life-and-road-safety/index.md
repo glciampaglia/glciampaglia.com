@@ -57,11 +57,9 @@ url_slides = "docs/slides/IC2S2 06-24-16 Telecom Big Data Challenge 15.pdf"
 url_video = ""
 
 # # Featured image
-# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# [header]
-# image = "headers/accidents_heatmap.png"
-# caption = """ Accidents (68% percentile) as a function of traffic and speed.
-# Only hexagonal bins with at least 5 observations were considered. """
+[image]
+  caption = " Accidents (68% percentile) as a function of traffic and speed. Only hexagonal bins with at least 5 observations were considered. "
+  focal_point = "BottomRight"
 
 +++
 
@@ -69,13 +67,3 @@ Preliminary results from this research were presented at [2016 International on
 Computational Social
 Science](http://www.kellogg.northwestern.edu/news-events/conference/ic2s2/2016.aspx)
 held on the 24-26 June at Northwestern University, in Evanston, IL, USA.
-
-## BibTeX
-```bibtex
-@Unpublished{Ciampaglia2016,
-  Title                    = {Night life and road safety: a comparison of 7 Italian cities},
-  Author                   = {Ciampaglia, Giovanni Luca and Ramasco, J. J. and Gon{\c c}alves, Bruno},
-  Note                     = {Work in progress},
-  Year                     = {2016}
-}
-```

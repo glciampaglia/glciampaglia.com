@@ -53,17 +53,3 @@ url_slides = ""
 url_video = ""
 
 +++
-
-## BibTeX
-```bibtex
-@Article{Ciampaglia2012,
-  Title                    = {A Framework for the Calibration of Social Simulation Models},
-  Author                   = {Giovanni Luca Ciampaglia},
-  Journal                  = {Advs Complex Sys.},
-  Year                     = {2012},
-  Pages                    = {1350030},
-  Volume                   = {16},
-
-  Doi                      = {10.1142/S0219525913500306}
-}
-```

@@ -16,11 +16,11 @@ authors = ["Azadeh Nematzadeh", "Giovanni Luca Ciampaglia",
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["2"]
+publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
-publication = "arXiv preprint arXiv:1610.06497"
-publication_short = "arXiv"
+publication = "arXiv e-print 1610.06497"
+publication_short = "arXiv:1610.06497"
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -44,19 +44,3 @@ url_slides = ""
 url_video = ""
 
 +++
-
-## BibTeX
-```bibtex
-@Article{Nematzadeh2016,
-  Title                    = {From Conversation to Cacophony: Information Overload and Collective Communication in the Twitch chat},
-  Author                   = {Nematzadeh, Azadeh and Ciampaglia, Giovanni Luca and Ahn, Yong-Yeol and Flammini, Alessandro},
-  Journal                  = {ArXiv e-prints},
-  Year                     = {2016},
-
-  Month                    = nov,
-
-  Archiveprefix            = {arXiv},
-  Eprint                   = {1610.06497},
-  Primaryclass             = {cs.SI}
-}
-```

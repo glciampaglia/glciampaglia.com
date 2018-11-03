@@ -19,7 +19,7 @@ publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
 publication = "Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing (CSCW'15) p. 734-742 "
-publication_short = "Proc. of CSCW'15"
+publication_short = "CSCW"
 
 # Abstract and optional shortened version.
 abstract = """ Socialization in online communities allows existing members to
@@ -54,10 +54,10 @@ url_slides = ""
 url_video = ""
 
 # # Featured image
-# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# [header]
-# image = "headers/moodbar.png"
-# caption = ""
+[image]
+  caption = "A zoomed detail of the full retention curves of the two groups. For ease of comparison, the treatment curve is shifted on the right of 3 days. Error bars are 95% confidence intervals. The inset shows the full curve with no shifting. The red dashed line is the treatment group."
+  focal_point = "BottomLeft"
+
 
 +++
 
@@ -70,25 +70,3 @@ editors](https://blog.wikimedia.org/2012/07/05/what-moodbar-tells-us-about-new-r
 The paper presented at CSCW'15 expands upon those findings and concludes
 that lightweight socialization does have a positive effect on long-term
 editor retention on Wikipedia.
-
-## BibTeX
-```bibtex
-@InProceedings{Ciampaglia2015,
-  Title                    = {MoodBar: Increasing New User Retention in Wikipedia Through Lightweight Socialization},
-  Author                   = {Ciampaglia, Giovanni Luca and Taraborelli, Dario},
-  Booktitle                = {Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work \& Social Computing},
-  Year                     = {2015},
-
-  Address                  = {New York, NY, USA},
-  Pages                    = {734--742},
-  Publisher                = {ACM},
-  Series                   = {CSCW '15},
-
-  Acmid                    = {2675181},
-  Doi                      = {10.1145/2675133.2675181},
-  ISBN                     = {978-1-4503-2922-4},
-  Keywords                 = {experiment, online community, socialization, user retention, wikipedia},
-  Location                 = {Vancouver, BC, Canada},
-  Numpages                 = {9}
-}
-```

@@ -49,23 +49,3 @@ url_slides = ""
 url_video = ""
 
 +++
-
-## BibTeX
-```bibtex
-@InProceedings{Ciampaglia2011,
-  Title                    = {A Bounded Confidence Approach to Understand User Participation in Peer Production Systems},
-  Author                   = {Giovanni Luca Ciampaglia},
-  Booktitle                = {Third International Conference on Social Informatics (SocInfo'11)},
-  Year                     = {2011},
-
-  Address                  = {Singapore},
-  Month                    = {Oct},
-  Pages                    = {269--282},
-  Publisher                = {Springer Verlang},
-  Series                   = {LNCS},
-  Volume                   = {6984},
-
-  Doi                      = {10.1007/978-3-642-24704-0_29},
-  Keywords                 = {wikipedia, consensus, user participation, sensitivity analysis},
-}
-```

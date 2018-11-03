@@ -29,7 +29,7 @@ publication_types = ["1"]
 # Publication name and optional abbreviated version.
 publication = "Proc. ACM Web Science Workshop on Computational Approaches to Social Modeling (ChASM), 2014"
 
-publication_short = "Proc. ChASM'2014"
+publication_short = "ChASM"
 
 # Abstract and optional shortened version.
 abstract = """ Studies have demonstrated that social media may offer
@@ -69,16 +69,3 @@ url_slides = ""
 url_video = ""
 
 +++
-
-## BibTeX
-
-```bibtex
-@InProceedings{Fulper2015,
-  Title                    = {Misogynistic Language on {T}witter and Sexual Violence},
-  Author                   = {R. Fulper and G. L. Ciampaglia and E. Ferrara and Filippo Menczer and Y. Ahn and A. Flammini and B. Lewis and K. Rowe},
-  Booktitle                = {{Proc. ACM Web Science Workshop on Computational Approaches to Social Modeling (ChASM), 2014}},
-  Year                     = {2015},
-  Month                    = {Jun},
-  Doi                      = {10.6084/m9.figshare.1291081}
-}
-```

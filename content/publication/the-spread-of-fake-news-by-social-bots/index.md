@@ -1,6 +1,6 @@
 +++
-title = "The Spread of Fake News by Social Bots"
-date = 2017-07-07
+title = "The Spread of Low-credibility Content by Social Bots"
+date = 2018-10-03
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -8,6 +8,7 @@ authors = [
     "Chengcheng Shao",
     "Giovanni Luca Ciampaglia",
     "Onur Varol",
+    "Kaicheng Yang",
     "Alessandro Flammini",
     "Filippo Menczer",
 ]
@@ -24,30 +25,19 @@ authors = [
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "arXiv preprint arXiv:1707.07592"
-publication_short = "arXiv"
+publication = "Nat. Comm. (in press)"
+publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = """ The massive spread of fake news has been identified as a
-major global risk and has been alleged to influence elections and threaten
-democracies. Communication, cognitive, social, and computer scientists are
-engaged in efforts to study the complex causes for the viral diffusion of
-digital misinformation and to develop solutions, while search and social
-media platforms are beginning to deploy countermeasures. However, to date,
-these efforts have been mainly informed by anecdotal evidence rather than
-systematic data. Here we analyze 14 million messages spreading 400 thousand
-claims on Twitter during and following the 2016 U.S. presidential campaign
-and election. We find evidence that social bots play a key role in the
-spread of fake news. Accounts that actively spread misinformation are
-significantly more likely to be bots. Automated accounts are particularly
-active in the early spreading phases of viral claims, and tend to target
-influential users. Humans are vulnerable to this manipulation, retweeting
-bots who post false news. Successful sources of false and biased claims are
-heavily supported by social bots. These results suggest that curbing social
-bots may be an effective strategy for mitigating the spread of online
-misinformation. """
+abstract = """ The massive spread of digital misinformation has been identified as a major threat to democracies. Communication, cognitive, social, and computer scientists are studying the complex causes for the viral diffusion of misinformation, while online platforms are beginning to deploy countermeasures. Little systematic, data-based evidence has been published to guide these efforts.  
+Here we analyze 14 million messages spreading 400 thousand articles on Twitter during ten months in 2016 and 2017. We find evidence that social bots played a disproportionate role in spreading articles from low-credibility sources. 
+Bots amplify such content in the early spreading moments, before an article goes viral. 
+They also target users with many followers through replies and mentions.
+Humans are vulnerable to this manipulation, resharing content posted by bots. Successful low-credibility sources are heavily supported by social bots. 
+These results suggest that curbing social bots may be an effective strategy for mitigating the spread of online misinformation. """
 
-abstract_short = ""
+abstract_short = """ The massive spread of digital misinformation has been identified as a major threat to democracies. Communication, cognitive, social, and computer scientists are studying the complex causes for the viral diffusion of misinformation, while online platforms are beginning to deploy countermeasures. Little systematic, data-based evidence has been published to guide these efforts.  
+Here we analyze 14 million messages spreading 400 thousand articles on Twitter during ten months in 2016 and 2017. We find evidence that [...] """
 
 # Does this page contain LaTeX math? (true/false)
 math = false
@@ -55,46 +45,21 @@ math = false
 # Does this page require source code highlighting? (true/false)
 highlight = true
 
-## Featured image thumbnail (optional)
-#image_preview = "thumbs/spread-of-fake-news-fig8a.png"
-
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Links (optional)
-url_pdf = "http://arxiv.org/abs/1707.07592"
-url_code = ""
-url_dataset = ""
+url_pdf = "http://doi.org/10.1038/s41467-018-06930-7"
+url_code = "http://github.com/IUNetSci/HoaxyBots"
+url_dataset = "http://doi.org/10.5281/zenodo.1402267"
 url_project = ""
 url_slides = ""
 url_video = ""
 
-# # Featured image
-# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# [header]
-# image = "headers/spread-of-fake-news-fig8a.png"
-# caption = """Example of targeting for the claim _Report: three million votes in
-# presidential election cast by illegal aliens_, published by
-# Infowars.com on November 14, 2016 and shared over 18 thousand
-# times on Twitter. Only a portion of the diffusion network is shown. Nodes
-# stand for Twitter accounts, with size representing number of followers.
-# Links illustrate how the claim spreads: by retweets and quoted tweets
-# (blue), or by replies and mentions (red)."""
+[image]
+  caption = """ Online virality of content. """
+  focal_point = "Bottom"
 
 +++
 
-## BibTeX
-```bibtex
-@Article{Shao2017,
-  Title                    = {The spread of fake news by social bots},
-  Author                   = {Shao, Chengcheng and Ciampaglia, Giovanni Luca and Varol, Onur and Flammini, Alessandro and Menczer, Filippo},
-  Journal                  = {ArXiv e-prints},
-  Year                     = {2017},
 
-  Month                    = jul,
-
-  Archiveprefix            = {arXiv},
-  Eprint                   = {1707.07592},
-  Primaryclass             = {cs.SI}
-}
-```

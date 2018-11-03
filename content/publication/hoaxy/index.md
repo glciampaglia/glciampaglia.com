@@ -24,7 +24,7 @@ publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
 publication = "Proceedings of the 25th International Conference Companion on World Wide Web"
-publication_short = "Proc. WWW'16 Companion"
+publication_short = "WWW'16 Companion"
 
 # Abstract and optional shortened version.
 abstract = """
@@ -50,13 +50,10 @@ real and fake news sharing. """
 abstract_short = ""
 
 # Does this page contain LaTeX math? (true/false)
-math = false
+math = true
 
 # Does this page require source code highlighting? (true/false)
 highlight = true
-
-## Featured image thumbnail (optional)
-#image_preview = "thumbs/hoaxy-fig5.png"
 
 # Is this a selected publication? (true/false)
 selected = false
@@ -65,37 +62,12 @@ selected = false
 url_pdf = "https://doi.org/10.1145/2872518.2890098"
 url_code = "https://github.com/IUNetSci/hoaxy-backend.git"
 url_dataset = "https://market.mashape.com/truthy/hoaxy"
-url_project = "https://hoaxy.iuni.iu.edu"
+url_project = "https://hoaxy.iuni.iu.edu/"
 url_slides = ""
 url_video = "https://www.youtube.com/watch?v=YoO7DDMvhUQ"
 
-# # Featured image
-# # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# [header]
-# image = "headers/hoaxy-fig5.png"
-# caption = ""
+[image]
+caption = "Lagged cross correlation (Pearson's $r$) between news sharing activity of misinformation and fact-checking, with peak value at ${\\rm lag}=-13$ hours."
+focal_point = "Center"
 
 +++
-
-## BibTeX
-```bibtex
-@InProceedings{Shao2016,
-  Title                    = {Hoaxy: A Platform for Tracking Online Misinformation},
-  Author                   = {Shao, Chengcheng and Ciampaglia, Giovanni Luca and Flammini, Alessandro and Menczer, Filippo},
-  Booktitle                = {Proceedings of the 25th International Conference Companion on World Wide Web},
-  Year                     = {2016},
-
-  Address                  = {Republic and Canton of Geneva, Switzerland},
-  Pages                    = {745--750},
-  Publisher                = {International World Wide Web Conferences Steering Committee},
-  Series                   = {WWW '16 Companion},
-
-  Acmid                    = {2890098},
-  Doi                      = {10.1145/2872518.2890098},
-  ISBN                     = {978-1-4503-4144-8},
-  Keywords                 = {fact checking, fake news, hoaxes, misinformation, rumor tracking, twitter},
-  Location                 = {Montr\&\#233;al, Qu\&\#233;bec, Canada},
-  Numpages                 = {6},
-  Url                      = {https://doi.org/10.1145/2872518.2890098}
-}
-```
