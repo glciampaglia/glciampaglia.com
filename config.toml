@@ -313,7 +313,7 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "Press"
-  url = "#press"
+  url = "press"
   weight = 5
 
 [[menu.main]]
