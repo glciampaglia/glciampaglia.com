@@ -64,6 +64,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.7717/peerj-cs.87"
+
 # Links (optional)
 url_pdf = "https://peerj.com/articles/cs-87/"
 url_code = ""

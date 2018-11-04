@@ -50,6 +50,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1109/ISDA.2007.63"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1109/ISDA.2007.63"
 url_code = ""

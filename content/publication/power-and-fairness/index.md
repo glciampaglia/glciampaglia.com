@@ -51,6 +51,8 @@ highlight = false
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1371/journal.pone.0099039"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1371/journal.pone.0099039"
 url_code = "https://github.com/glciampaglia/ultimatum"

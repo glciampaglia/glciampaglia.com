@@ -60,6 +60,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.6084/m9.figshare.1291081"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.6084/m9.figshare.1291081"
 url_code = ""

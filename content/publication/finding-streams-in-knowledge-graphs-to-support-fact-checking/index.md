@@ -64,6 +64,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = true
 
+doi = "10.1109/ICDM.2017.105"
+
 projects = ['computational-fact-checking']
 
 # Links (optional)

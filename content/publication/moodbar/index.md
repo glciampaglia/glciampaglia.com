@@ -45,6 +45,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1145/2675133.2675181"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1145/2675133.2675181"
 url_code = "https://github.com/glciampaglia/MoodBar"

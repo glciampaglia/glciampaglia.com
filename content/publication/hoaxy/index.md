@@ -58,6 +58,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1145/2872518.2890098"
+
 projects = ["hoaxy"]
 
 # Links (optional)

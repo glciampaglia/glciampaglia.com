@@ -56,6 +56,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1038/srep09452"
+
 # Links (optional)
 url_pdf = "http://doi.org/10.1038/srep09452"
 url_code = ""

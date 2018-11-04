@@ -42,6 +42,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1038/s41598-018-34203-2"
+
 # Links (optional)
 url_pdf = "https://www.nature.com/articles/s41598-018-34203-2"
 url_code = ""

@@ -39,6 +39,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1007/s42001-018-0018-9"
+
 # Links (optional)
 url_pdf = "http://doi.org/10.1007/s42001-018-0018-9"
 url_code = ""

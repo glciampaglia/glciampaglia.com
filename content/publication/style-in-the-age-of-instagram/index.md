@@ -38,6 +38,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1145/2818048.2820065"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1145/2818048.2820065"
 url_code = "/data/park2016cscw.zip"

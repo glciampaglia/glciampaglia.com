@@ -40,6 +40,8 @@ highlight = true
 # Is this a selected publication? (true/false)
 selected = false
 
+doi = "10.1007/978-3-642-24704-0_29"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1007/978-3-642-24704-0_29"
 url_code = "https://github.com/glciampaglia/Peers"

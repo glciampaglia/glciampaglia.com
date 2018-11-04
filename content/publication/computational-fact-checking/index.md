@@ -52,6 +52,8 @@ selected = false
 
 projects = ['computational-fact-checking']
 
+doi = "10.1371/journal.pone.0128193"
+
 # Links (optional)
 url_pdf = "https://doi.org/10.1371/journal.pone.0128193"
 url_code = "https://github.com/glciampaglia/knowledge_linker"
