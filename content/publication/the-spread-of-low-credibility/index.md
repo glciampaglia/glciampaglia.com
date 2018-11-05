@@ -47,6 +47,7 @@ projects = ["hoaxy"]
 doi = "10.1038/s41467-018-06930-7"
 
 # Links (optional)
+url_preprint = "https://arxiv.org/abs/1707.07592"
 url_pdf = "http://doi.org/10.1038/s41467-018-06930-7"
 url_code = "http://github.com/IUNetSci/HoaxyBots"
 url_dataset = "http://doi.org/10.5281/zenodo.1402267"
