@@ -41,5 +41,4 @@ for the [Wikimedia Foundation](https://wikimediafoundation.org/), and a
 research associate at the [Professorship of Computational Social
 Science](http://www.coss.ethz.ch/) at the Swiss Federal Institute of Technology
 in Zurich. His work has been covered in major news outlets, including the Wall
-Street Journal, the Economist, Wired, MIT Technology Review, NPR, and CBS News,
-to cite a few.
+Street Journal, Wired, MIT Technology Review, NPR, and CBS News, to cite a few.
