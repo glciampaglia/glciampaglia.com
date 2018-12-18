@@ -41,7 +41,7 @@ projects = []
 tags = []
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://rdcu.be/bb7QQ"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
