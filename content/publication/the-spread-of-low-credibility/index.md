@@ -25,7 +25,7 @@ authors = [
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "Nat. Comm. __9__ 4787 (2018)"
+publication = "Nat. Comm. __9__ 4787"
 publication_short = ""
 
 # Abstract and optional shortened version.
