@@ -1,6 +1,6 @@
 +++
 title = "On the Inevitability of Online Echo Chambers"
-date = 2020-03-01T20:33:08-05:00
+date = 2019-05-01
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
