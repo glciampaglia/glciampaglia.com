@@ -1,10 +1,10 @@
 +++
 title = "Fashion Informatics and the Network of Fashion Knockoffs"
-date = 2018-07-23
+date = 2019-12-02
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Copeland, Lauren", "Ciampaglia, Giovanni Luca", "Zhao, Li"]
+authors = ["Lauren Copeland", "Giovanni Luca Ciampaglia", "Li Zhao"]
 
 # Publication type.
 # Legend:
@@ -15,10 +15,10 @@ authors = ["Copeland, Lauren", "Ciampaglia, Giovanni Luca", "Zhao, Li"]
 # 4 = Report
 # 5 = Book
 # 6 = Book section
-publication_types = ["3"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = ""
+publication = "First Monday"
 publication_short = ""
 
 # Abstract and optional shortened version.
@@ -56,7 +56,7 @@ url_source = ""
 # url_custom = [{name = "Custom Link", url = "http://example.org"}]
 
 # Digital Object Identifier (DOI)
-doi = ""
+doi = "10.5210/fm.v24i12.9703"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
