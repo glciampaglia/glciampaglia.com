@@ -18,6 +18,11 @@ The objective of this course is to learn how to identify and mine user patterns 
 
 For syllabus, readings, and other course resources, see below.
 
+### Fall 2019
+
+- CIS 4930: https://usflearn.instructure.com/courses/1347852
+- CIS 6930: https://usflearn.instructure.com/courses/1355357
+
 ### Fall 2018
 
 - CIS 4930: https://usflearn.instructure.com/courses/1329153
