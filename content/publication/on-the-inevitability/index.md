@@ -4,7 +4,14 @@ date = 2019-05-01
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Kazutoshi Sasahara", "Wen Chen", "Hao Peng", "Giovanni Luca Ciampaglia", "Flammini Alessandro", "Filippo Menczer"]
+authors = [
+    "Kazutoshi Sasahara",
+    "Wen Chen",
+    "Hao Peng",
+    "Giovanni Luca Ciampaglia",
+    "Flammini Alessandro",
+    "Filippo Menczer"
+]
 
 # Publication type.
 # Legend:
@@ -22,7 +29,7 @@ publication = "arXiv e-Print"
 publication_short = "arXiv:1905.03919"
 
 # Abstract and optional shortened version.
-abstract = "While social media make it easy to connect with and access information from anyone, they also facilitate basic influence and unfriending mechanisms that may lead to segregated and polarized clusters known as "echo chambers." Here we study the conditions in which such echo chambers emerge by introducing a simple model of information sharing in online social networks with the two ingredients of influence and unfriending. Users can change both opinions and social connections based on the information to which they are exposed through sharing. Model dynamics demonstrate that even with minimal amounts of influence and unfriending, the social network rapidly devolves into segregated, homogeneous communities. These predictions are consistent with empirical data from Twitter. Although our findings suggest that echo chambers are somewhat inevitable given the mechanisms at play in online social media, they also provide insights into possible mitigation strategies"
+abstract = "While social media make it easy to connect with and access information from anyone, they also facilitate basic influence and unfriending mechanisms that may lead to segregated and polarized clusters known as \"echo chambers.\" Here we study the conditions in which such echo chambers emerge by introducing a simple model of information sharing in online social networks with the two ingredients of influence and unfriending. Users can change both opinions and social connections based on the information to which they are exposed through sharing. Model dynamics demonstrate that even with minimal amounts of influence and unfriending, the social network rapidly devolves into segregated, homogeneous communities. These predictions are consistent with empirical data from Twitter. Although our findings suggest that echo chambers are somewhat inevitable given the mechanisms at play in online social media, they also provide insights into possible mitigation strategies"
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
@@ -50,7 +57,7 @@ tags = []
 
 # Links (optional).
 url_pdf = ""
-url_preprint = "http://arxiv.org/1905.03919"
+url_preprint = "http://arxiv.org/abs/1905.03919"
 url_code = ""
 url_dataset = ""
 url_project = ""

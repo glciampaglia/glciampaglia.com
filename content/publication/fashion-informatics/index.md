@@ -18,11 +18,11 @@ authors = ["Lauren Copeland", "Giovanni Luca Ciampaglia", "Li Zhao"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "First Monday"
+publication = "First Monday 24(12)"
 publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = ""
+abstract = """ Knowledge discovery techniques have a long history of application to fields of practice such as marketing and business intelligence. Fashion and other manufacturing compartments have comparably enjoyed little attention from computer scientists. With the increasing availability of multimedia data from the Web and social media, our understanding of the fashion apparel industry could be significantly enhanced through the use of knowledge discovery methods and of large scale datasets obtained from places such as Twitter and Instagram. Here, we are interested in one of the issues at the center of the contemporary structure and dynamics of the fashion industry: the practice of knockoffs. We combine Web scraping and network science techniques to give a preliminary characterization of how brands knock designs off each other. Such a study could be one of the first examples of an emergent field, which we refer to and define as “fashion informatics.” """
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
