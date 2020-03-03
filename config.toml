@@ -326,6 +326,11 @@ enableGitInfo = true
   url = "#contact"
   weight = 7
 
+[[menu.main]]
+  name = "Lab"
+  url = "lab"
+  weight = 8
+
 # Search.
 [params.search]
   # Search provider:
