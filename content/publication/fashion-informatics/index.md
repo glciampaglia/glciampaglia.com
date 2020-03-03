@@ -62,7 +62,14 @@ doi = "10.5210/fm.v24i12.9703"
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 [image]
   # Caption (optional)
-  caption = ""
+  caption = """ Fashion knockoff network. Nodes are brands and there is a
+  directed edge A B if A knocked off a design from B. Thicker arrows indicate
+  multiple knockoffs. Node size is proportional to the number of incoming
+  edges, while text size to that of outgoing ones. The color of nodes is
+  proportional to the HITS authority score of the node, indicating influential
+  brands. Red-orange nodes have high authority, yellow intermediate, and
+  green-blue low. For visualization purposes, only brands participating in at
+  least two knockoffs (received or performed) are displayed. """
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
