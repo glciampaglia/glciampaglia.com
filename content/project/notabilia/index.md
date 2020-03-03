@@ -1,9 +1,9 @@
 +++
 date = "2016-09-13T17:28:21-04:00"
 math = false
-summary = "Collective Deliberation on Wikipedia."
+summary = "Articles for Deletion and Notabilia."
 tags = ["Wikipedia", "AfD", "visualization"]
-title = "Articles for Deletion and Notabilia"
+title = "Collective Deliberation on Wikipedia"
 [image]
   caption = "The 100 longest _Article for Deletion_ discussions on Wikipedia, which results in _deletion_ of the article."
   focal_point = "Right"
