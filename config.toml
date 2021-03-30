@@ -328,7 +328,7 @@ enableGitInfo = true
 
 [[menu.main]]
   name = "Lab"
-  url = "lab"
+  url = "https://sites.google.com/view/usfcsdl"
   weight = 8
 
 # Search.
