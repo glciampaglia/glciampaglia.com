@@ -12,19 +12,23 @@ categories = []
 
 ## Course description
 
-The objective of this course is to learn how to identify and mine user patterns from social media. We will cover the fundamentals tools and techniques of social media mining --- like the analysis of social networks --- and some of its applications, like news aggregation and recommendation systems. The course will include a project-based programming assignment in which students will learn how to use Python to connect to social media APIs, crawl data, and mine information from them.
+This course introduces useful techniques to model, analyze, and understand large-scale social media, with focus on social network analysis, user modeling, bot detection, and dynamical processes over social and information networks.
 
 ## Terms
 
 For syllabus, readings, and other course resources, see below.
 
+### Fall 2020
+
+- CAP 4773 Social Media Mining: [Catalog]() &middot; Syllabus (_coming soon_) &middot; [Course LMS]();
+- CAP 6317 Social Media Mining: Catalog (_coming soon_) &middot; Syllabus (_coming soon_) Course LMS (_coming soon_).
+
 ### Fall 2019
 
-- CIS 4930: https://usflearn.instructure.com/courses/1347852
-- CIS 6930: https://usflearn.instructure.com/courses/1355357
+- CIS 4930 Special Topics (Social Media Mining): [Syllabus]() &middot; [Course LMS](https://usflearn.instructure.com/courses/1347852);
+- CIS 6930 Special Topics (Social Media Mining): [Syllabus]() &middot; [Course LMS](https://usflearn.instructure.com/courses/1355357).
 
 ### Fall 2018
 
-- CIS 4930: https://usflearn.instructure.com/courses/1329153
-- CIS 6930: https://usflearn.instructure.com/courses/1329155 
-
+- CIS 4930 Special Topics (Social Media Mining): [Course LMS](https://usflearn.instructure.com/courses/1329153);
+- CIS 6930 Special Topics (Social Media Mining): [Course LMS](https://usflearn.instructure.com/courses/1329155).

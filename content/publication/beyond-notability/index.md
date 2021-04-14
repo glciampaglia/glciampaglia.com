@@ -51,7 +51,7 @@ doi = "10.1109/SASOW.2010.26"
 # Links (optional)
 url_pdf = "https://doi.org/10.1109/SASOW.2010.26"
 url_code = ""
-url_dataset = "data/afd_data.7z"
+url_dataset = "../../data/afd_data.7z"
 url_project = ""
 url_slides = "docs/slides/qteso2010.pdf"
 url_video = ""
