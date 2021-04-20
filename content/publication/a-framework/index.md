@@ -47,6 +47,7 @@ selected = false
 doi = "10.1142/S0219525913500306"
 
 # Links (optional)
+url_preprint = "https://arxiv.org/abs/1305.3842"
 url_pdf = "https://doi.org/10.1142/S0219525913500306"
 url_code = "https://github.com/glciampaglia/Peers"
 url_dataset = ""
