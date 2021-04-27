@@ -16,8 +16,8 @@ weight = 60
 +++
 
 * University of South Florida
-    - COP 2513: Introduction to Object Oriented Programming for IT
-    - [CIS 4930 / 6930: Special Topics: Social Media Mining](teaching/cis4930-6930)
+    - [COP 2513: IT Object Oriented Programming](teaching/cop2513)
+    - [CAP 4773 / 6317: Social Media Mining](teaching/cis4930-6930)
 * ETH Zürich
     - 851-0585-04L – Modelling and Simulating Social Systems with MATLAB
 

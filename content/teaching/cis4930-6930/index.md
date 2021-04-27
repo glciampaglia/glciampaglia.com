@@ -1,5 +1,5 @@
 +++
-title = "CIS 4930/6930 Special Topics: Social Media Mining"
+title = "CAP 4773/6317 Social Media Mining"
 date = 2018-08-19T22:51:48-04:00
 draft = false
 
@@ -20,15 +20,14 @@ For syllabus, readings, and other course resources, see below.
 
 ### Fall 2020
 
-- CAP 4773 Social Media Mining: [Catalog]() &middot; Syllabus (_coming soon_) &middot; [Course LMS]();
-- CAP 6317 Social Media Mining: Catalog (_coming soon_) &middot; Syllabus (_coming soon_) Course LMS (_coming soon_).
+- [Syllabus](../../docs/syllabi/SMM-Syllabus-Fall2020.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1503906);
 
-### Fall 2019
+### Fall 2019 (offered as CIS 4930 / 6930 Special Topics)
 
-- CIS 4930 Special Topics (Social Media Mining): [Syllabus]() &middot; [Course LMS](https://usflearn.instructure.com/courses/1347852);
-- CIS 6930 Special Topics (Social Media Mining): [Syllabus]() &middot; [Course LMS](https://usflearn.instructure.com/courses/1355357).
+- CIS 4930: [Syllabus](../../docs/syllabi/SMM-Syllabus-Fall2019.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1347852);
+- CIS 6930: [Syllabus](../../docs/syllabi/SMM-Syllabus-Fall2019.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1355357).
 
-### Fall 2018
+### Fall 2018 (offered as CIS 4930 / 6930 Special Topics) 
 
-- CIS 4930 Special Topics (Social Media Mining): [Course LMS](https://usflearn.instructure.com/courses/1329153);
-- CIS 6930 Special Topics (Social Media Mining): [Course LMS](https://usflearn.instructure.com/courses/1329155).
+- CIS 4930: [Syllabus](../../docs/syllabi/SMM-Syllabus-Fall2018.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1329153);
+- CIS 6930: [Syllabus](../../docs/syllabi/SMM-Syllabus-Fall2018.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1329155).
