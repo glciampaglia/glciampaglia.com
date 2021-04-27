@@ -1,10 +1,10 @@
 +++
-title = "HONEM: Network Embedding Using Higher-Order Patterns in Sequential Data"
-date = 2020-08-17
+title = "Characterizing Opinion Dynamics and Group Decision Making in Wikipedia Content Discussions"
+date = 2021-04-14
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Mandana Saebi", "Giovanni Luca Ciampaglia", "Lance M. Kaplan", "Nitesh V. Chawla"]
+authors = ["Khandaker Tasnim Huq", "Giovanni Luca Ciampaglia"]
 
 # Publication type.
 # Legend:
@@ -15,14 +15,14 @@ authors = ["Mandana Saebi", "Giovanni Luca Ciampaglia", "Lance M. Kaplan", "Nite
 # 4 = Report
 # 5 = Book
 # 6 = Book section
-publication_types = ["2"]
+publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
-publication = "Big Data __8__(4) 255-269"
-publication_short = ""
+publication = "Wiki Workshop 21 -- WWW '21 Companion Proceedings of the Web Conference 2021"
+publication_short = "WWW '21 Companion"
 
 # Abstract and optional shortened version.
-abstract = " Representation learning on networks offers a powerful alternative to the oft painstaking process of manual feature engineering, and, as a result, has enjoyed considerable success in recent years. However, all the existing representation learning methods are based on the first-order network, that is, the network that only captures the pairwise interactions between the nodes. As a result, these methods may fail to incorporate non-Markovian higher order dependencies in the network. Thus, the embeddings that are generated may not accurately represent the underlying phenomena in a network, resulting in inferior performance in different inductive or transductive learning tasks. To address this challenge, this study presents higher order network embedding (HONEM), a higher order network (HON) embedding method that captures the non-Markovian higher order dependencies in a network. HONEM is specifically designed for the HON structure and outperforms other state-of-the-art methods in node classification, network reconstruction, link prediction, and visualization for networks that contain non-Markovian higher order dependencies."
+abstract = "Wikipedia, the online encyclopedia, is a trusted source of knowledge for millions of individuals worldwide. As everyone can start a new article, it is often necessary to decide whether certain entries meet the standards for inclusion set forth by the community. These decisions (which are known as “Article for Deletion”, or AfD) are taken by groups of editors in a deliberative fashion, and are known for displaying a number of common biases associated to group decision making. Here, we present an analysis of 1,967,768 AfD discussions between 2005 and 2018. We perform a signed network analysis to capture the dynamics of agreement and disagreement among editors. We measure the preference of each editor for voting toward either inclusion or deletion. We further describe the evolution of individual editors and their voting preferences over time, finding four major opinion groups. Finally, we develop a predictive model of discussion outcomes based on latent factors. Our results shed light on an important, yet overlooked, aspect of curation dynamics in peer production communities, and could inform the design of improved processes of collective deliberation on the web."
 
 abstract_short = ""
 
@@ -35,7 +35,7 @@ selected = false
 #   E.g. `projects = ["deep-learning"]` references 
 #   `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects = []
+projects = ["notabilia"]
 
 # Slides (optional).
 #   Associate this page with Markdown slides.
@@ -50,9 +50,9 @@ slides = ""
 tags = []
 
 # Links (optional).
-url_pdf = ""
-url_preprint = "http://arxiv.org/abs/1908.05387"
-url_code = ""
+url_pdf = "https://wikiworkshop.org/2021/papers/Wiki_Workshop_2021_paper_19.pdf"
+url_preprint = ""
+url_code = "https://github.com/CSDL-USF/wiki-workshop-2021-huq-ciampaglia"
 url_dataset = ""
 url_project = ""
 url_slides = ""
@@ -65,7 +65,7 @@ url_source = ""
 # url_custom = [{name = "Custom Link", url = "http://example.org"}]
 
 # Digital Object Identifier (DOI)
-doi = "10.1089/big.2019.0169"
+doi = ""
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

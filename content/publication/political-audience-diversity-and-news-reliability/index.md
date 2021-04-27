@@ -1,10 +1,10 @@
 +++
-title = "HONEM: Network Embedding Using Higher-Order Patterns in Sequential Data"
-date = 2020-08-17
+title = "Political Audience Diversity and News Reliability in Algorithmic Ranking"
+date = 2020-07-16
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Mandana Saebi", "Giovanni Luca Ciampaglia", "Lance M. Kaplan", "Nitesh V. Chawla"]
+authors = ["Saumya Bhadani", "Shun Yamaya", "Alessandro Flammini", "Filippo Menczer", "Giovanni Luca Ciampaglia"]
 
 # Publication type.
 # Legend:
@@ -15,15 +15,14 @@ authors = ["Mandana Saebi", "Giovanni Luca Ciampaglia", "Lance M. Kaplan", "Nite
 # 4 = Report
 # 5 = Book
 # 6 = Book section
-publication_types = ["2"]
+publication_types = ["4"]
 
 # Publication name and optional abbreviated version.
-publication = "Big Data __8__(4) 255-269"
+publication = "ArXiv eprint 2007.08078"
 publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = " Representation learning on networks offers a powerful alternative to the oft painstaking process of manual feature engineering, and, as a result, has enjoyed considerable success in recent years. However, all the existing representation learning methods are based on the first-order network, that is, the network that only captures the pairwise interactions between the nodes. As a result, these methods may fail to incorporate non-Markovian higher order dependencies in the network. Thus, the embeddings that are generated may not accurately represent the underlying phenomena in a network, resulting in inferior performance in different inductive or transductive learning tasks. To address this challenge, this study presents higher order network embedding (HONEM), a higher order network (HON) embedding method that captures the non-Markovian higher order dependencies in a network. HONEM is specifically designed for the HON structure and outperforms other state-of-the-art methods in node classification, network reconstruction, link prediction, and visualization for networks that contain non-Markovian higher order dependencies."
-
+abstract = "Newsfeed algorithms frequently amplify misinformation and other low-quality content. How can social media platforms more effectively promote reliable information? Existing approaches are difficult to scale and vulnerable to manipulation. In this paper, we propose using the political diversity of a website's audience as a quality signal. Using news source reliability ratings from domain experts and web browsing data from a diverse sample of 6,890 U.S. citizens, we first show that websites with more extreme and less politically diverse audiences have lower journalistic standards. We then incorporate audience diversity into a standard collaborative filtering framework and show that our improved algorithm increases the trustworthiness of websites suggested to users -- especially those who most frequently consume misinformation -- while keeping recommendations relevant. These findings suggest that partisan audience diversity is a valuable signal of higher journalistic standards that should be incorporated into algorithmic ranking decisions."
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
@@ -51,7 +50,7 @@ tags = []
 
 # Links (optional).
 url_pdf = ""
-url_preprint = "http://arxiv.org/abs/1908.05387"
+url_preprint = "https://arxiv.org/abs/2007.08078"
 url_code = ""
 url_dataset = ""
 url_project = ""
@@ -65,7 +64,7 @@ url_source = ""
 # url_custom = [{name = "Custom Link", url = "http://example.org"}]
 
 # Digital Object Identifier (DOI)
-doi = "10.1089/big.2019.0169"
+doi = ""
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
