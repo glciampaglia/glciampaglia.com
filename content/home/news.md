@@ -4,7 +4,6 @@
 widget = "posts"
 active = true
 date = "2016-04-20T00:00:00"
-
 title = "Recent News"
 subtitle = ""
 
@@ -18,7 +17,7 @@ tags_include = []
 tags_exclude = []
 
 # Number of posts to list.
-count = 5
+count = 3
 
 +++
 

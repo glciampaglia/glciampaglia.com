@@ -3,9 +3,9 @@ date = "2016-04-20T12:00:00"
 lastmod = "2016-04-20T12:00:00"
 draft = false
 tags = []
-title = "News Archive"
+title = "Older News"
 math = false
-summary = "This is a timeline of old news from my previous homepage. It is included here for my future biographer."
+summary = "This is a timeline of old news from my previous homepage, going back to my days as a Ph.D. student. It is included here for completeness."
 
 [header]
 caption = ""
