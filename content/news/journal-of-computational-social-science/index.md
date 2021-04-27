@@ -5,6 +5,7 @@ draft = false
 tags = ["Service"]
 title = "Journal of Computational Social Science"
 math = true
+type = "post"
 summary = ""
 
 [header]

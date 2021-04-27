@@ -2,6 +2,7 @@
 title = "New Position"
 date = 2018-08-17T23:30:34-04:00
 draft = false
+type = "post"
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.

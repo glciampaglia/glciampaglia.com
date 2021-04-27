@@ -2,6 +2,7 @@
 date = "2016-04-20T12:00:00"
 lastmod = "2016-04-20T12:00:00"
 draft = false
+type = "post"
 tags = []
 title = "Older News"
 math = false

@@ -4,6 +4,7 @@ lastmod = 2017-11-16
 draft = true
 tags = ["The Conversation", "Twitch", "Wikipedia"]
 title = "Can Online Gaming Ditch its Sexist Ways?"
+type = "post"
 
 +++
 

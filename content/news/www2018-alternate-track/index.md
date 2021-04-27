@@ -3,6 +3,7 @@ date = 2017-09-16T19:18:06-04:00
 lastmod = 2017-09-16T19:18:06-04:00
 draft = false
 tags = ["Service"]
+type = "post"
 title = "WWW2018 Alternate Track on Journalism, Misinformation, and Fact Checking"
 
 [image]

@@ -2,6 +2,7 @@
 title = "Best Paper Award at KnOD 2021"
 date = 2021-04-26T21:35:07-04:00
 draft = false
+type = "post"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = []

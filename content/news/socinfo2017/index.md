@@ -6,6 +6,7 @@ tags = ["Service"]
 title = "Socinfo2017"
 math = true
 summary = ""
+type = "post"
 
 [image]
 caption = ""
