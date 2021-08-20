@@ -29,5 +29,5 @@ For syllabus, readings, and other course resources, see below.
 
 ### Fall 2021
 
-- [Syllabus](../../docs/syllabi/ITOOP-Syllabus-Spring2019.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1611714);
+- [Syllabus](../../docs/syllabi/Syllabus-CIS4219-6218-Ciampaglia-F21.pdf) &middot; [Course LMS](https://usflearn.instructure.com/courses/1611714);
 
