@@ -1,0 +1,15 @@
+<email-message>
+	<div class='field'>From: <span class='val'>{opts.msg.from}</span></div>
+	<div class='field'>Subject: <span class='val'>{opts.msg.subject}</span></div>
+
+	<div class='body'>
+		{opts.msg.body}
+		<email-chart data={opts.msg.data} if={opts.msg.data} />
+	</div>
+
+	<style>
+		.field { font-weight: bold; }
+		.val { font-weight: normal;}
+		.body { margin: 10px -5px 5px -5px; background-color: #fff; padding: 10px;  font-family: Tahoma; font-size: 20px;}
+	</style>
+</email-message>

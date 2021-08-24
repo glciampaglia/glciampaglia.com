@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Source Code Pro|Amiko|Duru Sans" rel="stylesheet">
+	<style>
+		body,
+		input,
+		td,
+		button {
+			font-family: 'Amiko';
+			font-size: 16px;
+		}
+
+		#layout {
+			display: flex;
+		}
+
+		.app {
+			flex: 1 1 400px;
+			padding: 30;
+			margin: 0px 10px;
+			align-self: stretch;
+		}
+
+		header {
+			border-radius: 15px 15px 0 0;
+			background-color: #303030;
+			text-align: center;
+			padding: 8px;
+			font-size: 22px;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<overlay-div></overlay-div>
+	<div id='layout'>
+		<div class='app'>
+			<security-app />
+		</div>
+		<div class='app'>
+			<email-app />
+		</div>
+	</div>
+	<div>
+		<rg-chart />
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/riot/3.11.1/riot+compiler.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script src="lite.js"></script>
+	<script>
+		var loaded = {s:false, e:false};
+		var stats, scenarios;
+
+		lite.get('scenarios.json', function(){
+			scenarios = JSON.parse(this.responseText);
+		});
+
+		lite.get('stats.json', function(){
+			stats = JSON.parse(this.responseText);
+		});
+
+		function settingsToEmails(settings){
+			//checkboxes use commalists, so flatten the values
+			var triggers = [];
+			for(var key in settings){
+				if(settings[key] != ''){
+					triggers = triggers.concat(settings[key].split(','));
+				}
+			}
+
+			var output = {emails: [], active: 0};
+			var activestats = {"wfA": 0.5, "wfB": 0, "wfC": 0.2, "wfD": 0.4, "wfE": 0 };
+			for(var i=0; i<triggers.length; i++){
+				var stat = stats[triggers[i]];
+				if(stat['type'] && stat['type'] == 'add'){
+					//'add' stats (checkboxes) accumulate
+					for(var key in stat){
+						if(key != 'type'){
+							activestats[key] += stat[key];
+						}
+					}
+				} else {
+					Object.assign(activestats, stat);
+				}
+			}
+
+			for(var key in activestats){
+				if(Math.random() < activestats[key]){
+					output.emails = output.emails.concat(scenarios[key]['emails']);
+				}
+			}
+
+			//chart_data = generateChartData({'sales': [54.6, 52.8, 52.3, 71]})
+			//dashboard = { "from": "Metricsbot", "subject": "Daily Dashboard", "data": chart_data}
+			//output['emails'].splice(0, 0, dashboard)
+			//today = { "from": "Statsbot", "subject": "Daily Dashboard", "data": chart_data}
+			//output['emails'].splice(0, 0, today)
+
+			//add ids to emails
+			var emailCount = output.emails.length;
+			for(var i=0; i<emailCount; i++){
+				output.emails[i].id = i;
+			}
+
+			return output;
+		}
+
+		function apply(settings) {
+			lighting(sunset);
+			var data = settingsToEmails(settings);
+			lighting(sunrise);
+			riot.mount('email-app', { emails: data.emails, active: data.active });
+		}
+		
+		function generateChartData(metrics){
+			params = {
+				'type': 'line',
+				'data': {
+					'labels': ['q1', 'q2', 'q3', "current"],
+					'datasets': [
+						{ 'label': "sales ($MM)", 'data': metrics['sales'] }
+					]
+				},
+				'options': {
+					'scales': {
+						'yAxes': [{
+							'ticks': {
+								'beginAtZero': true
+							}
+						}]
+					}
+				}
+			}
+			return params;
+		}
+
+		var sunset = [.25, .5, .75, .85, 1];
+		var sunrise = [1, .85, .75, .5, .25, 0];
+		var lightingInterval;
+		function lighting(vals) {
+			window.clearInterval(lightingInterval);
+			riot.mount('overlay-div', { opacity: vals[0] });
+			var i = 1;
+			lightingInterval = window.setInterval(function () {
+				riot.mount('overlay-div', { opacity: vals[i] });
+				i += 1;
+				if (i >= vals.length) {
+					window.clearInterval(lightingInterval);
+				}
+			}, 200)
+		}
+
+		riot.compile([
+			'common.tag.html', 'email-app.tag.html', 'email-chart.tag.html', 'email-message.tag.html', 'security.tag.html'
+		], function () {
+			riot.mount('security-app', { apply: apply });
+		});
+
+		//POLYFILLS
+		if (typeof Object.assign != 'function') {
+		  // Must be writable: true, enumerable: false, configurable: true
+		  Object.defineProperty(Object, "assign", {
+			value: function assign(target, varArgs) { // .length of function is 2
+			  'use strict';
+			  if (target == null) { // TypeError if undefined or null
+				throw new TypeError('Cannot convert undefined or null to object');
+			  }
+
+			  var to = Object(target);
+
+			  for (var index = 1; index < arguments.length; index++) {
+				var nextSource = arguments[index];
+
+				if (nextSource != null) { // Skip over if undefined or null
+				  for (var nextKey in nextSource) {
+					// Avoid bugs when hasOwnProperty is shadowed
+					if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+					  to[nextKey] = nextSource[nextKey];
+					}
+				  }
+				}
+			  }
+			  return to;
+			},
+			writable: true,
+			configurable: true
+		  });
+		}
+	
+	</script>
+</body>

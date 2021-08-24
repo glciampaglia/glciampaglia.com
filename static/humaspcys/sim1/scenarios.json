@@ -1,0 +1,98 @@
+{
+	"pcA":	{
+		"description": "Sales up",
+		"emails": [
+			{ "from": "[Mgmt] CEO", "subject": "Sales are up!", "body": "Good job everyone!!" }
+		]
+	},
+	"pcB": {
+		"description": "Salesperson locked out , self-fix",
+		"emails": [
+			{ "from": "[Sales] Riley C.", "subject": "locked", "body": "My account says it's locked. Can you reset?" },
+			{ "from": "[Sales] Riley C.", "subject": "Re: locked", "body": "It finally cleared itself. But the client wasn't happy waiting!" }
+		]
+	},
+	"pcC":	{
+		"description": "Data stolen",
+		"emails": [
+			{ "from": "[Mgmt] CEO", "subject": "Fwd: Gizmonic Institute Data Leak", "body": "News reporting we exposed all our customer data??? What is going on!" },
+			{ "from": "[Mgmt] CTO", "subject": "Data Breech", "body": "This is your jursidiction. I need a plan to find out our point of entry, responsible party identification, and future prevention on my desk by noon! The board meets at 2PM." },
+			{ "from": "g.james@kasl3.com", "subject": "Interview request", "body": "Good morning, I am a reporter with KASL3 and would like to have an interview with you regarding yesterday's data leak. We are going this as our lead story at Noon and we would like to give you the opportunity to respond."}
+		]
+	},
+	"pcD":	{
+		"description": "Sales database being held for ransom",
+		"emails": [
+			{ "from": "[Sales] Sales Bot", "subject": "~~@ THIS COMPUTER IS BEING HELD FOR RANSOM @~~", "body": "We have hacked this computer. Send .5BTC to this address in 24h or we delete everything! 1F1tAaz5x1HUXrCASLtMDqcw6o5GNn4xqy " },
+			{ "from": "[Sales] Robin Q.", "subject": "Uh Oh", "body": "Good morning. Casey is freaking out over here about the sales CMS being hacked. Just thought you'd want to know before you get the call."}
+		]
+	},
+	"pcE":	{
+		"description": "Web page defaced",
+		"emails": [
+			{ "from": "[Sales] Saul N.", "subject": "Web site", "body": "Sorry to bother you, but the website has some immoral content on the front page. I believe it has been defaced." },
+			{ "from": "[Sales] Casey B.", "subject": "LOL", "body": "I think your late night searches are leaking to the website! Unless this company has totally pivoted into the *entertainment* industry????"},
+			{ "from": "[IT] Lee J.", "subject": "GIZWEB1 site restoration", "body": "Someone got into the CMS and defaced the front page and the management page with porn. I restored the public site from our last backup, but I don't know how they got in. Did you change something yesterday?"}
+		]
+	},
+	"pcF":	{
+		"description": "Login slow, can't make sales ",
+		"emails": [
+			{ "from": "[Sales] Casey B.", "subject": "Logins", "body": "Can we do something about these redonkulous login passwords??? I look like an idiot redoing my password three times in front of the client. It's messing up my game!" }
+		]
+	},
+
+	"pcH":	{
+		"description": "CTO locked out, quits in disgust",
+		"emails": [
+			{ "from": "[Mgmt] CTO", "subject": "Security", "body": "The password restrictions you've set are somewhat excessive. Every thing I do here requires elevated access, and I'm spending more time on the UAC dialog than my work! Let's talk tomorrow." },
+			{ "from": "[Mgmt] CTO", "subject": "Re: Security", "body": "And now my admin acct is locked out! I need an override, stat! We are trying to ward off a huge DDoS attack!" },
+			{ "from": "[Mgmt] CTO", "subject": "Re: Security", "body": "Anyone???" },
+			{ "from": "[Mgmt] CTO", "subject": "Re: Security", "body": "I CANNOT WORK UNDER THESE CONDITIONS" },
+			{ "from": "[HR] Morgan M. ", "subject": "CTO Resignation", "body": "I am sorry to report that our CTO has resigned. We will have a meeting later this afternoon, but the board is working hard to line up interviews with very qualified candidates as I speak. " }
+		]
+	},
+
+
+	"wfA":	{
+		"description": "HR complaint: Coworker is watching porn again",
+		"emails": [
+			{ "from": "[Sales] Saul N.", "subject": "Web site", "body": "Sorry to bother you. This is a bit uncomfortable, but is there anyway we can keep internet usage here to professional content? Some of my coworkers are watching inappropriate videos. " },
+			{ "from": "[HR] Morgan M.", "subject": "Help", "body": "Can you just make my job easier and filter out the porn sites please? I don't need sexual harassment cases on top of the other work I have."}
+		]
+	},
+
+	"wfB":	{
+		"description": "Missed school closing",
+		"emails": [
+			{ "from": "[Sales] Riley C.", "subject": "Web sites", "body": "Why is my son's school blocked here at work? I couldn't check the webpage yesterday for the early school closing during the storm. Please, I don't need another day of a soaked, scared, and crying little boy. Parenting is hard enough as it is! " }
+		]
+	},
+	"wfC":	{
+		"description": "Why is my computer all in Cyrillic now?",
+		"emails": [
+			{ "from": "[Sales] Robin Q.", "subject": "Computer acting strange", "body": "I hope I'm sending this email correctly. Windows is acting funny, it's all in Russian or something." },
+			{ "from": "[IT] Lee J.", "subject": "ROBIN-L3 rebuild", "body": "Had to rebuild Robin's computer. I believe it got hacked to mine crypto."}
+		]
+	},
+	"wfD":	{
+		"description": "Productivity down; everyone is on Facebook",
+		"emails": [
+			{ "from": "The Facebook Team", "subject": "Casey added you as a friend on Facebook...", "body": "Casey B. added you as a friend on Facebook. We need to confirm that you know Casey in order for you to be friends on Facebook." },
+			{ "from": "Casey B.", "subject": "Casey's Bakery is calling you out!", "body": "Can you outbake the competition? Play against Casey with Bakery Saga on Facebook!" },
+			{ "from": "The Facebook Team", "subject": "Morgan added you as a friend on Facebook...", "body": "Morgan M. added you as a friend on Facebook. We need to confirm that you know Morgan in order for you to be friends on Facebook." },
+			{ "from": "The Facebook Team", "subject": "Robin added you as a friend on Facebook...", "body": "Robin Q. added you as a friend on Facebook. We need to confirm that you know Robin in order for you to be friends on Facebook." },
+			{ "from": "Robin Q.", "subject": "Robin's Bakery is calling you out!", "body": "Can you outbake the competition? Play against Robin with Bakery Saga on Facebook!" },
+			{ "from": "The Facebook Team", "subject": "You have notifications pending", "body": "Hi, you have 42 friend requests waiting in your inbox." },
+			{ "from": "[Mgmt] CEO", "subject": "Sales are terrible!", "body": "What is going on!!" }
+		]
+	},
+	"wfE":	{
+		"description": "Productivity down; no one can get to Stack Exchange",
+		"emails": [
+			{ "from": "[IT] Lee J.", "subject": "S/O", "body": "Stackoverflow is blocked?" },
+			{ "from": "[IT] Tyler S.", "subject": "Please check connectivity to StackOverflow", "body": "Can you get to StackOverflow? isitdownrightnow.com says it's fine, and my friends say they can get to it at their office." },
+			{ "from": "[IT] Pat V.", "subject": "UGH", "body": "Oh maybe you memorized the entire Javascript library, but us mere mortals need some reference sites opened! Are you seriously blocking StackOverflow here now?" }
+		]
+	}
+}

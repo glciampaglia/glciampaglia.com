@@ -1,0 +1,32 @@
+<email-chart>
+	<canvas id='canvas'></canvas>
+
+	<script>
+		var tag = this;
+		Chart.defaults.global.responsive = true;
+
+		this.on('mount', function(){
+			drawChart();
+		})
+
+		this.on('loaded', function(c) {
+			this.on('unmount', function(){
+				c.destroy();
+			})
+		})
+
+		const drawChart = function(){
+			if (!opts.chart) opts.chart = {};
+			let ctx = document.getElementById('canvas').getContext('2d');
+			let chart = new Chart(ctx, opts.data);
+			tag.trigger('loaded', chart);
+		}
+	</script>
+
+	<style scoped>
+		:scope {
+			display: inline-block;
+			width: 100%;
+		}
+	</style>
+</email-chart>

@@ -1,0 +1,71 @@
+<security-app>
+	<header>Security Settings</header>
+	<div id='panel'>
+		<security-concept each={item in items} concept={item} set={set[item.abbr] || 0} >
+	</div>
+	<div id='action'><button onclick={submit}>Submit changes</button></div>
+
+	<script>
+		var tag = this;
+		tag.items = [
+			{
+				abbr: 'pc',
+				type: 'radio',
+				name: 'Password Complexity',
+				values: ['None', 'Min. 8 characters', 'Min. 12 characters, must include numeric', 'Min. 20 chars, upper + lowercase + numeric + special characters']
+			},
+			{
+				abbr: 'wf',
+				type: 'checkbox',
+				name: 'Website filtering',
+				values: ['Social media', 'Porn', 'Malware']
+			}
+		];
+		tag.set = {
+			'pc': 0, 'wf': -1
+		};
+		active = opts.active;
+
+		this.submit = function(){
+			data = {};
+			tag.items.forEach(function(item){
+				if(item.type=='radio'){
+					data[item.abbr] = $("input[name='" + item.abbr + "']:checked").val();
+				} else if(item.type == 'checkbox'){
+					var checked = [];
+					$("input[name='" + item.abbr + "']:checked").each(function(){
+						checked.push($(this).val());
+					});
+					data[item.abbr] = checked.join(',');
+				}
+			});
+			//console.log(data);
+			opts.apply(data);
+		};
+
+	</script>
+
+	<style>
+		h2 { margin: 3px 0px; padding: 0px; font-size: 18px; color: rgba(163,203,227,1); font-family: Consolas; font-weight: normal;}
+		#panel {background-color: rgba(49,51,61,1); padding: 20px;}
+		#action {background-color: #303030; padding: 10px; }
+	</style>
+</security-app>
+<security-concept>
+	<div class='concept'>
+		<h2>{opts.concept.name}</h2>
+		<div each={setting, i in opts.concept.values}>
+			<input type={opts.concept.type} name='{opts.concept.abbr}' value='{opts.concept.abbr + i}' checked={opts.set == i}>
+			<span class='setname'>{setting}</span>
+		</div>
+	</div>
+
+	<script>
+		var tag = this;
+	</script>
+
+	<style>
+		.concept {padding-bottom: 20px;}
+		.setname { font-family: Source Code Pro; color: #DBBB3D; font-size: 14px;}
+	</style>
+</security-concept>

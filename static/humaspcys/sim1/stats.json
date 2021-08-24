@@ -1,0 +1,10 @@
+{
+	"pc0": {"pcA": 0.85, "pcB": 0.1, "pcC": 0.75, "pcD": 0.5, "pcE": 0.5, "pcF": 0, "pcH": 0},
+	"pc1": {"pcA": 0.55, "pcB": 0.3, "pcC": 0.5, "pcD": 0.2, "pcE": 0.2, "pcF": 0.05, "pcH": 0},
+	"pc2": {"pcA": 0.35, "pcB": 0.6, "pcC": 0.25, "pcD": 0.05, "pcE": 0.05, "pcF": 0.2, "pcH": 0},
+	"pc3": {"pcA": 0.1, "pcB": 0.85, "pcC": 0.1, "pcD": 0.05, "pcE": 0.05, "pcF": 0.8, "pcH": 0.05},
+
+	"wf0": {"type": "add", "wfA": 0, "wfB": 0.1, "wfC": 0, "wfD": -0.4, "wfE": 0.3 },
+	"wf1": {"type": "add", "wfA": -0.5, "wfB": 0, "wfC": -0.1, "wfD": 0, "wfE": 0 },
+	"wf2": {"type": "add", "wfA": 0, "wfB": 0, "wfC": -0.2, "wfD": 0, "wfE": 0.1 }
+}
