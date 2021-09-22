@@ -1,0 +1,107 @@
+[Screen]: # (1)
+This is a simulation that will provide a concrete example of a signal detection problem. It will take around fifteen minutes to complete.
+You will see a grid like the one on the following slide, and some stimuli displayed in the grid.
+
+
+[Screen]: # (2)
+This is the grid you will be monitoring. Various patterns will randomly flash in one of the four quadrants of the grid during each simulation.
+
+![](grid.png)
+
+
+[Screen]: # (3)
+#Simulation 1
+* During the simulation, you will see **target** patterns, as shown below.
+
+![](signal1.png) ![](signal2.png) ![](signal3.png) ![](signal4.png)
+
+* If you see a target display, you should **click** on the containing quadrant. 
+
+
+[Screen]: # (4)
+#Simulation 1
+* You will also see **noise** patterns in the display.
+
+![](noise1.png) ![](noise2.png) ![](noise3.png) ![](noise4.png)
+
+* If you see a noise pattern, you should NOT click on it. 
+
+
+[Screen]: # (5)
+#Simulation 1
+Remember, click on the target patterns and do NOT click on the noise. 
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (6)
+#Simulation 1 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+
+![](distribution1.png)
+
+
+[Screen]: # (7)
+#Simulation 2
+* This simulation will be very similar to the previous one, but with some additional variations in the target stimuli: 
+
+![](signal1.png) ![](signal2.png) ![](signal3.png) 
+
+![](signal4.png) ![](signal5.png) ![](signal6.png)
+
+
+
+[Screen]: # (8)
+#Simulation 2
+* You will again see noise patterns appear in the display:
+
+![](noise1.png) ![](noise2.png) ![](noise3.png) 
+
+![](noise4.png) ![](noise5.png) ![](noise6.png)
+
+* If you see a noise pattern, you should NOT click on it.
+
+
+[Screen]: # (9)
+#Simulation 2
+Remember, click on the target and do NOT click on the noise patterns. 
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (10)
+#Simulation 2 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+![](distribution2.png)
+
+
+[Screen]: # (11)
+#Simulation 3
+* This next simulation will be very similar to the previous, but with a new instruction:
+* Be sure to click on ALL signal displays, even if you sometimes click on noise displays. **Do not miss any signal**. 
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (12)
+#Simulation 3 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+* This time, you were instructed to ensure that you did not miss any signal, so a line representing your decision criterion is drawn near the end of the right-hand tail of the signal distribution. This decision criterion means you would miss no signal, but might include noise in your responses. .
+
+![](distribution3.png)
+
+
+[Screen]: # (13)
+#Simulation 4
+* This last is similar to the previous simulation, but with a different instruction:
+* Be sure not to click on ANY noise display, even if you sometimes miss a signal display. **Do not trigger any false alarms.**
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (14)
+#Simulation 4 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+* This time, you were instructed not to trigger any false alarms. The decision criterion has shifted to the left. Ensuring that you do not click on any noise displays may mean that you miss some signal displays. 
+
+![](distribution4.png)

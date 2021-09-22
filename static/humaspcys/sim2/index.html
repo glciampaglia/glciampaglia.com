@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link href="font.css" rel="stylesheet">
+	<style>
+		body,input,td,button {
+			font-family: 'Amiko';
+			font-size: 24px;
+		}
+
+		body {
+			background-color: #eee;
+		}
+
+		#content {
+			height: 90vh;
+			padding: 10px;
+			max-width: 99vw;
+		}
+
+		.c {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='content' class='c'></div>
+
+	<script src="riot+compiler.min.js"></script>
+	<script src="pagedown.js"></script>
+	<script src="sim07.js"></script>
+
+	<script>
+		function next() {
+			step++;
+			steps[step]();
+		}
+		function prev() {
+			step--;
+			steps[step]();
+		}
+		function restart(){
+			step = 0;
+			steps[step]();
+		}
+
+		var step = -1;
+		var steps = [
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[1], next: next, hidePrev: true }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[2], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[3], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[4], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[5], next: next, prev: prev }); },
+			function () { trialutil.start(0); },
+			function () { riot.mount('div#content', 'score-view', { sim: 1, logs: trialutil.logs(), next: next }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[6], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[7], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[8], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[9], next: next, prev: prev }); },
+			function () { trialutil.start(1); },
+			function () { riot.mount('div#content', 'score-view', { sim: 2, logs: trialutil.logs(), next: next }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[10], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[11], next: next, prev: prev }); },
+			function () { trialutil.start(2); },
+			function () { riot.mount('div#content', 'score-view', { sim: 3, logs: trialutil.logs(), next: next }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[12], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[13], next: next, prev: prev }); },
+			function () { trialutil.start(3); },
+			function () { riot.mount('div#content', 'score-view', { sim: 4, logs: trialutil.logs(), next: next }); },
+			function () { riot.mount('div#content', 'instructions-view', { content: instructions[14], next: next, prev: prev }); },
+			function () { riot.mount('div#content', 'end-view', { restart: restart }); }
+		];
+
+
+		var instructions = [''];
+		lite.ready(function () {
+
+			lite.get('instructions.txt', function () {
+				var unixText = this.responseText.replace(new RegExp('\r', 'g'), '');
+				instructions = unixText.split('\n\n\n');
+				instructions.unshift(''); //shift to 1-based array
+
+				riot.compile([
+					'sim07.tag.html'
+				], function () {
+					next();
+				});
+
+			});
+
+		});
+
+	</script>
+</body>
+</html>

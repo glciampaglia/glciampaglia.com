@@ -1,0 +1,89 @@
+[Screen]: # (1)
+This is a simulation that will provide a concrete example of a signal detection problem. It will take around fifteen minutes to complete.
+You will respond to various sounds by pressing the spacebar for some and ignoring others.
+
+
+[Screen]: # (2)
+#Simulation 1
+* During the simulation, you will hear various **target** sounds. Click the play button below to hear these sounds.
+* If you hear a target sound, you should press the spacebar. 
+
+
+[Screen]: # (3)
+#Simulation 1
+* You will also hear **noise** sounds. Click the play button below to hear these sounds.
+* If you hear a noise sound, you should NOT press the spacebar. 
+
+
+[Screen]: # (4)
+#Simulation 1
+Remember, press the spacebar when you hear a target sound and do NOT press the spacebar when you hear a noise sound. 
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (5)
+#Simulation 1 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+
+![Two bell curves side by side are identical in size and shape. The left-hand curve is labeled "noise" and the right-hand curve is labeled "signal." They overlap by approximately 1/3.](distribution1.png)
+
+
+[Screen]: # (6)
+#Simulation 2
+* This simulation will be very similar to the previous one, but with some additional variations in the target stimuli.  Click the play button below to hear the new set of target sounds.
+
+
+[Screen]: # (7)
+#Simulation 2
+* You will again hear noise sounds during the simulation. Click the play button below to hear the new set of noise sounds.
+
+* If you see a noise pattern, you should NOT click on it.
+
+
+[Screen]: # (8)
+#Simulation 2
+Remember, press the spacebar when you hear a target sound and do NOT press the spacebar when you hear a noise sound. 
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (9)
+#Simulation 2 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+
+![Two bell curves side by side. The left-hand curve is labeled "noise" and is about three times the height of the right-hand curve, labeled "signal." The tail of the noise distribution overlaps the signal curve by nearly half.](distribution2.png)
+
+
+[Screen]: # (10)
+#Simulation 3
+* This next simulation will be very similar to the previous, but with a new instruction:
+* Be sure to press the spacebar after ALL signal sounds, even if you sometimes press after a noise sound. **Do not miss any signal**. 
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (11)
+#Simulation 3 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+
+![Two bell curves are identical to the previous simulation (i.e., the left-hand curve is labeled "noise" and is about three times the height of the right-hand curve, labeled "signal." The tail of the noise distribution overlaps the signal curve by nearly half). ](distribution3.png)
+
+* This time, you were instructed to ensure that you did not miss any signal, so a line representing your decision criterion is drawn near the end of the right-hand tail of the signal distribution. This decision criterion means you would miss no signal, but might include noise in your responses. .
+
+
+[Screen]: # (12)
+#Simulation 4
+* This last is similar to the previous simulation, but with a different instruction:
+* Be sure not to press the spacebar after ANY noise sound, even if you sometimes miss a signal sound. **Do not trigger any false alarms.**
+
+Click "Next" below to start the simulation.
+
+
+[Screen]: # (13)
+#Simulation 4 feedback
+* This illustrates the approximate distribution of signal and noise displayed in the previous simulation.
+
+![Two bell curves are identical to the previous simulation (i.e., the left-hand curve is labeled "noise" and is about three times the height of the right-hand curve, labeled "signal." The tail of the noise distribution overlaps the signal curve by nearly half). ](distribution4.png)
+
+* This time, you were instructed not to trigger any false alarms. The decision criterion has shifted to the left. Ensuring that you do not click on any noise displays may mean that you miss some signal displays. 

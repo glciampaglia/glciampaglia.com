@@ -1,0 +1,102 @@
+<raw-content>
+	<span></span>
+	<script>
+		this.root.innerHTML = opts.content;
+		this.on('update', function() { 
+			this.root.innerHTML = opts.content;
+		});
+	</script>
+</raw-content>
+
+<instructions-view>
+	<div>
+		<div class='c instruct'><raw-content content={content} /></div>
+		<div if={opts.sounds} class='c'><button class='play' onclick={play}>Play</button></div>
+		<footer>
+			<div><button if={showPrev} onclick={opts.prev}>Prev</button>&nbsp;</div>
+			<div>&nbsp;<button if={showNext} onclick={opts.next}>Next</button></div>
+		</footer>
+	</div>
+	<script>
+		var tag = this;
+		var converter = Markdown.getSanitizingConverter();
+		content = converter.makeHtml(opts.content);
+		tag.showPrev = !opts.hidePrev;
+		tag.showNext = !opts.hideNext;
+
+		tag.play = function(){
+			soundutil.sounds(opts.sounds, 500);
+		}
+	</script>
+
+	<style>
+		.instruct, raw-content {width: 850px; }
+		button {font-size: 24px; padding: 5px 15px; }
+		.play {width: 500px; margin-bottom: 30px;}
+		footer {display: flex; flex-direction: row; justify-content: space-between; padding-top: 40px;}
+	</style>
+</instructions-view>
+
+<trial-view>
+	<div></div>
+</trial-view>
+
+<score-view>
+	<h2>Your performance on simulation {opts.sim}:</h2>
+	<div class='txt'>Hit Rate: {hitPct}%</div>
+	<div class='txt'>False Alarm Rate: {faPct}%</div>
+	<div class='action'><button onclick={opts.next}>Next</button></div>
+
+	<script>
+		var tag = this;
+		tag.hitPct = '';
+		tag.faPct = '';
+
+		function pctFormat(num){
+			if(num == NaN){
+				return 0;
+			} else {
+				return parseFloat(Math.round(num * 100) / 100).toFixed(0);
+			}
+		}
+		if (opts.logs.length > 0){
+			var score = {length: opts.logs.length, signals: 0, noises: 0, hits: 0, fas: 0};
+			opts.logs.forEach(function(l){
+				if (l.type == 'signal') {
+					score.signals += 1;
+				} else { //if (l.type == 'noise'){
+					score.noises +=1;
+				}
+
+				if (l.result == 'hit') {
+					score.hits += 1;
+				} else if (l.result == 'false alarm'){
+					score.fas +=1;
+				}
+			});
+
+			tag.hitPct = pctFormat((100 * score.hits) / score.signals);
+			tag.faPct = pctFormat((100 * score.fas) / score.noises);
+		}
+
+	</script>
+
+	<style>
+		.txt {width: 600px; text-align: left;}
+		.action {padding-top: 40px;}
+	</style>
+</score-view>
+
+
+<end-view>
+	<div>
+		<div class='c instruct'>
+			This exercise is complete. If you would like to restart the exercise, click the button below. <br/>
+			<button onclick={opts.restart}>Restart</button>
+		</div>
+	</div>
+	<style>
+		.instruct {width: 850px; }
+		button {font-size: 24px; padding: 5px 15px; }
+	</style>
+</end-view>
