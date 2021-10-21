@@ -1,0 +1,250 @@
+<raw-content>
+	<span></span>
+	<script>
+		this.root.innerHTML = opts.content;
+		this.on('update', function() { 
+			this.root.innerHTML = opts.content;
+		});
+	</script>
+</raw-content>
+
+<instructions-view>
+	<div>
+		<div class='c instruct'><raw-content content={content} /></div>
+		<footer>
+			<div><button if={showPrev} onclick={opts.prev}>Prev</button>&nbsp;</div>
+			<div>&nbsp;<button if={showNext} onclick={opts.next}>Next</button></div>
+		</footer>
+	</div>
+	<script>
+		var tag = this;
+		var converter = Markdown.getSanitizingConverter();
+		content = converter.makeHtml(opts.content);
+		tag.showPrev = !opts.hidePrev;
+		tag.showNext = !opts.hideNext;
+	</script>
+
+	<style>
+		.instruct, raw-content {width: 850px; }
+		footer {display: flex; flex-direction: row; justify-content: space-between; padding-top: 40px;}
+
+	</style>
+</instructions-view>
+
+<title-card>
+	<div class='layout'>
+		<div class='title'>Analysts vs. Hackers!</div>
+		<div class='headshots'>
+			<div><img src='analyst.png' width="200" /></div>
+			<div><img src='hacker.png' width="200" /></div>
+		</div>
+		<div class='options'>
+			<div class='sel'> 
+				Play as: 
+				<select ref='role'>
+					<option selected={r==0}>Analyst</option>
+					<option selected={r==1}>Hacker</option>
+				</select><br/>
+
+				Scenario: 
+				<select ref='scenario'>
+					<option selected={s==0}>Equal</option>
+					<option selected={s==1}>+Analyst</option>
+					<option selected={s==2}>+Hacker</option>
+				</select>
+			</div>
+			<button onclick={start}>Start</button>
+		</div>	
+	</div>
+
+	<script>
+		var tag = this;
+		tag.start = function(){
+			opts.start(tag.refs.role.value, tag.refs.scenario.value);
+		}
+
+		tag.r = Math.round(Math.random());
+		tag.s = 0; //Math.round(Math.random() * 2);
+	</script>
+
+	<style>
+		button {font-size: 80px; padding: 10px 30px; background-color: lightgoldenrodyellow;}
+		.c {text-align: center;}
+		.layout {display: flex; flex-direction: column; justify-content:space-around; height: 90vh;}
+		.title {font-size: 100px; text-align: center; padding-bottom: 30px;}
+		.headshots, .options {display: flex; flex-direction: row; justify-content: space-around;}
+		.sel {font-size: 40px;}
+		select{font-size: 30px; padding: 10px;}
+	</style>
+</title-card>
+
+<game-decide class='v'>
+	<div class='title'>Choose an action: <img src={opts.role + '.png'} height="100px" /> </div>
+	<div class='decisions' if={opts.role=='analyst'}>
+		<div class='decision'>
+			<div class={choice:true, sel:hover=='l'} onclick={selD} onmouseover={hoverL} onmouseout={unhover}>
+				<img src='defend.png' width='300' alt="defend" /><br/>
+				Defend<br/>
+			</div>
+			<table class='pts'>
+				<tr><td>&nbsp;</td><td>You</td><td>Them</td></tr>
+				<tr><td>If attacked:</td> <td class='aa'>{pts('ada')}</td><td class='ha'>{pts('adh')}</td></tr>
+				<tr><td></td></tr>
+				<tr><td>If unattacked: </td> <td class='an'>{pts('0da')}</td><td class='hn'>{pts('0dh')}</td></tr>
+			</table>
+		</div>
+
+		<div class='decision'>
+			<div class={choice:true, sel:hover=='r'} onclick={sel0} onmouseover={hoverR} onmouseout={unhover}>
+				<img src='null.png' width='300' alt="don't defend" /><br/>
+				Don't defend
+			</div>
+			<table class='pts'>
+				<tr><td>&nbsp;</td><td>You</td><td>Them</td></tr>
+				<tr><td>If attacked:</td> <td class='aa'>{pts('a0a')}</td><td class='ha'>{pts('a0h')}</td></tr>
+				<tr><td></td></tr>
+				<tr><td>If unattacked: </td> <td class='an'>{pts('00a')}</td><td class='hn'>{pts('00h')}</td></tr>
+			</table>
+		</div>
+	</div>
+
+	<div class='decisions' if={opts.role=='hacker'}>
+		<div class='decision'>
+			<div class={choice:true, sel:hover=='l'} onclick={selA} onmouseover={hoverL} onmouseout={unhover}>
+				<img src='attack.png' width='300' alt="attack" /><br/>
+				Attack<br/>
+			</div>
+			<table class='pts'>
+				<tr><td>&nbsp;</td><td>You</td><td>Them</td></tr>
+				<tr><td>If defended:</td> <td class='ha'>{pts('adh')}</td><td class='aa'>{pts('ada')}</td></tr>
+				<tr><td></td></tr>
+				<tr><td>If undefended: </td> <td class='hn'>{pts('a0h')}</td><td class='an'>{pts('a0a')}</td></tr>
+			</table>
+		</div>
+
+		<div class='decision'>
+			<div class={choice:true, sel:hover=='r'} onclick={sel0} onmouseover={hoverR} onmouseout={unhover}>
+				<img src='null.png' width='300' alt="don't attack" /><br/>
+				Don't attack
+			</div>
+			<table class='pts'>
+				<tr><td>&nbsp;</td><td>You</td><td>Them</td></tr>
+				<tr><td>If defended:</td> <td class='ha'>{pts('0dh')}</td><td class='aa'>{pts('0da')}</td></tr>
+				<tr><td></td></tr>
+				<tr><td>If undefended: </td> <td class='hn'>{pts('00h')}</td><td class='an'>{pts('00a')}</td></tr>
+			</table>
+		</div>
+	</div>
+	<script>
+		var tag = this;
+		tag.hover = '';
+
+		tag.pts = function(code){
+			var choices = code.substring(0,2);
+			var actor = code.substring(2,3);
+			var reward = opts.scenario[choices][actor];
+			if(reward > 0){
+				reward = "+" + reward;
+			}
+			return reward;
+		}
+
+		tag.hoverL = function(){
+			tag.hover = 'l';
+		}
+		tag.hoverR = function(){
+			tag.hover = 'r';
+		}
+		tag.unhover = function(){
+			tag.hover = '';
+		}
+		tag.sel0 = function(){
+			opts.sel('0');
+		}
+		tag.selA = function(){
+			opts.sel('a');
+		}
+		tag.selD = function(){
+			opts.sel('d');
+		}
+
+	</script>
+	<style>
+		.title {font-size: 80px; text-align: center;}
+		.decisions {display:flex; flex-direction: row; justify-content: space-between;
+			width: 800px; margin-left: auto; margin-right: auto;}
+		.decision {text-align: center; font-size: 50px;}
+		.choice {padding: 30px 30px 5px 30px;}
+		.sel {background-color: ghostwhite}
+		.action {padding-top: 40px;}
+		.pts td {font-family: "Share Tech Mono"; font-size: 25px; padding:5px;}
+		.aa {background-color: #448aa5; width: 55px;}
+		.an {background-color: #55aacc; width: 55px;}
+		.ha {background-color: #ff6d6d; width: 55px;}
+		.hn {background-color: #be5858; width: 55px;}
+	</style>
+</game-decide>
+
+<game-result class='v'>
+	<div class='title'>Round {opts.round} results:</div>
+	<div class='results'>
+		<div class='result'>
+			You chose:<br/>
+			<img src={attack.you.img} width='200' alt='' /><br/>
+			{attack.you.txt}<br/>
+			<div class='score'>{result.you}</div>
+		</div>
+		<div class='result'>
+			They chose:<br/>
+			<img src={attack.them.img} width='200' alt='' /><br/>
+			{attack.them.txt}<br/>
+			<div class='score'>{result.them}</div>
+		</div>
+	</div>
+	<div class='c'><button id='restart-btn' onclick={opts.restart}>new game</button><button id='next-btn' onclick={opts.next}>Next Round</button></div>
+	<div class='c'>
+		<table class='score'>
+			<tr><td>&nbsp;</td><td>You</td><td>Them</td></tr>
+			<tr><td>Current Score:</td><td>{score.you}</td><td>{score.them}</td></tr>
+		</table>
+	</div>
+
+	<script>
+		var tag = this;
+		var attacks = {
+			"a": {img: 'attack.png', txt: 'Attack!'},
+			"d": {img: 'defend.png', txt: 'Defend!'},
+			"0": {img: 'null.png', txt: 'Nothing.'}
+		}
+		tag.attack = {you: {img:'', txt:''}, them: {img:'', txt:''}};
+		tag.result = {you:0, them:0};
+		tag.score = {you:0, them:0};
+
+		if (opts.role == 'analyst'){
+			tag.score.you = opts.score.a;
+			tag.score.them = opts.score.h;
+			tag.result.you = opts.result.a;
+			tag.result.them = opts.result.h;
+			tag.attack.you = attacks[opts.result.clash[1]];
+			tag.attack.them = attacks[opts.result.clash[0]];
+		} else { //hacker
+			tag.score.you = opts.score.h;
+			tag.score.them = opts.score.a;
+			tag.result.you = opts.result.h;
+			tag.result.them = opts.result.a;
+			tag.attack.you = attacks[opts.result.clash[0]];
+			tag.attack.them = attacks[opts.result.clash[1]];
+		}
+	</script>
+
+	<style>
+		.title {font-size: 80px; text-align: center;}
+		.results {display:flex; flex-direction: row; justify-content: space-between;
+			width: 800px; margin-left: auto; margin-right: auto;}	
+		.result {text-align: center; font-size: 50px;}
+		.score {font-size: 60px; font-family: "Share Tech Mono"; }
+		.score td {font-size: 30px; min-width: 60px; text-align: center; padding: 10px;}
+		#restart-btn {font-size: 25px; color: #333;}
+		#next-btn {background-color: lightgoldenrodyellow;}
+	</style>
+</game-result>

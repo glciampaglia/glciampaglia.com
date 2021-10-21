@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Alfa+Slab+One" rel="stylesheet"> 
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SIM11</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body, button, select { font-family: Alfa Slab One; }
+		body { background-color: #eee; }
+		button {font-size: 50px; padding: 5px 15px; }
+		.v {display: flex; flex-direction: column; justify-content: space-around; height: 90vh;}
+		.c {display: flex; flex-direction: row; justify-content: space-around;}
+</style>
+</head>
+<body>
+	<div id='content'></div>
+
+	<script src="riot+compiler.min.js"></script>
+	<script src="game.js"></script>
+	<script>
+		var _role = 'analyst';
+		var _scenario = {};
+		var _result = {};
+		var _score = {"h":0, "a":0};
+		var _round = 1;
+
+		function restart(){
+			riot.mount('div#content', 'title-card', { start: start });
+		}
+
+		function start(role, scenario){
+			_role = role.toLowerCase();
+			_scenario = scenarios[scenario.toLowerCase()];
+			_score = {"h":0, "a":0};
+			_round = 1;
+			riot.mount('div#content', 'game-decide', { scenario: _scenario, role: _role, sel: sel });
+		}
+
+		function replay(){
+			_round += 1;
+			riot.mount('div#content', 'game-decide', { scenario: _scenario, role: _role, sel: sel });
+		}
+
+		/* Handler for action selection (attack/defend/nothing) */
+		function sel(action){
+			if(_role=='analyst'){
+				result = fightHacker(action, _scenario);
+			} else { //hacker
+				result = fightAnalyst(action, _scenario);
+			}
+			_score.a += result.a;
+			_score.h += result.h;
+			riot.mount('div#content', 'game-result', { round: _round, result: result, score: _score, scenario: _scenario, role: _role, restart: restart, next: replay});
+		}
+
+		riot.compile([
+			'sim11.tag.html'
+		], function () {
+			restart();
+		});
+
+	</script>
+
+</body>
+</html>
