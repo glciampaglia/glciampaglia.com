@@ -1,0 +1,124 @@
+<raw-content>
+	<span></span>
+	<script>
+		this.root.innerHTML = opts.content;
+		this.on('update', function() {
+			this.root.innerHTML = opts.content;
+		});
+	</script>
+</raw-content>
+
+<intro-view>
+	<div class='intro c'>
+		<div class='instruct'>Imagine you are the Division Chief for Computers and Information Systems at a mid-sized hospital on the East Coast of the United States. You are on a time-traveling adventure in which you will have to consider IT, security, and cyber-security scenarios over the years. We will start off in the 1960’s and end up in present day, so consider how information technology capabilities and IT use in the population has changed over time. You will see costs associated with most of your decisions. These reflect your anticipated up-front costs. Actual costs of adoption/implementation may differ.</div>
+	
+		<div class='instruct'>If the decision choices for a particular scenario do not reflect the decision you would like to make, make a note of it. You might want to mention it in the assignment later. The outcomes are probabilistic rather than deterministic, so if you play again you might have a different outcome for the same choice. Make a note of any outcomes you find surprising, and your final score, as you will be asked to discuss your experience with the simulation. </div>
+
+		<button onclick={opts.start}>Start</button>
+	</div>
+
+	<style>
+		.intro {display:flex; height: 100vh; flex-direction: column; align-items: center; justify-content: flex-start; }
+		.instruct {width: 850px; font-size: 26px; padding:20px;}
+	</style>
+</intro-view>
+
+<scenario-view>
+	<div class='year'>{opts.scenario.year}</div>
+	<div class='scenario'>{opts.scenario.event}</div>
+	<div class='row'>
+		<div class='cell c'>
+			<img src={opts.scenario.i} height="300" width="450" />
+		</div>
+		<div class='cell'>
+			<div class='q'>Do you . . . ?</div>
+			<div class={choice:1, chosen:this.hovered==c.choice} each={c in opts.scenario.choices} onclick={select} 
+				onmouseover={hover} onmouseout={unhover}
+			>
+				{c.choice}
+				<div class='cost'>Cost: {formatMoney(c.cost, true)}</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var tag = this;
+		tag.hovered = null;
+
+		tag.select = function(e){
+			opts.choose(e.item.c.outcomes)
+		}
+		tag.hover = function(e){
+			tag.hovered = e.item.c.choice;
+		}
+		tag.unhover = function(){
+			tag.hovered = null;
+		}
+	</script>
+	<style>
+		.scenario {font-size: 30px; padding: 30px;}
+		.q {font-size: 30px;}
+		.choice {border: solid 1px #333; padding: 10px; margin: 10px; font-size: 25px; background-color: #ddd; cursor:pointer ;}
+		.chosen {background-color: white};
+		.cost {font-size: 18px; color: #333;}
+	</style>
+
+</scenario-view>
+
+<outcome-view>
+	<div class='year'>{opts.scenario.year}</div>
+	<div class='outcome'>{opts.outcome.outcome}</div>
+	<div class='row'>
+		<div class='cell c'>
+			<img src={opts.scenario.i} height="300" width="450" />
+		</div>
+		<div class='cell'>
+			<br/>
+			<table if={!opts.outcome.exit}>
+				<tr><td>&nbsp;</td><th>Outcome</th><th>Totals</th></tr>
+				<tr><td>Operating Costs:</td><td>
+					<div each={b in opts.outcome.budget}>{formatMoney(b)}</div>
+				</td><td>{formatMoney(opts.stats.budget)}</td></tr>
+				<tr><td>Net Jobs:</td><td>{format(opts.outcome.jobs)}</td><td>{format(opts.stats.jobs)}</td></tr>
+				<tr><td>Employee Morale: </td><td>{format(opts.outcome.jobs)}</td><td>{format(opts.stats.jobs)}</td></tr>
+				<tr><td>Community Trust</td><td>{format(opts.outcome.jobs)}</td><td>{format(opts.stats.jobs)}</td></tr>
+			</table>
+			<button onclick={opts.next}>Next</button>
+		</div>
+	</div>
+
+
+	<script>
+		var tag = this;
+		tag.format = function(num){
+			if(num>0){
+				return '+' + num;
+			} else {
+				return num;
+			}
+		}
+	</script>
+
+	<style>
+		.outcome {font-size: 30px; padding: 30px;}
+		td{padding: 2px 20px; vertical-align: top;}
+		th {text-align: left; }
+	</style>
+</outcome-view>
+
+<final-view>
+		<div class='note'>Make a note of your final scores and any observations made throughout the simulation. You will be asked to discuss these later. Feel free to try the simulation again and note any difference in outcomes.</div>
+		<table>
+		<tr><td>&nbsp;</td><th>Outcome</th></tr>
+		<tr><td>Operating Costs:</td><td>{formatMoney(opts.stats.budget, true)}</td></tr>
+		<tr><td>Net Jobs:</td><td>{opts.stats.jobs}</td></tr>
+		<tr><td>Employee Morale: </td><td>{opts.stats.jobs}</td></tr>
+		<tr><td>Community Trust</td><td>{opts.stats.jobs}</td></tr>
+	</table>
+
+	<button onclick={opts.restart}>Restart</button>
+	
+	<style>
+		.note {font-size: 30px;}
+	</style>
+</final-view>

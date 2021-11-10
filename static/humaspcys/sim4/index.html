@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|PT+Serif" rel="stylesheet"> 
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SIM14</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body, button, select { font-family: PT Serif; }
+		body { background-color: #eee; font-size: 20px; }
+		button {font-size: 30px; padding: 5px 15px; }
+		.v {display: flex; flex-direction: column; justify-content: space-around; height: 90vh;}
+		.c {display: flex; flex-direction: row; justify-content: space-around;}
+		.year {font-weight: bold; font-size: 40px;}
+		.row {display: flex; flex-direction: row; width: 100%}
+		.cell {flex:1;}
+		tr:nth-child(odd) {background: #ddd;}
+		table {margin-bottom: 20px;}
+</style>
+</head>
+<body>
+	<div id='content'></div>
+
+	<script src="riot+compiler.min.js"></script>
+	<script src="lite.js"></script>
+	<script>
+		var _round = 0;
+		var _scenarios;
+		var _stats = {
+			budget: 0,
+			jobs: 0,
+			morale: 0,
+			trust: 0
+		};
+
+		function intro(){
+			riot.mount('div#content', 'intro-view', { start: restart });
+		}
+
+		function restart(){
+			_round = -1;
+			_stats = {
+				budget: 0,
+				jobs: 0,
+				morale: 0,
+				trust: 0
+			};
+			next();
+		}
+
+		function next(){
+			_round += 1;
+			if(_round >= _scenarios.length){
+				end();
+			} else {
+				riot.mount('div#content', 'scenario-view', { scenario: _scenarios[_round], choose: choose });
+			}
+		}
+
+		function retry(){
+			riot.mount('div#content', 'scenario-view', { scenario: _scenarios[_round], choose: choose });
+		}
+
+		function choose(outcomes){
+			var scenario = _scenarios[_round];
+			var bucket = [];
+			for(var i=0; i<outcomes.length; i++){
+				for(var x=0; x<outcomes[i].pct; x++){
+					bucket.push(i);
+				}
+			}
+			var pick = Math.floor(Math.random() * bucket.length);
+			var outcome = outcomes[bucket[pick]];
+
+			var s = {i: scenario.i, year: scenario.year}
+			if(outcome.exit){
+				riot.mount('div#content', 'outcome-view', {scenario:s, outcome: outcome, stats: _stats, next: retry});
+			} else {
+				applyOutcome(outcome);
+				riot.mount('div#content', 'outcome-view', {scenario:s, outcome: outcome, stats: _stats, next: next});
+			}
+		}
+
+		function applyOutcome(outcome){
+			if(outcome.budget.length){
+				for(var i=0; i<outcome.budget.length; i++){
+					_stats.budget += outcome.budget[i];
+				}
+			} else {
+				_stats.budget += outcome.budget;
+			}
+			_stats.jobs += outcome.jobs;
+			_stats.morale += outcome.morale;
+			_stats.trust += outcome.trust;
+		}
+
+		function formatMoney(num,hideplus){
+			if(num>0){
+				if(hideplus){
+					return ('$' + (num * 1000)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+				} else {
+					return ('+$' + (num * 1000)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+				}
+			} else if(num <0) {
+				return ('-$' + (Math.abs(num) * 1000)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+			}
+			 else {
+				return ('$0');
+			}
+		}
+
+		function end(){
+			riot.mount('div#content', 'final-view', { stats: _stats, restart: restart });
+		}
+
+		riot.compile([
+			'sim14.tag.html'
+		], function () {
+			lite.get('scenarios.json', function(){
+				_scenarios = JSON.parse(this.responseText);
+				intro();
+			});			
+		});
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,1195 @@
+[
+	{
+		"year": "Early 1960s",
+		"event": "The first computerized accounting systems become available.",
+		"i": "1960.png",
+		"choices": [
+			{"choice": "Adopt", "cost": 10,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "The hospital purchases mainframe time and access and successful adoption increases billing accuracy and timely payment - hospital earns +$54,000 in the following year, adds 2 jobs",
+						"budget": [-10, 54],
+						"jobs": 2,
+						"morale": 0,
+						"trust": 1
+					},
+					{
+						"pct": 40,
+						"outcome": "Adoption succeeds after much difficulty in finding access to a mainframe system, but billing accuracy and timely payment increase eventually.",
+						"budget": [-10, 22],
+						"jobs": 2,
+						"morale": 0,
+						"trust": 1
+					},
+					{
+						"pct": 10,
+						"outcome": "Hospital is never able to get reliable access to the mainframe and adoption fails.",
+						"budget": [-10],
+						"jobs": 2,
+						"morale": 0,
+						"trust": 1
+					}
+				]
+			},
+			{"choice": "Decline", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 90,
+						"outcome": "The hospital declines out of concern that it would be difficult and costly to access the mainframe. No one outside of hospital administration is aware of the decision.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 10,
+						"outcome": "The decision to not participate in the innovation receives negative press coverage, costing $2,000 for a press release explaining the decision and business lost as a result.",
+						"budget": [-2],
+						"jobs": 0,
+						"morale": -1,
+						"trust": -1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1962",
+		"event": "Computerized scheduling and employee payroll systems become available.",
+		"i": "1962.png",
+		"choices": [
+			{"choice": "Adopt Immediately", "cost": 47,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "Successful adoption improves scheduling, adds 4 jobs, saves $10,000 annually in efficiencies over the next 5 years.",
+						"budget": [-47, 50],
+						"jobs": 4,
+						"morale": 5,
+						"trust": 1
+					},
+					{
+						"pct": 45,
+						"outcome": "Adoption succeeds after a rocky start, with some employee frustrations about the inflexibility of computerized schedules, 10 employees do not renew their contract, system saves $4,000 annually in the next 5 years.",
+						"budget": [-47, 20],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -1
+					},
+					{
+						"pct": 5,
+						"outcome": "Hospital lacks the infrastructure to support mainframe access and competent operators, causing the system to fail.",
+						"budget": [-47],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -1
+					}
+				]
+			},
+			{"choice": "Phased-in adoption", "cost": 68,
+				"outcomes": [
+					{
+						"pct": 85,
+						"outcome": "Successful adoption improves scheduling, adds 4 jobs, saves $10,000 annually in efficiencies over the next 5 years",
+						"budget": [-68, 50],
+						"jobs": 4,
+						"morale": 5,
+						"trust": 1
+					},
+					{
+						"pct": 12,
+						"outcome": "Adoption succeeds after a rocky start, with some employee frustrations about scheduling errors, 10 employees do not renew their contract, system saves $4,000 annually in the next 5 years",
+						"budget": [-68, 20],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -1
+					},
+					{
+						"pct": 3,
+						"outcome": "Hospital lacks the skilled workers and infrastructure to access the mainframe and adoption fails",
+						"budget": [-68],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -1
+					}
+				]
+			},
+			{"choice": "Decline", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 90,
+						"outcome": "The hospital declines to invest in mainframe access and no one outside of hospital administration is aware of the decision.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 10,
+						"outcome": "The decision not to invest results in scheduling mistakes and inefficiencies, costing $4,000 per year over the next five years.",
+						"budget": [-20],
+						"jobs": 0,
+						"morale": -1,
+						"trust": -1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1965",
+		"event": "Patient vital tracking and health charting systems become available (still mostly via mainframe). Health care documentation became required for Medicaid and Medicare reimbursement the previous year.",
+		"i": "1965.png",
+		"choices": [
+			{"choice": "Adopt Immediately", "cost": 120,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Successful adoption improves patient outcomes and billing of Medicaid and Medicare, adding 15 jobs and $250,000 additional revenue annually in the next 2 years.",
+						"budget": [-120,500],
+						"jobs": 15,
+						"morale": 5,
+						"trust": 5
+					},
+					{
+						"pct": 20,
+						"outcome": "A poorly planned adoption leads to many errors and reluctant users. Jobs are added, and revenue increases $40,000 over the next two years. Unfortunately, the hospital is fined $300,000 for compliance problems.",
+						"budget": [-120,80,-300],
+						"jobs": 15,
+						"morale": -5,
+						"trust": -2
+					},
+					{
+						"pct": 10,
+						"outcome": "A disastrous adoption and flaws in the system means the hospital needs to develop a replacement system and hire a new mainframe operator in 2 years. Compliance fines of $300,000 are waived by the federal government because the hospital can demonstrate a good faith effort to comply with the reporting requirements. ",
+						"budget": [-120],
+						"jobs": 15,
+						"morale": -5,
+						"trust": -2
+					}
+				]
+			},
+			{"choice": "Adopt in 2 years when the capability matures", "cost": 135,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Successful delayed adoption  improves billing of Medicaid and Medicare, adding 15 jobs and $250,000 additional revenue annually in the next 2 years. Unfortunately, the delay in adoption caused the hospital to accrue $300,000 in compliance fines.",
+						"budget": [-135,500,-300],
+						"jobs": 15,
+						"morale": 5,
+						"trust": 1
+					},
+					{
+						"pct": 20,
+						"outcome": "Medical staff has learned how to meet the reporting requirements via manual means in the two years before adoption. Many of them are reluctant to learn the new system and simply continue to use the old forms. Patient outcomes are unchanged, and the hospital avoids large compliance fines by fulfilling them manually. However, inefficiencies caused by reliance on manual systems costs the hospital $40,000 annually over the next two years.  ",
+						"budget": [-135,-80],
+						"jobs": 15,
+						"morale": -15,
+						"trust": -1
+					}
+				]
+			},
+			{"choice": "Decline", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "Medical staff learns how to meet the reporting requirments via manual means. Patient outcomes are unchanged, and the hospital avoids large compliance fines by fulfilling them manually. However, inefficiencies caused by reliance on manual systems costs the hospital $40,000 annually over the next two years.",
+						"budget": [-80],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -5
+					},
+					{
+						"pct": 50,
+						"outcome": "Medical staff learns how to meet the reporting requirments via manual means. The hospital incurs $150,000 in compliance fines caused by reliance on manual systems.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -5
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1969",
+		"event": "Bell Aerospace Company develops a centralized database that makes health care records available to all providers",
+		"i": "1969.png",
+		"choices": [
+			{"choice": "Adopt Immediately", "cost": 250,
+				"outcomes": [
+					{
+						"pct": 100,
+						"outcome": "This system was developed only for the Papagoe Tribe and was only available on their reservation. You'll need to wait 3 years before a similar option is commercially available. Pick another choice.",
+						"exit": true
+					}
+				]
+			},
+			{"choice": "Adopt in 3 years when it becomes more widely commercially available", "cost": 375,
+				"outcomes": [
+					{
+						"pct": 40,
+						"outcome": "Successful delayed adoption greatly benefits your hospital. Patient outcomes improve. Jobs soar and you see a huge gain in business. The hospital is able to expand and gains national recognition both for it's medicine and the IT system that supports it. Unfortunately, national adoption is very weak and similar systems do not become mainstream until more than 20 years later.",
+						"budget": [-375, 4000],
+						"jobs": 150,
+						"morale": 30,
+						"trust": 100
+					},
+					{
+						"pct": 60,
+						"outcome": "Adoption of the system by employees is incomplete, but still realizes some benefits. Patient outcomes improve and the hospital adds 20 jobs. Revenue increases nearly a million dollars total in the next two years. Unfortunely, national adoption is very weak and similar systems do not become mainstream until more than 20 years later.",
+						"budget": [-375,990],
+						"jobs": 20,
+						"morale": 5,
+						"trust": 15
+					}
+				]
+			},
+			{"choice": "Decline", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 40,
+						"outcome": "Adoption of this system outside of the Papagoe Reservation was actually never possible anyway. When a similar system becomes widely commercially available 3 years later, it is adopted by a competing hospital, costing more than $500,000 in lost business. ",
+						"budget": [-500],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -5
+					},
+					{
+						"pct": 60,
+						"outcome": "You decline to adopt now, but reconsider when a similar commercial system becomes available later.",
+						"exit": true,
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1970s",
+		"event": "Fourth Generation Computers see a broad array of developments including attempts to computerize surveys, make local and inter-operable patient databases, and offer access to cost information. Your hospital decides to set aside funds for innovation and advancement. Choose an area for development.",
+		"i": "1970.png",
+		"choices": [
+			{"choice": "Develop guidelines for data collected from patients prior to discharge", "cost": 0,
+				"outcomes": [{
+					"pct": 100,
+					"outcome": "This innovation becomes the Universal Hospital Discharge Database still in use decades later.",
+					"budget": [0],
+					"jobs": 10,
+					"morale": 1,
+					"trust": 10
+				}]
+			},
+			{"choice": "Standardize medical terms for use in databases", "cost": 0,
+				"outcomes": [{
+					"pct": 100,
+					"outcome": "Your efforts become known at the Systematized Nomenclature of Medicine (SNOMED) which eventually becomes the international standard.",
+					"budget": [0],
+					"jobs": 5,
+					"morale": 10,
+					"trust": 20
+				}]
+			},
+			{"choice": "Establish a system to chart patient progress combined with a staffing system", "cost": 0,
+				"outcomes": [{
+					"pct": 100,
+					"outcome": "Funding constraints and technological limitations prevent the system from becoming functional (e.g., Rockland County Health Department)",
+					"budget": [0],
+					"jobs": 0,
+					"morale": 5,
+					"trust": 0
+				}]
+			},
+			{"choice": "Standardize a patient assessment form", "cost": 0,
+				"outcomes": [{
+					"pct": 100,
+					"outcome": "Computer technology is not advanced enough to process the numerous variables and the assessment is never computerized (e.g., University of New York at Buffalo)",
+					"budget": [0],
+					"jobs": 0,
+					"morale": -5,
+					"trust": 0
+				}]
+			},
+			{"choice": "Develop a system to predict patient care requirements", "cost": 0,
+				"outcomes": [{
+					"pct": 100,
+					"outcome": "The project cannot be completed with the available funding (e.g., Community Nursing Services of Philadelphia)",
+					"budget": [0],
+					"jobs": 0,
+					"morale": -5,
+					"trust": 0
+				}]
+			},
+			{"choice": "Develop a clinical database for later integration in a fully integrated and automated information management system", "cost": 0,
+				"outcomes": [{
+					"pct": 100,
+					"outcome": "Your efforts become known as the \"Omaha System,\" still in use today",
+					"budget": [0],
+					"jobs": 100,
+					"morale": 20,
+					"trust": 50
+				}]
+			}
+		]
+	},
+	{
+		"year": "1985",
+		"event": "Personal computers become more widely available and cost effective. Health care information is still largely maintained in stand-alone department-based systems, but PCs are rapidly coming into use by medical professionals, administrators, and finance staff. You are concerned about limiting access to health care records and hospital files to authorized personnel, but don't want to create additional barriers for staff who are already having difficulty adopting new systems. Choose a strategy.",
+		"i": "1985.png",
+		"choices": [
+			{"choice": "Users must password protect their terminal and logout when away from their office", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Users are frustrated and compliance is poor. Electronic files are not misused, but several paper files are stolen or misplaced.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": -5,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "The policy is not popular, but you make appearances at department meetings to explain the rationale and answer questions. Compliance is subsequently good.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 1,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Users must lock their office doors when not at their desks; passwords are not required", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "The policy is not popular, but users are generally compliant. Electronic files and paper files are protected.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": -1,
+						"trust": 0
+					},
+					{
+						"pct": 40,
+						"outcome": "The policy is not popular, but you make appearances at department meetings to explain the rationale and answer questions. Compliance is subsequently good. Paper files and electronic files are protected.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 1,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Implement no policy, but increase security presence", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Increased security reduces incidents of inappropriate access to both electronic and paper files. A few employees voice their displeasure, but most say they feel safer. The salaries of the security officers cost $60,000, but the hospital widely views this as a good investment. ",
+						"budget": [-60],
+						"jobs": 4,
+						"morale": 5,
+						"trust": 1
+					},
+					{
+						"pct": 40,
+						"outcome": "Despite increased security, there is a file tampering incident. Fortunately, the culprit is detected and there are no further issues. The salaries of the security officers cost $60,000, but the hospital widely views this as a good investment.",
+						"budget": [-60],
+						"jobs": 4,
+						"morale": 10,
+						"trust": 1
+					}
+				]
+			},
+			{"choice": "Implement no policy, but resolve to re-evaluate in 6 months", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "There is no change in rate of file tampering, and no major incidents. ",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 5,
+						"trust": 0
+					},
+					{
+						"pct": 10,
+						"outcome": "There is a massive electronic file compromise causing loss of data for the hospital. Unfortunately, it is financial data and the hospital takes a whopping financial hit.",
+						"budget": [-350],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -20
+					},
+					{
+						"pct": 10,
+						"outcome": "There is a minor incident involving electronic data compromise, which may have been unintentional. There is a minor financial loss as a result. This prompts you to reconsider your policy.",
+						"budget": [-2],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -2
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1987",
+		"event": "You read a report about a computer virus that is being circulated on floppy disks. Floppies are widely used in the hospital to share and transport information and you are concerned about the vulnerability. Choose a strategy.",
+		"i": "1987.png",
+		"choices": [
+			{"choice": "Advise users never to insert floppies that originate outside the hospital. Print out flyers describing the risk.", "cost": 0.1,
+				"outcomes": [
+					{
+						"pct": 90,
+						"outcome": "Users don't see, ignore, or don't understand the flyer. Fortunately, no one ever receives a disk and nothing happens.",
+						"budget": [-0.1],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 8,
+						"outcome": "Users don't see, ignore, or don't understand the flyer. A few weeks later, an administrator receives a disk he inserts into his computer, causing a system crash and data loss.",
+						"budget": [-0.1, -50],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -10
+					},
+					{
+						"pct": 2,
+						"outcome": "Enough employees see the flyer that they start conversations about the risk. There is a general understanding, though it has an undertone of exaggerated risk and alarm. An administrator who receives an infected disk thinks twice about inserting it, preventing infection of the entire hospital system.",
+						"budget": [-0.1],
+						"jobs": 0,
+						"morale": -2,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Advise users never to insert floppies that originate outside the hospital. Bring in a local computer expert to talk at a town hall meeting to talk about the specific virus, the more general issue, and what to do.", "cost": 1,
+				"outcomes": [
+					{
+						"pct": 90,
+						"outcome": "Many people attend the town hall and awareness of computer viruses and other risks increases. Fortunately, no one ever receives a disk and nothing happens.",
+						"budget": [-1],
+						"jobs": 0,
+						"morale": 5,
+						"trust": 5
+					},
+					{
+						"pct": 5,
+						"outcome": "Many people attend the town hall and awareness of computer viruses and other risks increases. An administrator receives a disk but does not insert it because of what he learned at the town hall.",
+						"budget": [-1],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 10
+					},
+					{
+						"pct": 5,
+						"outcome": "Many people attend the town hall and awareness of computer viruses and other risks increases. An administrator who did not attend receives a disk and inserts it, causing a data loss and infection of the hospital system.",
+						"budget": [-1,-150],
+						"jobs": 0,
+						"morale": -5,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Publish a column on computer safety in the hospital newsletter on computer safety. Do not mention the risk specifically so as not to confuse or alarm staff.", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 25,
+						"outcome": "About half of all employees see the newsletter and read the column. Joan in patient services read it, but didn't understand the specific threat, so inserted the disk anyway, resulting in data loss and infection of hospital systems.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -5
+					},
+					{
+						"pct": 25,
+						"outcome": "About half of all employees see the newsletter and read the column. Joan in patient services read it, and as a result did not insert the disk.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 5,
+						"trust": 5
+					},
+					{
+						"pct": 25,
+						"outcome": "About half of all employees see the newsletter and read the column. Joan in patient services didn't read it or know about the threat, so inserted the disk, resulting in data loss and infection of hospital systems.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -1,
+						"trust": -1
+					},
+					{
+						"pct": 25,
+						"outcome": "About half of all employees see the newsletter and read the column. Joan in patient services didn't read it or know about the threat, but she threw away the disk anyway. Whew! Lucked out there!",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Talk to the administrative heads of the departments and ask them to communicate the risk down their chains of command.", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 25,
+						"outcome": "Administrators do not effectively communicate the problem, but no one ever receives an infected disk at the hospital so the systems are not compromised.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 25,
+						"outcome": "Administrators do not effectively communicate the problem. A surgeon receives an infected disk and inserts it, resulting in data loss and infection of the hospital computer system.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -5
+					},
+					{
+						"pct": 25,
+						"outcome": "Administrators effectively communicate the problem. A surgeon receives an infected disk but does not insert because of the risk.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 25,
+						"outcome": "Administrators effectively communicate the problem. No one ever receives an infected disk at the hospital so the systems are not compromised.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1991",
+		"event": "Health care providers increasingly communicate via closed-system hospital electronic messages (e-mail). As use becomes more widespread, you realize the need for balancing convenient and quick communications with security of patient data and the cost of the system. Currently your biggest cost is data storage. Choose a policy to manage storage issues.",
+		"i": "1991.png",
+		"choices": [
+			{"choice": "Email ages off after 30 days with an option to protect/save important files", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 70,
+						"outcome": "Some employees are unhappy with this policy, but it saves enough storage capacity that the hospital does not need to upgrade at this time. There is a large uptick in requests for help with saving and retrieving saved files, requiring addition of two IT \"help desk\" employees.",
+						"budget": [-40],
+						"jobs": 2,
+						"morale": 1,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Some employees are unhappy with this policy, but it saves enough storage capacity that the hospital does not need to upgrade at this time. There is a large uptick in requests for help with saving and retrieving saved files. Although adding \"help desk\" staff would improve the situation, you decide not to hire at this time to contain costs.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": -10,
+						"trust": 0
+					},
+					{
+						"pct": 10,
+						"outcome": "Some employees are unhappy with this policy, but it saves enough storage capacity that the hospital does not need to upgrade immediately. However, after a month you notice that employees are protecting most of their email files, necessitating an expensive upgrade.",
+						"budget": [-250],
+						"jobs": 0,
+						"morale": -2,
+						"trust": 1
+					}
+				]
+			},
+			{"choice": "Email ages off after 90 days", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "Although a few employees are upset about the age-off process, most find that emails older than 90 days are rarely needed. The individuals who need email data learn to save it to text files. You have to upgrade data storage, but not as much as originally forecast.",
+						"budget": [-10],
+						"jobs": 0,
+						"morale": -1,
+						"trust": 0
+					},
+					{
+						"pct": 50,
+						"outcome": "Although a few employees are upset about the age-off process, most find that emails older than 90 days are rarely needed. Unfortunately, an administrator allows emailed communication about a contract to age off, necessitating re-negotiation and costing the hospital $150,000.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -1,
+						"trust": -2
+					}
+				]
+			},
+			{"choice": "Email ages off after 90 days with an option to save/protect important files", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "Most employees are happy with this policy, and find that they rarely need emails more than 90 days old. The new policy saves enough storage capacity that the hospital does not need to upgrade at this time. There is a large uptick in requests for help with saving and retrieving saved files, requiring addition of two IT ʺhelp deskʺ employees.",
+						"budget": [-40],
+						"jobs": 2,
+						"morale": 5,
+						"trust": 1
+					},
+					{
+						"pct": 50,
+						"outcome": "Most employees are happy with this policy, and find that they rarely need emails more than 90 days old. You don't have to do a full upgrade at this time, but still need to increase storage.",
+						"budget": [-25],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Do not implement an age-off policy, but encourage users to delete unneeded files and refrain from sending jokes and non-work-related email", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "Few users comply with instructions to delete unnecessary emails and you are forced to upgrade storage. While the new storage is expensive, it greatly improves email performance and makes FTP capabilities nearly instantaneous.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 40,
+						"outcome": "Few users comply with instructions to delete unnecessary emails and you are forced to upgrade storage. Unfortunately, you did not act quickly enough and the old system goes down for nearly a week before the new one can be brought on line.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -2
+					},
+					{
+						"pct": 10,
+						"outcome": "Users comply with the request to delete emails and an upgrade is not necessary at this time.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "1997",
+		"event": "Email is becoming an increasingly popular way of communicating and there have been requests to expand the in-house email system to allow for emailing outside the hospital system. Assume all options are HIPAA compliant.",
+		"i": "1997.png",
+		"choices": [
+			{"choice": "Opt to continue in-house for now", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Most users who need outside email adopt web-based mail and/or use personal email addresses to conduct business. This looks unprofessional and fails to protect patient information. On the other hand, most web email services do a pretty good job of protecting from emailed viruses, so it's not the worst possible solution. You're going to need external email eventually though. Better start budgeting.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": -1,
+						"trust": -10
+					},
+					{
+						"pct": 10,
+						"outcome": "Most users who need outside email adopt web-based mail and/or use personal email addresses to conduct business. This looks unprofessional and fails to protect patient information. A local official's private health information is compromised because of an employee using Hotmail, leading to a lawsuit that is eventually settled for $50,000. Better start looking into managing an external email server.",
+						"budget": [-50],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -20
+					},
+					{
+						"pct": 10,
+						"outcome": "Most users who need outside email adopt web-based mail and/or use personal email addresses to conduct business. This looks unprofessional and fails to protect patient information. Fortunately, you are lucky and there are no major incidents, but better start looking into managing an external email server.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": -1,
+						"trust": -10
+					}
+				]
+			},
+			{"choice": "Expand to include external email on hospital servers; restrict access to web mail servers", "cost": 250,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "The new external email is adopted throughout the hospital. You add a new help desk employee to assist with adoption and two new IT positions to manage email servers. Local news covers the successful rollout and the hospital receives kudos.",
+						"budget": [-250, 0],
+						"jobs": 3,
+						"morale": 5,
+						"trust": 10
+					},
+					{
+						"pct": 20,
+						"outcome": "The new external email is adopted throughout the hospital. You add a new help desk employee to assist with adoption and two new IT positions to manage email servers. Unfortunately, some employees are irritated that they are unable to access personal email, but after an initial adoption period things run smoothly.",
+						"budget": [-250],
+						"jobs": 3,
+						"morale": -1,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Expand to include external email on hospital servers; no restrictions on web mail servers", "cost": 250,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Hospital employees are happy that they can still access webmail and rollout of the new in-house system is smooth. Like most medium businesses, you do not monitor email and so have no insight into whether there is lost productivity or compromise of proprietary information. Fortunately, no incident is ever detected. ",
+						"budget": [-250],
+						"jobs": 3,
+						"morale": 5,
+						"trust": 10
+					},
+					{
+						"pct": 10,
+						"outcome": "Hospital employees are happy that they can still access webmail and rollout of the new in-house system is smooth. Like most medium businesses, you do not monitor email and so have no insight into whether there is lost productivity or compromise of proprietary information. Unfortunately there is an incident in which an employee exfiltrates information. It is difficult to monetize the impact of the incident, but the hospital loses intellectual property and there is bad press.",
+						"budget": [-250],
+						"jobs": 3,
+						"morale": -5,
+						"trust": -10
+					},
+					{
+						"pct": 10,
+						"outcome": "Hospital employees are happy that they can still access webmail and rollout of the new in-house system is smooth. Like most medium businesses, you do not monitor email and so have no insight into whether there is lost productivity or compromise of proprietary information. Unfortunately there is a browser-based attack that infects the radiology department, shutting down testing for a day.",
+						"budget": [-250, -100],
+						"jobs": 3,
+						"morale": -5,
+						"trust": -5
+					}
+				]
+			},
+			{"choice": "Expand to include external email, but include email filtering", "cost": 250,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Rollout of the new system goes smoothly. Most employees are not aware that email is filtered and are generally happy with the system.",
+						"budget": [-250],
+						"jobs": 3,
+						"morale": 5,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Hospital employees are happy with the new system and rollout goes smoothly. One employee misses an email about a grant proposal, losing $250,000 in research money. This is later uncovered and he is irate. The incident receives negative press.",
+						"budget": [-250, -250],
+						"jobs": 3,
+						"morale": -10,
+						"trust": -10
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2002",
+		"event": "Automatic updates and security patches become available for the hospital's OS. (All options are HIPAA compliant.)",
+		"i": "2002.png",
+		"choices": [
+			{"choice": "Run automatic updates", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Automatic updates increase system security and improve performance. ",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 1,
+						"trust": 1
+					},
+					{
+						"pct": 10,
+						"outcome": "Automatic updates generally increase system security and improve performance. Unfortunately, you are the victim of a \"bad update\" which breaks server connectivity for a number of systems. It's all hands on deck to restore functionality, costing in overtime and morale.",
+						"budget": [-50],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -3
+					},
+					{
+						"pct": 10,
+						"outcome": "Automatic updates increase system security and improve performance. Although most users are unaware, prompt patching allows you to avoid a \"zero day exploit\" which seriously compromises the servers of a competing hospital.",
+						"budget": [250],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Keep updates manual", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 40,
+						"outcome": "Manual updates require significant resources. You are forced to hire new staff to handle the workload.",
+						"budget": [-150],
+						"jobs": 2,
+						"morale": 5,
+						"trust": 0
+					},
+					{
+						"pct": 40,
+						"outcome": "Manual updates require significant resources. The helpdesk is overwhelmed with tickets and cannot address both those and the updates adequately.",
+						"budget": [0],
+						"jobs": 0,
+						"morale": -10,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Because of a weather event, systems are not patched on schedule and you fall victim to a virus. Cleaning the fallout and getting patches up to date is expensive.",
+						"budget": [-150],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -5
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2003",
+		"event": "The hospital wants to increase information security. Being mindful of budget, you are considering adding a firewall to the hospital internet. Choose a strategy. (All options are HIPAA compliant.)",
+		"i": "2003.png",
+		"choices": [
+			{"choice": "Implement a host-based firewall", "cost": 50,
+				"outcomes": [
+					{
+						"pct": 40,
+						"outcome": "Host-based firewall provides good, but not perfect protection. Fortunately, hospital laptops are protected even off-premises. This time you luck out and the host-based solution works well for you, but be aware that network-based firewalls or a combination solution usually provide between protection, scalability, and are typically more affordable.",
+						"budget": [-50],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 30,
+						"outcome": "Host-based firewall provides good, but not perfect protection. Fortunately, hospital laptops are protected even off-premises. Unfortunately, they do not scale as well as host-based solutions and you have to spend additional funds for a combination approach as the network expands.  ",
+						"budget": [-50,-100],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 30,
+						"outcome": "Host-based firewall provides good, but not perfect protection. An attacker manages to circumvent your firewall, gains access to the host, and uses administrator privileges to install malicious code. A network-based firewall probably would have done a better job protecting, but your host-based firewall does notify you of the suspicious traffic in enough time to contain the damage.",
+						"budget": [-50,-150],
+						"jobs": 0,
+						"morale": -5,
+						"trust": -5
+					}
+				]
+			},
+			{"choice": "Implement a network-based firewall", "cost": 100,
+				"outcomes": [
+					{
+						"pct": 90,
+						"outcome": "Good choice. Network-based firewalls provide greater security, scalability, and are often the most affordable. You'll want to protect hospital-owned mobile devices and laptops with host-based firewalls since they may operate on other networks.",
+						"budget": [-100],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 5
+					},
+					{
+						"pct": 10,
+						"outcome": "Good choice. Network-based firewalls provide greater security, scalability, and are often the most affordable. Unfortunately, you over-looked host-based firewalls for hospital-owned mobile devices and laptops, and several were returned with evidence that they'd picked up a Trojan from a foreign network. It takes a lot of man hours, but you're able to restore the laptops.",
+						"budget": [-100,-20],
+						"jobs": 0,
+						"morale": -2,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Build your own firewall using existing hardware and free firewall applications", "cost": 10,
+				"outcomes": [
+					{
+						"pct": 100,
+						"outcome": "This is an inexpensive option and might make sense for a small business or start-up organization. For a mid-sized hospital, you're better off with a commercial solution that will be familiar to your IT staff. Please choose again.",
+						"exit": true,
+						"budget": [-10],
+						"jobs": 2,
+						"morale": 0,
+						"trust": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2006",
+		"event": "USB devices are popular, but pose a security risk by potentially carrying incoming viruses and outgoing confidential and proprietary information. You need to set the USB policy for your hospital. Assume all options are HIPAA compliant.",
+		"i": "2006.png",
+		"choices": [
+			{"choice": "Disallow USB devices for in-house information systems", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Despite the policy, employees continue to bring in and use USB drives and other USB devices. This proves costly, eventually leading to system compromise and loss of data.",
+						"budget": [-300],
+						"jobs": 0,
+						"morale": 0,
+						"trust": -5
+					},
+					{
+						"pct": 20,
+						"outcome": "Despite the policy, employees continue to bring in and use USB drives and other USB devices. Fortunately, you've put out a strong message about the vulnerabilities of USB drives and employees throw away the drives they find in parking lots and are given at conferences. Allowing use does leave a vulnerability, but it also permits a user-friendly method for administrators and health care workers to move files when necessary. ",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 1
+					}
+				]
+			},
+			{"choice": "Disallow USB devices and disable USB ports for in-house information systems", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Although your vulnerability is effectively reduced, employees are unhappy about their inability to move files as necessary. You must produce education modules about burning information to CD, or using FTP to move files. Employees complain that this is cumbersome and inconvenient.",
+						"budget": [-40],
+						"jobs": 0,
+						"morale": -2,
+						"trust": 0
+					},
+					{
+						"pct": 40,
+						"outcome": "Although your vulnerability is effectively reduced, employees are unhappy about their inability to move files as necessary. Employees start printing more as a work-around, doubling paper and toner costs and causing a detrimental impact to the environment.",
+						"budget": [-250],
+						"jobs": 0,
+						"morale": -10,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Allow USB use, but ask employees to scan all outside media for viruses at a virus scan station ", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "The scanning policy works well. Although some employees grumble a bit about the inconvenience, you stop four compromised drives from being used on hospital systems in the first month alone.",
+						"budget": [10],
+						"jobs": 0,
+						"morale": -1,
+						"trust": 5
+					},
+					{
+						"pct": 20,
+						"outcome": "The scanning policy works well and, you stop four compromised drives from being used on hosptial systems in the first month alone. The new policy allows a watchful employee to spot an unscanned drive which is being used to exfiltrate private information. The employee who was circumventing procedure is fired, likely saving the hospital from a lawsuit.",
+						"budget": [150],
+						"jobs": 0,
+						"morale": 5,
+						"trust": 5
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2010",
+		"event": "The hospital wants you to put a cybersecurity awareness program in place. Choose your approach. Assume all options are HIPAA compliant.",
+		"i": "2010.png",
+		"choices": [
+			{"choice": "Compulsory modules can be completed at home or work; failure to complete results in loss of network access", "cost": 100,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Although many people complete the modules, the number of successful completions still falls far below the goal of 80%. You have to abandon the idea of revoking network access for non-completion because of the large number of people who would be impacted.",
+						"budget": [-100],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Although many people complete the modules, the number of successful completions still falls far below the goal of 80%. One supervisor insists that her employees complete the modules on their own time, leading to a law suit from the union.",
+						"budget": [-100,-150],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Some people complete the modules, but the number of successful completions still falls far short of your goal. The nutrition division has the highest completion rate because of a supervisor's decision to employees to schedule a \"work from home day\" to complete the modules.",
+						"budget": [-100],
+						"jobs": 0,
+						"morale": 0,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Compulsory course completed in person during work hours; failure to complete results in employee disciplinary action", "cost": 40,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Although many people register and attend the course, the number of successful completions still falls far below the goal of 80%. Disciplinary action is spotty and falls to the departments. Employees who do complete the training resent the threat of disciplinary action and hospital administration asks you to revise your approach in the future.",
+						"budget": [-40],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -5
+					},
+					{
+						"pct": 20,
+						"outcome": "Although many people complete the course, the number of successful completions still falls far below the goal of 80%. Employees who do attend are moderately engaged and have the opportunity to ask questions, so do see some benefit from the course. However, they also resent the threat of disciplinary action for non-completion. Hospital administration asks you to change your approach in the future.",
+						"budget": [-40],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -10
+					},
+					{
+						"pct": 10,
+						"outcome": "Some people register and attend the course, but attendance falls far short of your goal. The union sues the hospital for requiring mandatory training not specified in current contracts.",
+						"budget": [-40,-150],
+						"jobs": 0,
+						"morale": -10,
+						"trust": -10
+					}
+				]
+			},
+			{"choice": "Elective modules can be completed at home or work; completion tied to department-level rewards", "cost": 100,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Motivated by the reward, employee completion exceeds the goal of 80%. Unfortunately, the module approach means that not everyone pays close attention to the content and almost 1/3 of attendees give negative reviews to the course.",
+						"budget": [-100],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Motivated by the reward, employee completion exceeds the goal of 80%. One supervisor insists that her employees complete the modules on their own time, leading to a law suit from the union.",
+						"budget": [-100,-150],
+						"jobs": 0,
+						"morale": 0,
+						"trust": -10
+					},
+					{
+						"pct": 20,
+						"outcome": "Motivated by the reward, employee completion exceeds the goal of 80%. The module approach is not the most effective way to engage students, and retention is not ideal. You consider tying rewards to both attendance and performance on a knowledge check next year.",
+						"budget": [-100],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Elective modules completed in person during work hours; completion tied to department-level rewards", "cost": 100,
+				"outcomes": [
+					{
+						"pct": 60,
+						"outcome": "Motivated by the reward, employee completion exceeds the goal of 80%. Attendees are moderately engaged and have the opportunity to ask questions, so do see a benefit from the course. ",
+						"budget": [-100],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 0
+					},
+					{
+						"pct": 40,
+						"outcome": "Motivated by the reward, employee completion exceeds the goal of 80%. Attendees are engaged and have the opportunity to ask questions, improving their retention of course materials. You also convince hospital administration to offer 12 hours paid time off to everyone in the department with the highest attendance. This reward greatly boosts organizational attitude towards the IT department and adherence to cybersecurity recommendations. Your department wins a prestigious national award.",
+						"budget": [-100,200],
+						"jobs": 0,
+						"morale": 10,
+						"trust": 10
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2015",
+		"event": "The hospital is responding to a new mandates to remove PII and PHI from stored customer data. Choose your approach. Assume HIPAA compliance is not an issue.",
+		"i": "2015.png",
+		"choices": [
+			{"choice": "Use individuals SSN rather than name to identify records; have customers and staff sign a broad data use agreement", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 100,
+						"outcome": "SSNs are personal information, but they are considered PII. Any data linked to PII or PHI should be kept on encrypted, password-protected systems. The \"Safe Harbor Method\" specifies 18 types of information that should be redacted from medical databased that are or could be accessed by unauthorized personnel. See NISTIR 8053 for more information: https://nvlpubs.nist.gov/nistpubs/ir/2015/nist.ir.8053.pdf",
+						"budget": [0],
+						"jobs": 0,
+						"morale": 0,
+						"trust": -10
+					}
+				]
+			},
+			{"choice": "Use unique identifiers for patients that can be looked up based on quasi-identifiers the individual is likely to know (e.g., birthday, zipcode, gender)", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 100,
+						"outcome": "Quasi-identifiers can be and have be used to re-identify sensitive databases. Any data linked to PII or PHI should be kept on encrypted, password-protected systems. The \"Safe Harbor Method\" specifies 18 types of information that should be redacted from medical databased that are or could be accessed by unauthorized personnel. See NISTIR 8053 for more information: https://nvlpubs.nist.gov/nistpubs/ir/2015/nist.ir.8053.pdf",
+						"budget": [-50],
+						"jobs": 0,
+						"morale": 0,
+						"trust": -5
+					}
+				]
+			},
+			{"choice": "Use the \"Safe Harbor Method\" for anyone who does not need full records; encrypt and password protect systems with PII and PHI", "cost": 0,
+				"outcomes": [
+					{
+						"pct": 100,
+						"outcome": "The \"Safe Harbor Method\" specifies 18 types of information that should be redacted from medical databased that are or could be accessed by unauthorized personnel. See NISTIR 8053 for more information: https://nvlpubs.nist.gov/nistpubs/ir/2015/nist.ir.8053.pdf Although inconvenient and expensive to maintain multiple levels of user access, this provides maximum protection to patients and staff, while avoiding fines for non-compliance.",
+						"budget": [100],
+						"jobs": 2,
+						"morale": 10,
+						"trust": 10
+					}
+				]
+			}
+		]
+	},
+	{
+		"year": "2017",
+		"event": "Increasing concerns about information privacy have driven the hospital to consider multiple safety measures. Choose which ones to implement. Assume HIPAA compliance is not an issue.",
+		"i": "2017.png",
+		"choices": [
+			{"choice": "Multi-factor authentication", "cost": 1000,
+				"outcomes": [
+					{
+						"pct": 50,
+						"outcome": "While not cheap or convenient, multi-factor authentication does a good job of securing information systems. Most MFA systems are not useful for providing access controls, but in this case you already have an operational badge access system. You use a staged adoption plan to minimize the impact of new MFA users on your IT systems.",
+						"budget": [-1000],
+						"jobs": 0,
+						"morale": -2,
+						"trust": 0
+					},
+					{
+						"pct": 50,
+						"outcome": "While not cheap or convenient, multi-factor authentication does a good job of securing information systems. Most MFA systems are not useful for providing access controls, but in this case you already have an operational badge access system. Unfortunately, requiring MFA for all levels of users at once is a substantial burden on IT and you are forced to hire new staff to assist users.",
+						"budget": [-1000,-300],
+						"jobs": 0,
+						"morale": -2,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Bio-metric log-ins and access controls", "cost": 1000,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Bio-metric logins and access control are expensive and although they do a good job securing physical space and IT systems, they sometimes cause unexpected issues for some users. Fortunately, you have the foresight to make accommodations for users with known difficulties (e.g., retinal scans may be unreliable for those with blood vessel disease and older people may have difficulties with finger or hand-print access), and you work with security to station extra guards while staff adapt to the new systems. Despite your efforts, some employees are uncomfortable with the biometric systems. ",
+						"budget": [-1000],
+						"jobs": 5,
+						"morale": -5,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Bio-metric logins and access control are expensive and although they do a good job securing physical space and IT systems, they sometimes cause unexpected issues for some users. Some users have difficulty with the systems (e.g., retinal scans may be unreliable for those with blood vessel disease and older people may have difficulties with finger or hand-print access), and complain to hospital administration. You are forced to maintain redundant systems - both the existing badge system plus the biometric system to accommodate all users. Fortunately, this also allows you to accommodate employees who are uncomfortable with the biometric systems. ",
+						"budget": [-1000,-1000],
+						"jobs": 0,
+						"morale": 1,
+						"trust": 0
+					}
+				]
+			},
+			{"choice": "Both multi-factor authentication plus bio-metric log-ins and access controls", "cost": 2000,
+				"outcomes": [
+					{
+						"pct": 80,
+						"outcome": "Bio-metric logins and access control are expensive, and adding MFA to biometric logins is expensive and probably overkill. Biometric systems sometimes cause unexpected issues for some users. Fortunately, you have the foresight to make accommodations for users with known difficulties (e.g., retinal scans may be unreliable for those with blood vessel disease and older people may have difficulties with finger or hand-print access), and you work with security to station extra guards while staff adapt to the new systems. Despite your efforts, some employees are uncomfortable with the biometric systems. ",
+						"budget": [-2000],
+						"jobs": 0,
+						"morale": 1,
+						"trust": 0
+					},
+					{
+						"pct": 20,
+						"outcome": "Bio-metric logins and access control are expensive, and adding MFA to biometric logins is expensive and probably overkill. Biometric systems sometimes cause unexpected issues for some users. Some users have difficulty with the systems (e.g., retinal scans may be unreliable for those with blood vessel disease and older people may have difficulties with finger or hand-print access), and complain to hospital administration. You are forced to maintain redundant systems - both the existing badge system plus the biometric system to accommodate all users. Fortunately, this also allows you to accommodate employees who are uncomfortable with the biometric systems. ",
+						"budget": [-2000,-1000],
+						"jobs": 0,
+						"morale": 1,
+						"trust": 0
+					}
+				]
+			}
+		]
+	}
+
+]
