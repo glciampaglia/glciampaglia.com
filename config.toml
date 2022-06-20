@@ -42,14 +42,14 @@ enableGitInfo = true
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "College of Information Studies, University of Maryland, College Park", url = "http://ischool.umd.edu/" } ]
+  organizations = [ { name = "University of Maryland", url = "http://ischool.umd.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "giovanni_avatar.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "giovanni_avatar_2022.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
   email = "gciampag@umd.edu"
-  address = "University of Maryland, College of Information Studies, 4130 Campus Drive, Hornbake Library, Rm. 2117C, College Park, MD 20742-4345"
+  address = "University of Maryland<br/>College of Information Studies<br/>4130 Campus Drive<br/>Hornbake Library, Rm. 2117C<br/>College Park, MD 20742-4345"
   office_hours = ""
   phone = ""
   skype = ""
@@ -75,11 +75,11 @@ enableGitInfo = true
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
+  map = 2
   map_api_key = ""
-  latitude = ""
-  longitude = ""
-  zoom = 0
+  latitude = "38.98811390106729"
+  longitude = "-76.94160187782033"
+  zoom = 17
 
   # SITE SETUP
 
